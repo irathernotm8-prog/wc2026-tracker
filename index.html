@@ -243,6 +243,39 @@ async function init() {
 
 // ── Helpers ──────────────────────────────────────────────────
 function esc(s){ return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : '' }
+
+// ── Flag image helper ─────────────────────────────────────────
+const FLAG_MAP = {
+  'Algeria': "dz", 'Argentina': "ar", 'Australia': "au", 'Austria': "at",
+  'Belgium': "be", 'Bosnia and Herzegovina': "ba", 'Brazil': "br", 'Canada': "ca",
+  'Cape Verde': "cv", 'Colombia': "co", 'Croatia': "hr", 'Curacao': "cw",
+  'Czechia': "cz", 'DR Congo': "cd", 'Ecuador': "ec", 'Egypt': "eg",
+  'England': "gb-eng", 'France': "fr", 'Germany': "de", 'Ghana': "gh",
+  'Haiti': "ht", 'Iran': "ir", 'Iraq': "iq", 'Ivory Coast': "ci",
+  'Japan': "jp", 'Jordan': "jo", 'Mexico': "mx", 'Morocco': "ma",
+  'Netherlands': "nl", 'New Zealand': "nz", 'Norway': "no", 'Panama': "pa",
+  'Paraguay': "py", 'Portugal': "pt", 'Qatar': "qa", 'Saudi Arabia': "sa",
+  'Scotland': "gb-sct", 'Senegal': "sn", 'South Africa': "za", 'South Korea': "kr",
+  'Spain': "es", 'Sweden': "se", 'Switzerland': "ch", 'Tunisia': "tn",
+  'Turkiye': "tr", 'United States': "us", 'Uruguay': "uy", 'Uzbekistan': "uz"
+};
+
+function teamFlag(teamStr, size) {
+  if(!teamStr) return '';
+  size = size || 16;
+  const name = teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
+  if(name === 'Draw' || name === 'TBD' || !name) return esc(teamStr);
+  const code = FLAG_MAP[name];
+  if(!code) return esc(teamStr);
+  const h = Math.round(size * 0.75);
+  return `<img src="https://flagcdn.com/${size}x${h}/${code}.png" width="${size}" height="${h}" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px;flex-shrink:0">` + esc(name);
+}
+
+function teamName(teamStr) {
+  if(!teamStr) return '';
+  return teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
+}
+
 function now_cst(){ return new Date(Date.now() - 5*3600*1000) }
 
 function matchStatus(m) {
@@ -292,7 +325,7 @@ function renderLiveBanner() {
     banner.className = 'visible live-now';
     dot.style.background = 'var(--red)';
     const parts = live.map(m =>
-      `<span class="live-match"><span class="tag-live">LIVE</span> <b>${esc(m.id)}</b> ${esc(m.home)} <span class="live-vs">vs</span> ${esc(m.away)}</span>`
+      `<span class="live-match"><span class="tag-live">LIVE</span> <b>${esc(m.id)}</b> ${teamFlag(m.home,14)} <span class="live-vs">vs</span> ${teamFlag(m.away,14)}</span>`
     );
     txt.innerHTML = parts.join('<span class="live-sep">|</span>');
   } else if(upcoming.length > 0) {
@@ -304,10 +337,10 @@ function renderLiveBanner() {
     dot.style.animation = 'none';
     const timeStr = nextTime.toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
     if(concur.length > 1) {
-      const parts = concur.map(m => `<b>${esc(m.id)}</b> ${esc(m.home)} vs ${esc(m.away)}`);
+      const parts = concur.map(m => `<b>${esc(m.id)}</b> ${teamFlag(m.home,14)} vs ${teamFlag(m.away,14)}`);
       txt.innerHTML = `<span class="next-label">Next (×${concur.length}):</span> ` + parts.join(' <span class="live-sep">|</span> ') + ` · <span class="next-label">${timeStr} CST</span>`;
     } else {
-      txt.innerHTML = `<span class="next-label">Next:</span> <b>${esc(next.id)}</b> ${esc(next.home)} vs ${esc(next.away)} · <span class="next-label">${timeStr} CST</span>`;
+      txt.innerHTML = `<span class="next-label">Next:</span> <b>${esc(next.id)}</b> ${teamFlag(next.home,14)} vs ${teamFlag(next.away,14)} · <span class="next-label">${timeStr} CST</span>`;
     }
   } else {
     banner.className = '';
@@ -425,17 +458,17 @@ function renderBracket() {
       html += `<div class="match-box${haswinner?' has-winner':''}">
         <span class="match-id-badge">${id}</span>
         <div class="match-team${t1win?' winner':''}"">
-          <span class="team-name">${esc(m.t1||'TBD')}</span>
+          <span class="team-name">${teamFlag(m.t1||'TBD',14)}</span>
         </div>
         <div class="match-team${t2win?' winner':''}">
-          <span class="team-name">${esc(m.t2||'TBD')}</span>
+          <span class="team-name">${teamFlag(m.t2||'TBD',14)}</span>
         </div>
       </div>`;
       if(round.ids.indexOf(id)%2===1) html += '<div class="bracket-spacer"></div>';
     }
     if(round.label==='FINAL') {
       const finalWinner = ko['KO31']?.winner;
-      html += `<div class="champion-box"><div class="champion-label">🏆 Champion</div><div class="champion-name">${esc(finalWinner||'TBD')}</div></div>`;
+      html += `<div class="champion-box"><div class="champion-label">🏆 Champion</div><div class="champion-name">${teamFlag(finalWinner||'TBD',20)}</div></div>`;
     }
     html += '</div>';
   }
@@ -459,7 +492,7 @@ function renderGroups() {
     teams.forEach((t,i)=>{
       const qualify = started && i<2;
       html += `<tr class="${qualify?'qualify':''}">
-        <td>${esc(t.team)}</td>
+        <td style="white-space:nowrap">${teamFlag(t.team,14)}</td>
         <td>${t.p}</td>
         <td>${t.gd>=0?'+':''}${t.gd}</td>
         <td class="pts-val">${t.pts}</td>
@@ -528,13 +561,13 @@ function renderMatchViewer() {
   }
 
   const scoreDisplay = played ? `<span class="mv-score">${m.hs}</span><span class="mv-dash">–</span><span class="mv-score">${m.as}</span>` : '<span class="mv-dash" style="font-size:28px">vs</span>';
-  const resultBar = result ? `<div class="mv-result">✅ Result: ${esc(result)}</div>` : `<div class="mv-result" style="color:var(--muted)">⏳ Match ${played?'played':'upcoming'}</div>`;
+  const resultBar = result ? `<div class="mv-result">✅ Result: ${teamFlag(result,14)}</div>` : `<div class="mv-result" style="color:var(--muted)">⏳ Match ${played?'played':'upcoming'}</div>`;
 
   document.getElementById('mv-card').innerHTML = `
     <div class="mv-header">
-      <div class="mv-team">${esc(m.home)}</div>
+      <div class="mv-team">${teamFlag(m.home,20)}</div>
       <div class="mv-score-box">${scoreDisplay}</div>
-      <div class="mv-team away">${esc(m.away)}</div>
+      <div class="mv-team away">${teamFlag(m.away,20)}</div>
     </div>
     ${resultBar}
     <div class="mv-picks">
@@ -564,7 +597,7 @@ function renderHistoryTable(rows) {
   const head = `<thead><tr><th>Grp</th><th>Team</th><th>Apps</th><th>Debut</th><th>Last</th><th>Best Result</th></tr></thead>`;
   const body = rows.map(r => `<tr>
     <td style="color:var(--muted)">${r.group}</td>
-    <td>${esc(r.flag)} ${esc(r.team)}</td>
+    <td style="white-space:nowrap">${teamFlag(r.team,14)}</td>
     <td style="text-align:center;color:var(--cyan);font-family:var(--font-display);font-size:16px">${r.apps||'—'}</td>
     <td style="text-align:center;color:var(--muted)">${r.debut||'2026'}</td>
     <td style="text-align:center;color:var(--muted)">${r.last||'2026'}</td>

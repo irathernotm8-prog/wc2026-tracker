@@ -181,7 +181,7 @@ function renderGroupMatches() {
     const played = m.hs!==null&&m.hs!==undefined;
     html += `<div class="match-row" data-id="${m.id}">
       <span class="match-id">${m.id}</span>
-      <span class="match-teams">${m.home} vs ${m.away}</span>
+      <span class="match-teams" style="white-space:nowrap">${teamFlag(m.home,14)} vs ${teamFlag(m.away,14)}</span>
       <input class="score-input" type="number" min="0" max="30" value="${hs}" placeholder="—" data-field="hs" data-id="${m.id}">
       <span class="score-dash">–</span>
       <input class="score-input" type="number" min="0" max="30" value="${as}" placeholder="—" data-field="as" data-id="${m.id}">
@@ -207,13 +207,18 @@ function renderKOGrid() {
     html += `<div class="admin-card"><h3>${round.label}</h3>`;
     for(const id of round.ids) {
       const m = D.ko[id] || {};
+      const t1c = (m.t1||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
+      const t2c = (m.t2||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
+      const wc  = (m.winner||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
       html += `<div class="ko-row">
         <span class="match-id">${id}</span>
         <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.5rem">
-          <input class="ko-input" placeholder="Team 1" value="${esc(m.t1||'')}" data-ko="${id}" data-field="t1">
-          <input class="ko-input" placeholder="Team 2" value="${esc(m.t2||'')}" data-ko="${id}" data-field="t2">
+          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t1||'TBD',12)}</div>
+          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t2||'TBD',12)}</div>
+          <input class="ko-input" placeholder="Team 1 name" value="${esc(t1c)}" data-ko="${id}" data-field="t1">
+          <input class="ko-input" placeholder="Team 2 name" value="${esc(t2c)}" data-ko="${id}" data-field="t2">
           <input class="ko-input" placeholder="Score (e.g. 2-1)" value="${esc(m.score||'')}" data-ko="${id}" data-field="score">
-          <input class="ko-input" placeholder="Winner team name" value="${esc(m.winner||'')}" data-ko="${id}" data-field="winner">
+          <input class="ko-input" placeholder="Winner name" value="${esc(wc)}" data-ko="${id}" data-field="winner">
         </div>
       </div>`;
     }
@@ -223,6 +228,34 @@ function renderKOGrid() {
 }
 
 function esc(s){return s?String(s).replace(/"/g,'&quot;'):'';}
+
+// ── Flag image helper ─────────────────────────────────────────
+const FLAG_MAP = {
+  'Algeria': "dz", 'Argentina': "ar", 'Australia': "au", 'Austria': "at",
+  'Belgium': "be", 'Bosnia and Herzegovina': "ba", 'Brazil': "br", 'Canada': "ca",
+  'Cape Verde': "cv", 'Colombia': "co", 'Croatia': "hr", 'Curacao': "cw",
+  'Czechia': "cz", 'DR Congo': "cd", 'Ecuador': "ec", 'Egypt': "eg",
+  'England': "gb-eng", 'France': "fr", 'Germany': "de", 'Ghana': "gh",
+  'Haiti': "ht", 'Iran': "ir", 'Iraq': "iq", 'Ivory Coast': "ci",
+  'Japan': "jp", 'Jordan': "jo", 'Mexico': "mx", 'Morocco': "ma",
+  'Netherlands': "nl", 'New Zealand': "nz", 'Norway': "no", 'Panama': "pa",
+  'Paraguay': "py", 'Portugal': "pt", 'Qatar': "qa", 'Saudi Arabia': "sa",
+  'Scotland': "gb-sct", 'Senegal': "sn", 'South Africa': "za", 'South Korea': "kr",
+  'Spain': "es", 'Sweden': "se", 'Switzerland': "ch", 'Tunisia': "tn",
+  'Turkiye': "tr", 'United States': "us", 'Uruguay': "uy", 'Uzbekistan': "uz"
+};
+
+function teamFlag(teamStr, size) {
+  if(!teamStr) return '';
+  size = size || 16;
+  const name = teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
+  if(name === 'Draw' || name === 'TBD' || !name) return esc(teamStr);
+  const code = FLAG_MAP[name];
+  if(!code) return esc(teamStr);
+  const h = Math.round(size * 0.75);
+  return `<img src="https://flagcdn.com/${size}x${h}/${code}.png" width="${size}" height="${h}" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px">` + esc(name);
+}
+
 
 // ── Collect edits & save ───────────────────────────────────────
 function collectEdits() {
