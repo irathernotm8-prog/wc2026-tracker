@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WC26 · Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#09111F;--card:#0E1A2B;--card2:#152238;--border:#1E3250;--cyan:#00D9FF;--amber:#F5A623;--red:#FF3B3B;--green:#1DB954;--text:#E8F0FB;--muted:#6B7FA3}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;min-height:100vh;padding:1.5rem}
+h1{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--cyan);margin-bottom:.25rem}
+.sub{color:var(--muted);font-size:12px;margin-bottom:2rem}
+a{color:var(--cyan);text-decoration:none;font-size:12px}
+
+/* SETUP PANEL */
+#setup-panel{max-width:480px}
+.setup-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem}
+.setup-card h3{font-size:13px;font-weight:600;margin-bottom:1rem;color:var(--text)}
+label{display:block;font-size:11px;color:var(--muted);margin-bottom:.25rem;margin-top:.75rem}
+label:first-of-type{margin-top:0}
+input,select{width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:6px;font-family:'Inter',sans-serif;font-size:13px}
+input:focus,select:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--cyan);color:#09111F;border:none;padding:9px 18px;border-radius:6px;font-weight:600;font-size:13px;cursor:pointer;margin-top:1rem;font-family:'Inter',sans-serif}
+.btn:hover{opacity:.9}
+.btn.danger{background:var(--red);color:#fff}
+.btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.status{margin-top:.75rem;padding:8px 12px;border-radius:6px;font-size:12px;display:none}
+.status.ok{background:var(--green)22;color:var(--green);border:1px solid var(--green)44;display:block}
+.status.err{background:var(--red)22;color:var(--red);border:1px solid var(--red)44;display:block}
+.status.info{background:var(--cyan)11;color:var(--cyan);border:1px solid var(--cyan)33;display:block}
+
+/* MAIN ADMIN */
+#admin-panel{display:none}
+.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:900px}
+@media(max-width:600px){.admin-grid{grid-template-columns:1fr}}
+.admin-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.25rem}
+.admin-card h3{font-size:13px;font-weight:600;margin-bottom:1rem;color:var(--cyan);text-transform:uppercase;letter-spacing:.5px}
+.match-row{display:flex;align-items:center;gap:.5rem;padding:6px 0;border-bottom:1px solid var(--border)55}
+.match-row:last-child{border-bottom:none}
+.match-id{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--amber);min-width:36px}
+.match-teams{flex:1;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.score-input{width:44px;text-align:center;padding:4px 6px;font-size:13px;font-family:'Bebas Neue',sans-serif}
+.score-dash{color:var(--muted);font-size:14px}
+.played-badge{font-size:10px;color:var(--green);padding:2px 6px;background:var(--green)15;border-radius:4px;flex-shrink:0}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.5px;margin-bottom:1rem;color:var(--text)}
+.group-filter{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.group-btn{background:var(--card2);border:1px solid var(--border);color:var(--muted);padding:4px 10px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer}
+.group-btn.active{background:var(--cyan)22;border-color:var(--cyan);color:var(--cyan)}
+.ko-row{display:flex;align-items:center;gap:.5rem;padding:8px 0;border-bottom:1px solid var(--border)55}
+.ko-row:last-child{border-bottom:none}
+.ko-input{width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:6px 8px;border-radius:4px;font-size:12px}
+.save-bar{display:flex;align-items:center;gap:1rem;padding:1rem 0;border-top:1px solid var(--border);margin-top:1rem}
+#global-status{font-size:12px;color:var(--muted)}
+.spinner{display:none;width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--cyan);border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<h1>WC26 · ADMIN</h1>
+<p class="sub">Score entry panel · <a href="index.html">← Back to site</a></p>
+
+<!-- SETUP: GitHub credentials -->
+<div id="setup-panel">
+  <div class="setup-card">
+    <h3>🔐 GitHub Connection</h3>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">
+      This panel saves directly to your GitHub repo via the API. You only need to enter these once — they're stored in your browser only, never sent anywhere except GitHub.
+    </p>
+    <label>GitHub Personal Access Token (needs <code>repo</code> scope)</label>
+    <input type="password" id="pat-input" placeholder="ghp_xxxxxxxxxxxx">
+    <label>GitHub username</label>
+    <input type="text" id="owner-input" placeholder="your-username">
+    <label>Repository name</label>
+    <input type="text" id="repo-input" placeholder="wc2026-tracker">
+    <label>Branch</label>
+    <input type="text" id="branch-input" value="main">
+    <br>
+    <button class="btn" onclick="saveCredentials()">Connect & Load Data</button>
+    <div class="status" id="setup-status"></div>
+  </div>
+
+  <div class="setup-card" style="font-size:12px;color:var(--muted);line-height:1.7">
+    <h3>How to get a Personal Access Token</h3>
+    1. Go to <strong>github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens</strong><br>
+    2. Click <strong>Generate new token</strong><br>
+    3. Set repository access to your tracker repo<br>
+    4. Under Permissions → Repository permissions → <strong>Contents: Read and write</strong><br>
+    5. Generate and copy the token above<br><br>
+    <strong style="color:var(--text)">The token lives in your browser's localStorage only. It is never embedded in any code.</strong>
+  </div>
+</div>
+
+<!-- MAIN ADMIN PANEL -->
+<div id="admin-panel">
+  <div class="save-bar">
+    <button class="btn" onclick="saveAll()">💾 Save All Changes to GitHub</button>
+    <div class="spinner" id="spinner"></div>
+    <span id="global-status"></span>
+    <button class="btn ghost" style="margin-left:auto;font-size:11px" onclick="clearCredentials()">Disconnect</button>
+  </div>
+
+  <div class="section-title">GROUP STAGE SCORES</div>
+  <div class="group-filter" id="group-filter"></div>
+  <div id="group-matches"></div>
+
+  <div class="section-title" style="margin-top:2rem">KNOCKOUT BRACKET</div>
+  <div style="max-width:900px">
+    <div class="admin-grid" id="ko-grid"></div>
+  </div>
+</div>
+
+<script>
+let D = null;
+let CREDS = null;
+
+// ── Credentials ────────────────────────────────────────────────
+function saveCredentials() {
+  const pat   = document.getElementById('pat-input').value.trim();
+  const owner = document.getElementById('owner-input').value.trim();
+  const repo  = document.getElementById('repo-input').value.trim();
+  const branch= document.getElementById('branch-input').value.trim();
+  if(!pat||!owner||!repo) return setStatus('setup-status','err','Please fill in all fields');
+  CREDS = {pat,owner,repo,branch};
+  localStorage.setItem('wc26_creds', JSON.stringify(CREDS));
+  loadData();
+}
+
+function clearCredentials() {
+  localStorage.removeItem('wc26_creds');
+  location.reload();
+}
+
+function setStatus(id,cls,msg){
+  const el=document.getElementById(id);
+  el.className='status '+cls; el.textContent=msg;
+}
+
+// ── Load data from GitHub API ──────────────────────────────────
+async function loadData() {
+  setStatus('setup-status','info','Connecting to GitHub…');
+  try {
+    const url = `https://api.github.com/repos/${CREDS.owner}/${CREDS.repo}/contents/data.json?ref=${CREDS.branch}`;
+    const r = await fetch(url, { headers: { Authorization: `Bearer ${CREDS.pat}`, Accept: 'application/vnd.github.v3+json' }});
+    if(!r.ok) throw new Error(`GitHub API: ${r.status} ${r.statusText}`);
+    const meta = await r.json();
+    const content = atob(meta.content.replace(/\n/g,''));
+    D = JSON.parse(content);
+    D._sha = meta.sha;  // needed for update
+    setStatus('setup-status','ok','Connected! Loading admin panel…');
+    setTimeout(showAdmin, 600);
+  } catch(e) {
+    setStatus('setup-status','err', e.message);
+  }
+}
+
+function showAdmin() {
+  document.getElementById('setup-panel').style.display='none';
+  document.getElementById('admin-panel').style.display='block';
+  renderGroupMatches();
+  renderKOGrid();
+}
+
+// ── Group matches editor ───────────────────────────────────────
+let activeGroup = 'A';
+function renderGroupFilter() {
+  const groups = [...new Set(D.schedule.map(m=>m.group))].sort();
+  document.getElementById('group-filter').innerHTML = groups.map(g =>
+    `<button class="group-btn${g===activeGroup?' active':''}" onclick="setGroup('${g}')">Group ${g}</button>`
+  ).join('');
+}
+function setGroup(g){activeGroup=g;renderGroupMatches()}
+function renderGroupMatches() {
+  renderGroupFilter();
+  const matches = D.schedule.filter(m=>m.group===activeGroup);
+  let html = '';
+  for(const m of matches){
+    const hs = m.hs!==null&&m.hs!==undefined ? m.hs : '';
+    const as = m.as!==null&&m.as!==undefined ? m.as : '';
+    const played = m.hs!==null&&m.hs!==undefined;
+    html += `<div class="match-row" data-id="${m.id}">
+      <span class="match-id">${m.id}</span>
+      <span class="match-teams">${m.home} vs ${m.away}</span>
+      <input class="score-input" type="number" min="0" max="30" value="${hs}" placeholder="—" data-field="hs" data-id="${m.id}">
+      <span class="score-dash">–</span>
+      <input class="score-input" type="number" min="0" max="30" value="${as}" placeholder="—" data-field="as" data-id="${m.id}">
+      ${played?'<span class="played-badge">✓</span>':'<span style="min-width:32px"></span>'}
+    </div>`;
+  }
+  document.getElementById('group-matches').innerHTML = html;
+}
+
+// ── KO bracket editor ──────────────────────────────────────────
+const KO_ROUNDS = [
+  {label:'Round of 32',   ids:[...Array(16)].map((_,i)=>`KO${i+1}`)},
+  {label:'Round of 16',   ids:[...Array(8)].map((_,i)=>`KO${i+17}`)},
+  {label:'Quarter-finals',ids:[...Array(4)].map((_,i)=>`KO${i+25}`)},
+  {label:'Semi-finals',   ids:['KO29','KO30']},
+  {label:'Final',         ids:['KO31']},
+  {label:'3rd Place',     ids:['KO32']},
+];
+
+function renderKOGrid() {
+  let html = '';
+  for(const round of KO_ROUNDS) {
+    html += `<div class="admin-card"><h3>${round.label}</h3>`;
+    for(const id of round.ids) {
+      const m = D.ko[id] || {};
+      html += `<div class="ko-row">
+        <span class="match-id">${id}</span>
+        <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.5rem">
+          <input class="ko-input" placeholder="Team 1" value="${esc(m.t1||'')}" data-ko="${id}" data-field="t1">
+          <input class="ko-input" placeholder="Team 2" value="${esc(m.t2||'')}" data-ko="${id}" data-field="t2">
+          <input class="ko-input" placeholder="Score (e.g. 2-1)" value="${esc(m.score||'')}" data-ko="${id}" data-field="score">
+          <input class="ko-input" placeholder="Winner team name" value="${esc(m.winner||'')}" data-ko="${id}" data-field="winner">
+        </div>
+      </div>`;
+    }
+    html += '</div>';
+  }
+  document.getElementById('ko-grid').innerHTML = html;
+}
+
+function esc(s){return s?String(s).replace(/"/g,'&quot;'):'';}
+
+// ── Collect edits & save ───────────────────────────────────────
+function collectEdits() {
+  // Group scores
+  document.querySelectorAll('[data-id][data-field]').forEach(el => {
+    const id = el.dataset.id;
+    const field = el.dataset.field;
+    const m = D.schedule.find(s=>s.id===id);
+    if(!m) return;
+    const val = el.value.trim();
+    if(val === '') { m[field] = null; }
+    else { m[field] = parseInt(val,10); }
+  });
+
+  // Derive winner for group matches
+  D.schedule.forEach(m => {
+    if(m.hs!==null&&m.hs!==undefined&&m.as!==null&&m.as!==undefined) {
+      if(m.hs > m.as) m.winner = m.home;   // full flag+name, matches predictions
+      else if(m.as > m.hs) m.winner = m.away;
+      else m.winner = 'Draw';
+    } else {
+      m.winner = null;
+    }
+    // Also recompute prediction points
+    D.friends.forEach(f => {
+      const p = D.predictions[f]?.matches?.[m.id];
+      if(!p?.pick) return;
+      const pick = p.pick;
+      const won = m.winner;
+      if(!won) { p.pts = 0; return; }
+      const matchesPick = won === pick || won === 'Draw' && pick === 'Draw';
+      p.pts = matchesPick ? 1 : 0;
+    });
+  });
+
+  // Recompute totals
+  D.friends.forEach(f => {
+    const preds = D.predictions[f]?.matches || {};
+    let total = 0;
+    Object.values(preds).forEach(p => { total += (p.pts||0); });
+    if(D.predictions[f]) D.predictions[f].total = total;
+  });
+
+  // KO inputs
+  document.querySelectorAll('[data-ko][data-field]').forEach(el => {
+    const ko = el.dataset.ko; const field = el.dataset.field;
+    if(!D.ko[ko]) D.ko[ko] = {};
+    D.ko[ko][field] = el.value.trim() || null;
+  });
+
+  // Recompute KO prediction points
+  D.friends.forEach(f => {
+    const preds = D.predictions[f]?.matches || {};
+    ['KO1','KO2','KO3','KO4','KO5','KO6','KO7','KO8','KO9','KO10',
+     'KO11','KO12','KO13','KO14','KO15','KO16','KO17','KO18','KO19','KO20',
+     'KO21','KO22','KO23','KO24','KO25','KO26','KO27','KO28','KO29','KO30','KO31','KO32'].forEach(ko => {
+      const p = preds[ko]; if(!p?.pick) return;
+      const m = D.ko[ko]; if(!m?.winner) { p.pts=0; return; }
+      p.pts = p.pick===m.winner ? 2 : 0;
+    });
+  });
+
+  // Recompute totals again including KO
+  D.friends.forEach(f => {
+    const preds = D.predictions[f]?.matches || {};
+    let total = 0;
+    Object.values(preds).forEach(p => { total += (p.pts||0); });
+    if(D.predictions[f]) D.predictions[f].total = total;
+  });
+
+  D.meta.updated = new Date().toISOString();
+}
+
+async function saveAll() {
+  collectEdits();
+
+  const spinner = document.getElementById('spinner');
+  const statusEl = document.getElementById('global-status');
+  spinner.style.display = 'block';
+  statusEl.textContent = 'Saving to GitHub…';
+
+  try {
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(D, null, 2))));
+    const url = `https://api.github.com/repos/${CREDS.owner}/${CREDS.repo}/contents/data.json`;
+    const body = {
+      message: `Update scores – ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`,
+      content,
+      sha: D._sha,
+      branch: CREDS.branch
+    };
+    const r = await fetch(url, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${CREDS.pat}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if(!r.ok) { const err=await r.json(); throw new Error(err.message||r.statusText); }
+    const result = await r.json();
+    D._sha = result.content.sha;  // update SHA for next save
+    statusEl.style.color = 'var(--green)';
+    statusEl.textContent = '✓ Saved! GitHub Pages will update in ~30 seconds.';
+  } catch(e) {
+    statusEl.style.color = 'var(--red)';
+    statusEl.textContent = '✗ Error: ' + e.message;
+  }
+  spinner.style.display = 'none';
+}
+
+// ── Init ───────────────────────────────────────────────────────
+const saved = localStorage.getItem('wc26_creds');
+if(saved) {
+  try {
+    CREDS = JSON.parse(saved);
+    document.getElementById('pat-input').value = CREDS.pat;
+    document.getElementById('owner-input').value = CREDS.owner;
+    document.getElementById('repo-input').value = CREDS.repo;
+    document.getElementById('branch-input').value = CREDS.branch;
+    loadData();
+  } catch(e) { localStorage.removeItem('wc26_creds'); }
+}
+</script>
+</body>
+</html>

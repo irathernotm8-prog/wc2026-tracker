@@ -1,0 +1,5095 @@
+{
+  "meta": {
+    "updated": "2026-06-26T20:12:24.642483Z"
+  },
+  "friends": [
+    "Bilal",
+    "Kiana",
+    "Humza",
+    "Anu",
+    "R2",
+    "Ray",
+    "Laura"
+  ],
+  "schedule": [
+    {
+      "id": "A1",
+      "date": "2026-06-11",
+      "time": "14:00",
+      "group": "A",
+      "home": "🇲🇽 Mexico",
+      "away": "🇿🇦 South Africa",
+      "home_name": "Mexico",
+      "away_name": "South Africa",
+      "hs": 2,
+      "as": 0,
+      "winner": "🇲🇽 Mexico"
+    },
+    {
+      "id": "A2",
+      "date": "2026-06-11",
+      "time": "17:00",
+      "group": "A",
+      "home": "🇰🇷 South Korea",
+      "away": "🇨🇿 Czechia",
+      "home_name": "South Korea",
+      "away_name": "Czechia",
+      "hs": 2,
+      "as": 1,
+      "winner": "🇰🇷 South Korea"
+    },
+    {
+      "id": "B1",
+      "date": "2026-06-12",
+      "time": "14:00",
+      "group": "B",
+      "home": "🇨🇦 Canada",
+      "away": "🇧🇦 Bosnia and Herzegovina",
+      "home_name": "Canada",
+      "away_name": "Bosnia and Herzegovina",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "D1",
+      "date": "2026-06-12",
+      "time": "20:00",
+      "group": "D",
+      "home": "🇺🇸 United States",
+      "away": "🇵🇾 Paraguay",
+      "home_name": "United States",
+      "away_name": "Paraguay",
+      "hs": 4,
+      "as": 1,
+      "winner": "🇺🇸 United States"
+    },
+    {
+      "id": "B2",
+      "date": "2026-06-13",
+      "time": "11:00",
+      "group": "B",
+      "home": "🇶🇦 Qatar",
+      "away": "🇨🇭 Switzerland",
+      "home_name": "Qatar",
+      "away_name": "Switzerland",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "C1",
+      "date": "2026-06-13",
+      "time": "14:00",
+      "group": "C",
+      "home": "🇧🇷 Brazil",
+      "away": "🇲🇦 Morocco",
+      "home_name": "Brazil",
+      "away_name": "Morocco",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "C2",
+      "date": "2026-06-13",
+      "time": "17:00",
+      "group": "C",
+      "home": "🇭🇹 Haiti",
+      "away": "🏴 Scotland",
+      "home_name": "Haiti",
+      "away_name": "Scotland",
+      "hs": 0,
+      "as": 1,
+      "winner": "🏴 Scotland"
+    },
+    {
+      "id": "D2",
+      "date": "2026-06-14",
+      "time": "11:00",
+      "group": "D",
+      "home": "🇦🇺 Australia",
+      "away": "🇹🇷 Turkiye",
+      "home_name": "Australia",
+      "away_name": "Turkiye",
+      "hs": 2,
+      "as": 0,
+      "winner": "🇦🇺 Australia"
+    },
+    {
+      "id": "E1",
+      "date": "2026-06-14",
+      "time": "14:00",
+      "group": "E",
+      "home": "🇩🇪 Germany",
+      "away": "🇨🇼 Curacao",
+      "home_name": "Germany",
+      "away_name": "Curacao",
+      "hs": 7,
+      "as": 1,
+      "winner": "🇩🇪 Germany"
+    },
+    {
+      "id": "E2",
+      "date": "2026-06-14",
+      "time": "14:00",
+      "group": "E",
+      "home": "🇨🇮 Ivory Coast",
+      "away": "🇪🇨 Ecuador",
+      "home_name": "Ivory Coast",
+      "away_name": "Ecuador",
+      "hs": 1,
+      "as": 0,
+      "winner": "🇨🇮 Ivory Coast"
+    },
+    {
+      "id": "F1",
+      "date": "2026-06-14",
+      "time": "17:00",
+      "group": "F",
+      "home": "🇳🇱 Netherlands",
+      "away": "🇯🇵 Japan",
+      "home_name": "Netherlands",
+      "away_name": "Japan",
+      "hs": 2,
+      "as": 2,
+      "winner": "Draw"
+    },
+    {
+      "id": "F2",
+      "date": "2026-06-14",
+      "time": "17:00",
+      "group": "F",
+      "home": "🇸🇪 Sweden",
+      "away": "🇹🇳 Tunisia",
+      "home_name": "Sweden",
+      "away_name": "Tunisia",
+      "hs": 5,
+      "as": 1,
+      "winner": "🇸🇪 Sweden"
+    },
+    {
+      "id": "H1",
+      "date": "2026-06-15",
+      "time": "11:00",
+      "group": "H",
+      "home": "🇪🇸 Spain",
+      "away": "🇨🇻 Cape Verde",
+      "home_name": "Spain",
+      "away_name": "Cape Verde",
+      "hs": 0,
+      "as": 0,
+      "winner": "Draw"
+    },
+    {
+      "id": "G1",
+      "date": "2026-06-15",
+      "time": "14:00",
+      "group": "G",
+      "home": "🇧🇪 Belgium",
+      "away": "🇪🇬 Egypt",
+      "home_name": "Belgium",
+      "away_name": "Egypt",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "H2",
+      "date": "2026-06-15",
+      "time": "17:00",
+      "group": "H",
+      "home": "🇸🇦 Saudi Arabia",
+      "away": "🇺🇾 Uruguay",
+      "home_name": "Saudi Arabia",
+      "away_name": "Uruguay",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "G2",
+      "date": "2026-06-15",
+      "time": "20:00",
+      "group": "G",
+      "home": "🇮🇷 Iran",
+      "away": "🇳🇿 New Zealand",
+      "home_name": "Iran",
+      "away_name": "New Zealand",
+      "hs": 2,
+      "as": 2,
+      "winner": "Draw"
+    },
+    {
+      "id": "I1",
+      "date": "2026-06-16",
+      "time": "14:00",
+      "group": "I",
+      "home": "🇫🇷 France",
+      "away": "🇸🇳 Senegal",
+      "home_name": "France",
+      "away_name": "Senegal",
+      "hs": 3,
+      "as": 1,
+      "winner": "🇫🇷 France"
+    },
+    {
+      "id": "I2",
+      "date": "2026-06-16",
+      "time": "17:00",
+      "group": "I",
+      "home": "🇮🇶 Iraq",
+      "away": "🇳🇴 Norway",
+      "home_name": "Iraq",
+      "away_name": "Norway",
+      "hs": 1,
+      "as": 4,
+      "winner": "🇳🇴 Norway"
+    },
+    {
+      "id": "J1",
+      "date": "2026-06-16",
+      "time": "20:00",
+      "group": "J",
+      "home": "🇦🇷 Argentina",
+      "away": "🇩🇿 Algeria",
+      "home_name": "Argentina",
+      "away_name": "Algeria",
+      "hs": 3,
+      "as": 0,
+      "winner": "🇦🇷 Argentina"
+    },
+    {
+      "id": "K1",
+      "date": "2026-06-17",
+      "time": "11:00",
+      "group": "K",
+      "home": "🇵🇹 Portugal",
+      "away": "🇨🇩 DR Congo",
+      "home_name": "Portugal",
+      "away_name": "DR Congo",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "J2",
+      "date": "2026-06-17",
+      "time": "14:00",
+      "group": "J",
+      "home": "🇦🇹 Austria",
+      "away": "🇯🇴 Jordan",
+      "home_name": "Austria",
+      "away_name": "Jordan",
+      "hs": 3,
+      "as": 1,
+      "winner": "🇦🇹 Austria"
+    },
+    {
+      "id": "L1",
+      "date": "2026-06-17",
+      "time": "14:00",
+      "group": "L",
+      "home": "🏴 England",
+      "away": "🇭🇷 Croatia",
+      "home_name": "England",
+      "away_name": "Croatia",
+      "hs": 4,
+      "as": 2,
+      "winner": "🏴 England"
+    },
+    {
+      "id": "L2",
+      "date": "2026-06-17",
+      "time": "18:00",
+      "group": "L",
+      "home": "🇬🇭 Ghana",
+      "away": "🇵🇦 Panama",
+      "home_name": "Ghana",
+      "away_name": "Panama",
+      "hs": 1,
+      "as": 0,
+      "winner": "🇬🇭 Ghana"
+    },
+    {
+      "id": "K2",
+      "date": "2026-06-17",
+      "time": "19:00",
+      "group": "K",
+      "home": "🇺🇿 Uzbekistan",
+      "away": "🇨🇴 Colombia",
+      "home_name": "Uzbekistan",
+      "away_name": "Colombia",
+      "hs": 1,
+      "as": 3,
+      "winner": "🇨🇴 Colombia"
+    },
+    {
+      "id": "A4",
+      "date": "2026-06-18",
+      "time": "11:00",
+      "group": "A",
+      "home": "🇨🇿 Czechia",
+      "away": "🇿🇦 South Africa",
+      "home_name": "Czechia",
+      "away_name": "South Africa",
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
+    },
+    {
+      "id": "B3",
+      "date": "2026-06-18",
+      "time": "14:00",
+      "group": "B",
+      "home": "🇨🇭 Switzerland",
+      "away": "🇧🇦 Bosnia and Herzegovina",
+      "home_name": "Switzerland",
+      "away_name": "Bosnia and Herzegovina",
+      "hs": 6,
+      "as": 0,
+      "winner": "🇨🇭 Switzerland"
+    },
+    {
+      "id": "B4",
+      "date": "2026-06-18",
+      "time": "17:00",
+      "group": "B",
+      "home": "🇨🇦 Canada",
+      "away": "🇶🇦 Qatar",
+      "home_name": "Canada",
+      "away_name": "Qatar",
+      "hs": 1,
+      "as": 4,
+      "winner": "🇶🇦 Qatar"
+    },
+    {
+      "id": "A3",
+      "date": "2026-06-18",
+      "time": "20:00",
+      "group": "A",
+      "home": "🇲🇽 Mexico",
+      "away": "🇰🇷 South Korea",
+      "home_name": "Mexico",
+      "away_name": "South Korea",
+      "hs": 1,
+      "as": 0,
+      "winner": "🇲🇽 Mexico"
+    },
+    {
+      "id": "D3",
+      "date": "2026-06-19",
+      "time": "14:00",
+      "group": "D",
+      "home": "🇺🇸 United States",
+      "away": "🇦🇺 Australia",
+      "home_name": "United States",
+      "away_name": "Australia",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "C4",
+      "date": "2026-06-19",
+      "time": "14:00",
+      "group": "C",
+      "home": "🏴 Scotland",
+      "away": "🇲🇦 Morocco",
+      "home_name": "Scotland",
+      "away_name": "Morocco",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "C3",
+      "date": "2026-06-19",
+      "time": "19:30",
+      "group": "C",
+      "home": "🇧🇷 Brazil",
+      "away": "🇭🇹 Haiti",
+      "home_name": "Brazil",
+      "away_name": "Haiti",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "D4",
+      "date": "2026-06-19",
+      "time": "22:00",
+      "group": "D",
+      "home": "🇹🇷 Turkiye",
+      "away": "🇵🇾 Paraguay",
+      "home_name": "Turkiye",
+      "away_name": "Paraguay",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "F3",
+      "date": "2026-06-20",
+      "time": "12:00",
+      "group": "F",
+      "home": "🇳🇱 Netherlands",
+      "away": "🇸🇪 Sweden",
+      "home_name": "Netherlands",
+      "away_name": "Sweden",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "E3",
+      "date": "2026-06-20",
+      "time": "15:00",
+      "group": "E",
+      "home": "🇩🇪 Germany",
+      "away": "🇨🇮 Ivory Coast",
+      "home_name": "Germany",
+      "away_name": "Ivory Coast",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "E4",
+      "date": "2026-06-20",
+      "time": "19:00",
+      "group": "E",
+      "home": "🇪🇨 Ecuador",
+      "away": "🇨🇼 Curacao",
+      "home_name": "Ecuador",
+      "away_name": "Curacao",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "F4",
+      "date": "2026-06-20",
+      "time": "23:00",
+      "group": "F",
+      "home": "🇹🇳 Tunisia",
+      "away": "🇯🇵 Japan",
+      "home_name": "Tunisia",
+      "away_name": "Japan",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "H3",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "group": "H",
+      "home": "🇪🇸 Spain",
+      "away": "🇸🇦 Saudi Arabia",
+      "home_name": "Spain",
+      "away_name": "Saudi Arabia",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "G3",
+      "date": "2026-06-21",
+      "time": "14:00",
+      "group": "G",
+      "home": "🇧🇪 Belgium",
+      "away": "🇮🇷 Iran",
+      "home_name": "Belgium",
+      "away_name": "Iran",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "H4",
+      "date": "2026-06-21",
+      "time": "17:00",
+      "group": "H",
+      "home": "🇺🇾 Uruguay",
+      "away": "🇨🇻 Cape Verde",
+      "home_name": "Uruguay",
+      "away_name": "Cape Verde",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "G4",
+      "date": "2026-06-21",
+      "time": "20:00",
+      "group": "G",
+      "home": "🇳🇿 New Zealand",
+      "away": "🇪🇬 Egypt",
+      "home_name": "New Zealand",
+      "away_name": "Egypt",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "J3",
+      "date": "2026-06-22",
+      "time": "12:00",
+      "group": "J",
+      "home": "🇦🇷 Argentina",
+      "away": "🇦🇹 Austria",
+      "home_name": "Argentina",
+      "away_name": "Austria",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "I3",
+      "date": "2026-06-22",
+      "time": "16:00",
+      "group": "I",
+      "home": "🇫🇷 France",
+      "away": "🇮🇶 Iraq",
+      "home_name": "France",
+      "away_name": "Iraq",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "I4",
+      "date": "2026-06-22",
+      "time": "19:00",
+      "group": "I",
+      "home": "🇳🇴 Norway",
+      "away": "🇸🇳 Senegal",
+      "home_name": "Norway",
+      "away_name": "Senegal",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "J4",
+      "date": "2026-06-22",
+      "time": "22:00",
+      "group": "J",
+      "home": "🇯🇴 Jordan",
+      "away": "🇩🇿 Algeria",
+      "home_name": "Jordan",
+      "away_name": "Algeria",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "K3",
+      "date": "2026-06-23",
+      "time": "12:00",
+      "group": "K",
+      "home": "🇵🇹 Portugal",
+      "away": "🇺🇿 Uzbekistan",
+      "home_name": "Portugal",
+      "away_name": "Uzbekistan",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "L3",
+      "date": "2026-06-23",
+      "time": "15:00",
+      "group": "L",
+      "home": "🏴 England",
+      "away": "🇬🇭 Ghana",
+      "home_name": "England",
+      "away_name": "Ghana",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "L4",
+      "date": "2026-06-23",
+      "time": "18:00",
+      "group": "L",
+      "home": "🇵🇦 Panama",
+      "away": "🇭🇷 Croatia",
+      "home_name": "Panama",
+      "away_name": "Croatia",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "K4",
+      "date": "2026-06-23",
+      "time": "21:00",
+      "group": "K",
+      "home": "🇨🇴 Colombia",
+      "away": "🇨🇩 DR Congo",
+      "home_name": "Colombia",
+      "away_name": "DR Congo",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "B5",
+      "date": "2026-06-24",
+      "time": "14:00",
+      "group": "B",
+      "home": "🇧🇦 Bosnia and Herzegovina",
+      "away": "🇶🇦 Qatar",
+      "home_name": "Bosnia and Herzegovina",
+      "away_name": "Qatar",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "B6",
+      "date": "2026-06-24",
+      "time": "14:00",
+      "group": "B",
+      "home": "🇨🇭 Switzerland",
+      "away": "🇨🇦 Canada",
+      "home_name": "Switzerland",
+      "away_name": "Canada",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "C5",
+      "date": "2026-06-24",
+      "time": "17:00",
+      "group": "C",
+      "home": "🇲🇦 Morocco",
+      "away": "🇭🇹 Haiti",
+      "home_name": "Morocco",
+      "away_name": "Haiti",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "C6",
+      "date": "2026-06-24",
+      "time": "17:00",
+      "group": "C",
+      "home": "🏴 Scotland",
+      "away": "🇧🇷 Brazil",
+      "home_name": "Scotland",
+      "away_name": "Brazil",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "A5",
+      "date": "2026-06-24",
+      "time": "20:00",
+      "group": "A",
+      "home": "🇨🇿 Czechia",
+      "away": "🇲🇽 Mexico",
+      "home_name": "Czechia",
+      "away_name": "Mexico",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "A6",
+      "date": "2026-06-24",
+      "time": "20:00",
+      "group": "A",
+      "home": "🇿🇦 South Africa",
+      "away": "🇰🇷 South Korea",
+      "home_name": "South Africa",
+      "away_name": "South Korea",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "E5",
+      "date": "2026-06-25",
+      "time": "15:00",
+      "group": "E",
+      "home": "🇨🇼 Curacao",
+      "away": "🇨🇮 Ivory Coast",
+      "home_name": "Curacao",
+      "away_name": "Ivory Coast",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "E6",
+      "date": "2026-06-25",
+      "time": "15:00",
+      "group": "E",
+      "home": "🇪🇨 Ecuador",
+      "away": "🇩🇪 Germany",
+      "home_name": "Ecuador",
+      "away_name": "Germany",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "F5",
+      "date": "2026-06-25",
+      "time": "18:00",
+      "group": "F",
+      "home": "🇯🇵 Japan",
+      "away": "🇸🇪 Sweden",
+      "home_name": "Japan",
+      "away_name": "Sweden",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "F6",
+      "date": "2026-06-25",
+      "time": "18:00",
+      "group": "F",
+      "home": "🇹🇳 Tunisia",
+      "away": "🇳🇱 Netherlands",
+      "home_name": "Tunisia",
+      "away_name": "Netherlands",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "D5",
+      "date": "2026-06-25",
+      "time": "21:00",
+      "group": "D",
+      "home": "🇹🇷 Turkiye",
+      "away": "🇺🇸 United States",
+      "home_name": "Turkiye",
+      "away_name": "United States",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "D6",
+      "date": "2026-06-25",
+      "time": "21:00",
+      "group": "D",
+      "home": "🇵🇾 Paraguay",
+      "away": "🇦🇺 Australia",
+      "home_name": "Paraguay",
+      "away_name": "Australia",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "I5",
+      "date": "2026-06-26",
+      "time": "14:00",
+      "group": "I",
+      "home": "🇳🇴 Norway",
+      "away": "🇫🇷 France",
+      "home_name": "Norway",
+      "away_name": "France",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "I6",
+      "date": "2026-06-26",
+      "time": "14:00",
+      "group": "I",
+      "home": "🇸🇳 Senegal",
+      "away": "🇮🇶 Iraq",
+      "home_name": "Senegal",
+      "away_name": "Iraq",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "H5",
+      "date": "2026-06-26",
+      "time": "19:00",
+      "group": "H",
+      "home": "🇨🇻 Cape Verde",
+      "away": "🇸🇦 Saudi Arabia",
+      "home_name": "Cape Verde",
+      "away_name": "Saudi Arabia",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "H6",
+      "date": "2026-06-26",
+      "time": "19:00",
+      "group": "H",
+      "home": "🇺🇾 Uruguay",
+      "away": "🇪🇸 Spain",
+      "home_name": "Uruguay",
+      "away_name": "Spain",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "G5",
+      "date": "2026-06-26",
+      "time": "22:00",
+      "group": "G",
+      "home": "🇪🇬 Egypt",
+      "away": "🇮🇷 Iran",
+      "home_name": "Egypt",
+      "away_name": "Iran",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "G6",
+      "date": "2026-06-26",
+      "time": "22:00",
+      "group": "G",
+      "home": "🇳🇿 New Zealand",
+      "away": "🇧🇪 Belgium",
+      "home_name": "New Zealand",
+      "away_name": "Belgium",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "L5",
+      "date": "2026-06-27",
+      "time": "16:00",
+      "group": "L",
+      "home": "🇵🇦 Panama",
+      "away": "🏴 England",
+      "home_name": "Panama",
+      "away_name": "England",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "L6",
+      "date": "2026-06-27",
+      "time": "16:00",
+      "group": "L",
+      "home": "🇭🇷 Croatia",
+      "away": "🇬🇭 Ghana",
+      "home_name": "Croatia",
+      "away_name": "Ghana",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "K5",
+      "date": "2026-06-27",
+      "time": "18:30",
+      "group": "K",
+      "home": "🇨🇴 Colombia",
+      "away": "🇵🇹 Portugal",
+      "home_name": "Colombia",
+      "away_name": "Portugal",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "K6",
+      "date": "2026-06-27",
+      "time": "18:30",
+      "group": "K",
+      "home": "🇨🇩 DR Congo",
+      "away": "🇺🇿 Uzbekistan",
+      "home_name": "DR Congo",
+      "away_name": "Uzbekistan",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "J5",
+      "date": "2026-06-27",
+      "time": "21:00",
+      "group": "J",
+      "home": "🇩🇿 Algeria",
+      "away": "🇦🇹 Austria",
+      "home_name": "Algeria",
+      "away_name": "Austria",
+      "hs": null,
+      "as": null,
+      "winner": null
+    },
+    {
+      "id": "J6",
+      "date": "2026-06-27",
+      "time": "21:00",
+      "group": "J",
+      "home": "🇯🇴 Jordan",
+      "away": "🇦🇷 Argentina",
+      "home_name": "Jordan",
+      "away_name": "Argentina",
+      "hs": null,
+      "as": null,
+      "winner": null
+    }
+  ],
+  "ko": {
+    "KO1": {
+      "round": "Round of 32",
+      "t1": "🇨🇿 Czechia",
+      "t2": "🇧🇦 Bosnia and Herzegovina",
+      "score": null,
+      "winner": null
+    },
+    "KO2": {
+      "round": "Round of 32",
+      "t1": "🇩🇪 Germany",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO3": {
+      "round": "Round of 32",
+      "t1": "🇸🇪 Sweden",
+      "t2": "🇲🇦 Morocco",
+      "score": null,
+      "winner": null
+    },
+    "KO4": {
+      "round": "Round of 32",
+      "t1": "🏴 Scotland",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO5": {
+      "round": "Round of 32",
+      "t1": "🇳🇴 Norway",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO6": {
+      "round": "Round of 32",
+      "t1": "🇪🇨 Ecuador",
+      "t2": "🇸🇳 Senegal",
+      "score": null,
+      "winner": null
+    },
+    "KO7": {
+      "round": "Round of 32",
+      "t1": "🇲🇽 Mexico",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO8": {
+      "round": "Round of 32",
+      "t1": "🏴 England",
+      "t2": "🇨🇩 DR Congo",
+      "score": null,
+      "winner": null
+    },
+    "KO9": {
+      "round": "Round of 32",
+      "t1": "🇺🇸 United States",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO10": {
+      "round": "Round of 32",
+      "t1": "🇮🇷 Iran",
+      "t2": "🇪🇸 Spain",
+      "score": null,
+      "winner": null
+    },
+    "KO11": {
+      "round": "Round of 32",
+      "t1": "🇨🇩 DR Congo",
+      "t2": "🇵🇦 Panama",
+      "score": null,
+      "winner": null
+    },
+    "KO12": {
+      "round": "Round of 32",
+      "t1": "🇸🇦 Saudi Arabia",
+      "t2": "🇯🇴 Jordan",
+      "score": null,
+      "winner": null
+    },
+    "KO13": {
+      "round": "Round of 32",
+      "t1": "🇨🇦 Canada",
+      "t2": "🇯🇵 Japan",
+      "score": null,
+      "winner": null
+    },
+    "KO14": {
+      "round": "Round of 32",
+      "t1": "🇦🇷 Argentina",
+      "t2": "🇪🇸 Spain",
+      "score": null,
+      "winner": null
+    },
+    "KO15": {
+      "round": "Round of 32",
+      "t1": "🇨🇴 Colombia",
+      "t2": "🇪🇨 Ecuador",
+      "score": null,
+      "winner": null
+    },
+    "KO16": {
+      "round": "Round of 32",
+      "t1": "🇹🇷 Turkiye",
+      "t2": "🇧🇪 Belgium",
+      "score": null,
+      "winner": null
+    },
+    "KO17": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO18": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO19": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO20": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO21": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO22": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO23": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO24": {
+      "round": "Round of 16",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO25": {
+      "round": "Quarter-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO26": {
+      "round": "Quarter-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO27": {
+      "round": "Quarter-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO28": {
+      "round": "Quarter-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO29": {
+      "round": "Semi-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO30": {
+      "round": "Semi-finals",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO31": {
+      "round": "Final",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    },
+    "KO32": {
+      "round": "3rd Place Playoff",
+      "t1": "TBD",
+      "t2": "TBD",
+      "score": null,
+      "winner": null
+    }
+  },
+  "standings": {
+    "A": [
+      {
+        "team": "🇲🇽 Mexico",
+        "p": 2,
+        "w": 2,
+        "d": 0,
+        "l": 0,
+        "gf": 3,
+        "ga": 0,
+        "gd": 3,
+        "pts": 6
+      },
+      {
+        "team": "🇿🇦 South Africa",
+        "p": 2,
+        "w": 0,
+        "d": 1,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 1
+      },
+      {
+        "team": "🇰🇷 South Korea",
+        "p": 2,
+        "w": 1,
+        "d": 0,
+        "l": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 3
+      },
+      {
+        "team": "🇨🇿 Czechia",
+        "p": 2,
+        "w": 0,
+        "d": 1,
+        "l": 1,
+        "gf": 2,
+        "ga": 3,
+        "gd": -1,
+        "pts": 1
+      }
+    ],
+    "B": [
+      {
+        "team": "🇨🇦 Canada",
+        "p": 2,
+        "w": 1,
+        "d": 1,
+        "l": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "pts": 4
+      },
+      {
+        "team": "🇧🇦 Bosnia and Herzegovina",
+        "p": 2,
+        "w": 0,
+        "d": 1,
+        "l": 1,
+        "gf": 2,
+        "ga": 5,
+        "gd": -3,
+        "pts": 1
+      },
+      {
+        "team": "🇶🇦 Qatar",
+        "p": 2,
+        "w": 0,
+        "d": 1,
+        "l": 1,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
+        "pts": 1
+      },
+      {
+        "team": "🇨🇭 Switzerland",
+        "p": 2,
+        "w": 1,
+        "d": 1,
+        "l": 0,
+        "gf": 5,
+        "ga": 2,
+        "gd": 3,
+        "pts": 4
+      }
+    ],
+    "C": [
+      {
+        "team": "🇧🇷 Brazil",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇲🇦 Morocco",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇭🇹 Haiti",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "team": "🏴 Scotland",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      }
+    ],
+    "D": [
+      {
+        "team": "🇺🇸 United States",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "🇵🇾 Paraguay",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "pts": 0
+      },
+      {
+        "team": "🇦🇺 Australia",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "🇹🇷 Turkiye",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "pts": 0
+      }
+    ],
+    "E": [
+      {
+        "team": "🇩🇪 Germany",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "pts": 3
+      },
+      {
+        "team": "🇨🇼 Curacao",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
+        "pts": 0
+      },
+      {
+        "team": "🇨🇮 Ivory Coast",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "🇪🇨 Ecuador",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      }
+    ],
+    "F": [
+      {
+        "team": "🇳🇱 Netherlands",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇯🇵 Japan",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇸🇪 Sweden",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 5,
+        "ga": 1,
+        "gd": 4,
+        "pts": 3
+      },
+      {
+        "team": "🇹🇳 Tunisia",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
+        "pts": 0
+      }
+    ],
+    "G": [
+      {
+        "team": "🇧🇪 Belgium",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇪🇬 Egypt",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇮🇷 Iran",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇳🇿 New Zealand",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "H": [
+      {
+        "team": "🇪🇸 Spain",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇨🇻 Cape Verde",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇸🇦 Saudi Arabia",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇺🇾 Uruguay",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "I": [
+      {
+        "team": "🇫🇷 France",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "🇸🇳 Senegal",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "🇮🇶 Iraq",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "pts": 0
+      },
+      {
+        "team": "🇳🇴 Norway",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      }
+    ],
+    "J": [
+      {
+        "team": "🇦🇷 Argentina",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 3,
+        "ga": 0,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "🇩🇿 Algeria",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 3,
+        "gd": -3,
+        "pts": 0
+      },
+      {
+        "team": "🇦🇹 Austria",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "🇯🇴 Jordan",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 0
+      }
+    ],
+    "K": [
+      {
+        "team": "🇵🇹 Portugal",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇨🇩 DR Congo",
+        "p": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "🇺🇿 Uzbekistan",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "🇨🇴 Colombia",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      }
+    ],
+    "L": [
+      {
+        "team": "🏴 England",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "🇭🇷 Croatia",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 2,
+        "ga": 4,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "🇬🇭 Ghana",
+        "p": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "🇵🇦 Panama",
+        "p": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      }
+    ]
+  },
+  "predictions": {
+    "Bilal": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A4": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "🇨🇦 Canada",
+          "pts": 1.0
+        },
+        "B4": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 1.0
+        },
+        "B5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "🏴 Scotland",
+          "pts": 1.0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "🇦🇺 Australia",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 1.0
+        },
+        "F3": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇮🇷 Iran",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "🇮🇷 Iran",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "🇸🇦 Saudi Arabia",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "🇳🇴 Norway",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "🇳🇴 Norway",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "🇸🇳 Senegal",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇦🇹 Austria",
+          "pts": 1.0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "🇯🇴 Jordan",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "🇦🇹 Austria",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇺🇿 Uzbekistan",
+          "pts": 0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "🇨🇩 DR Congo",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "🇺🇿 Uzbekistan",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L2": {
+          "pick": "🇵🇦 Panama",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 15.0
+    },
+    "Kiana": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A4": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B3": {
+          "pick": "🇶🇦 Qatar",
+          "pts": 0
+        },
+        "B4": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 1.0
+        },
+        "B5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "C2": {
+          "pick": "🇭🇹 Haiti",
+          "pts": 0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🏴 Scotland",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "🇦🇺 Australia",
+          "pts": 1.0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "🇵🇾 Paraguay",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "🇵🇾 Paraguay",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 1.0
+        },
+        "E3": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 1.0
+        },
+        "F3": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇹🇳 Tunisia",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇨🇻 Cape Verde",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇸🇦 Saudi Arabia",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "🇨🇻 Cape Verde",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇮🇶 Iraq",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "🇸🇳 Senegal",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇯🇴 Jordan",
+          "pts": 0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "🇯🇴 Jordan",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "🇦🇹 Austria",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇺🇿 Uzbekistan",
+          "pts": 0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "🇨🇩 DR Congo",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "🇺🇿 Uzbekistan",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L2": {
+          "pick": "🇵🇦 Panama",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🇬🇭 Ghana",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 15.0
+    },
+    "Humza": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "A4": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇶🇦 Qatar",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "🇨🇦 Canada",
+          "pts": 1.0
+        },
+        "B4": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "B5": {
+          "pick": "🇨🇦 Canada",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 1.0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F3": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "🇮🇷 Iran",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "H2": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇨🇻 Cape Verde",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "🇸🇦 Saudi Arabia",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇯🇴 Jordan",
+          "pts": 0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "K2": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 1.0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🇬🇭 Ghana",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 14.0
+    },
+    "Anu": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "A4": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "A5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B4": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "B5": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "🏴 Scotland",
+          "pts": 1.0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "🏴 Scotland",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "🇵🇾 Paraguay",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 1.0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F3": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇮🇷 Iran",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "🇸🇦 Saudi Arabia",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "🇳🇴 Norway",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "🇩🇿 Algeria",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 1.0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "🇨🇩 DR Congo",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 11.0
+    },
+    "R2": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "A4": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "🇨🇦 Canada",
+          "pts": 1.0
+        },
+        "B4": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 1.0
+        },
+        "B5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇶🇦 Qatar",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "🏴 Scotland",
+          "pts": 1.0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "🇲🇦 Morocco",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D3": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "🇹🇷 Turkiye",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "🇦🇺 Australia",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F3": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇳🇱 Netherlands",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "G3": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "🇸🇳 Senegal",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇦🇹 Austria",
+          "pts": 1.0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "🇩🇿 Algeria",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 1.0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "🇺🇿 Uzbekistan",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L2": {
+          "pick": "🇬🇭 Ghana",
+          "pts": 1.0
+        },
+        "L3": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 16.0
+    },
+    "Ray": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A4": {
+          "pick": "🇨🇿 Czechia",
+          "pts": 0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇨🇭 Switzerland",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "🇨🇦 Canada",
+          "pts": 1.0
+        },
+        "B4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "🏴 Scotland",
+          "pts": 1.0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "🇦🇺 Australia",
+          "pts": 1.0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "🇵🇾 Paraguay",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 1.0
+        },
+        "F3": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇳🇿 New Zealand",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "🇳🇴 Norway",
+          "pts": 1.0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "🇳🇴 Norway",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇦🇹 Austria",
+          "pts": 1.0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "🇦🇹 Austria",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 1.0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🏴 England",
+          "pts": 1.0
+        },
+        "L2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "🇭🇷 Croatia",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 16.0
+    },
+    "Laura": {
+      "matches": {
+        "A1": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A2": {
+          "pick": "🇰🇷 South Korea",
+          "pts": 1.0
+        },
+        "A3": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 1.0
+        },
+        "A4": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "A5": {
+          "pick": "🇲🇽 Mexico",
+          "pts": 0
+        },
+        "A6": {
+          "pick": "🇿🇦 South Africa",
+          "pts": 0
+        },
+        "B1": {
+          "pick": "Draw",
+          "pts": 1.0
+        },
+        "B2": {
+          "pick": "🇶🇦 Qatar",
+          "pts": 0
+        },
+        "B3": {
+          "pick": "🇨🇦 Canada",
+          "pts": 1.0
+        },
+        "B4": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "B5": {
+          "pick": "🇨🇦 Canada",
+          "pts": 0
+        },
+        "B6": {
+          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pts": 0
+        },
+        "C1": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C2": {
+          "pick": "🇭🇹 Haiti",
+          "pts": 0
+        },
+        "C3": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "C5": {
+          "pick": "🇧🇷 Brazil",
+          "pts": 0
+        },
+        "C6": {
+          "pick": "🇭🇹 Haiti",
+          "pts": 0
+        },
+        "D1": {
+          "pick": "🇺🇸 United States",
+          "pts": 1.0
+        },
+        "D2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D3": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "D5": {
+          "pick": "🇺🇸 United States",
+          "pts": 0
+        },
+        "D6": {
+          "pick": "🇦🇺 Australia",
+          "pts": 0
+        },
+        "E1": {
+          "pick": "🇩🇪 Germany",
+          "pts": 1.0
+        },
+        "E2": {
+          "pick": "🇪🇨 Ecuador",
+          "pts": 0
+        },
+        "E3": {
+          "pick": "🇩🇪 Germany",
+          "pts": 0
+        },
+        "E4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "E6": {
+          "pick": "🇨🇮 Ivory Coast",
+          "pts": 0
+        },
+        "F1": {
+          "pick": "🇯🇵 Japan",
+          "pts": 0
+        },
+        "F2": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 1.0
+        },
+        "F3": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 0
+        },
+        "F4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "F5": {
+          "pick": "🇹🇳 Tunisia",
+          "pts": 0
+        },
+        "F6": {
+          "pick": "🇸🇪 Sweden",
+          "pts": 0
+        },
+        "G1": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G2": {
+          "pick": "🇮🇷 Iran",
+          "pts": 0
+        },
+        "G3": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "G4": {
+          "pick": "🇪🇬 Egypt",
+          "pts": 0
+        },
+        "G5": {
+          "pick": "🇧🇪 Belgium",
+          "pts": 0
+        },
+        "G6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "H1": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H2": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H3": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H4": {
+          "pick": "🇺🇾 Uruguay",
+          "pts": 0
+        },
+        "H5": {
+          "pick": "🇪🇸 Spain",
+          "pts": 0
+        },
+        "H6": {
+          "pick": "🇨🇻 Cape Verde",
+          "pts": 0
+        },
+        "I1": {
+          "pick": "🇫🇷 France",
+          "pts": 1.0
+        },
+        "I2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I3": {
+          "pick": "🇫🇷 France",
+          "pts": 0
+        },
+        "I4": {
+          "pick": "🇸🇳 Senegal",
+          "pts": 0
+        },
+        "I5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "I6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J1": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 1.0
+        },
+        "J2": {
+          "pick": "🇦🇹 Austria",
+          "pts": 1.0
+        },
+        "J3": {
+          "pick": "🇦🇷 Argentina",
+          "pts": 0
+        },
+        "J4": {
+          "pick": "🇩🇿 Algeria",
+          "pts": 0
+        },
+        "J5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "J6": {
+          "pick": "🇩🇿 Algeria",
+          "pts": 0
+        },
+        "K1": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K2": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 1.0
+        },
+        "K3": {
+          "pick": "🇵🇹 Portugal",
+          "pts": 0
+        },
+        "K4": {
+          "pick": "🇨🇴 Colombia",
+          "pts": 0
+        },
+        "K5": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "K6": {
+          "pick": "🇨🇩 DR Congo",
+          "pts": 0
+        },
+        "L1": {
+          "pick": "🏴 England",
+          "pts": 1.0
+        },
+        "L2": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L3": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L4": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "L5": {
+          "pick": "🏴 England",
+          "pts": 0
+        },
+        "L6": {
+          "pick": "Draw",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO2": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO3": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO4": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO5": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO6": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO7": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO8": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO9": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO10": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO11": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO12": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO13": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO14": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO15": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO16": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO17": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO18": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO19": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO20": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO21": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO22": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO23": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO24": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO25": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO26": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO27": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO28": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO29": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO30": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO31": {
+          "pick": null,
+          "pts": 0
+        },
+        "KO32": {
+          "pick": null,
+          "pts": 0
+        }
+      },
+      "total": 13.0
+    }
+  },
+  "flags": {
+    "Mexico": "🇲🇽",
+    "South Africa": "🇿🇦",
+    "South Korea": "🇰🇷",
+    "Czechia": "🇨🇿",
+    "Canada": "🇨🇦",
+    "Bosnia and Herzegovina": "🇧🇦",
+    "Qatar": "🇶🇦",
+    "Switzerland": "🇨🇭",
+    "Brazil": "🇧🇷",
+    "Morocco": "🇲🇦",
+    "Haiti": "🇭🇹",
+    "Scotland": "🏴",
+    "United States": "🇺🇸",
+    "Paraguay": "🇵🇾",
+    "Australia": "🇦🇺",
+    "Turkiye": "🇹🇷",
+    "Germany": "🇩🇪",
+    "Curacao": "🇨🇼",
+    "Ivory Coast": "🇨🇮",
+    "Ecuador": "🇪🇨",
+    "Netherlands": "🇳🇱",
+    "Japan": "🇯🇵",
+    "Sweden": "🇸🇪",
+    "Tunisia": "🇹🇳",
+    "Belgium": "🇧🇪",
+    "Egypt": "🇪🇬",
+    "Iran": "🇮🇷",
+    "New Zealand": "🇳🇿",
+    "Spain": "🇪🇸",
+    "Cape Verde": "🇨🇻",
+    "Saudi Arabia": "🇸🇦",
+    "Uruguay": "🇺🇾",
+    "France": "🇫🇷",
+    "Senegal": "🇸🇳",
+    "Iraq": "🇮🇶",
+    "Norway": "🇳🇴",
+    "Argentina": "🇦🇷",
+    "Algeria": "🇩🇿",
+    "Austria": "🇦🇹",
+    "Jordan": "🇯🇴",
+    "Portugal": "🇵🇹",
+    "DR Congo": "🇨🇩",
+    "Uzbekistan": "🇺🇿",
+    "Colombia": "🇨🇴",
+    "England": "🏴",
+    "Croatia": "🇭🇷",
+    "Ghana": "🇬🇭",
+    "Panama": "🇵🇦"
+  },
+  "groups": {
+    "A": [
+      "Mexico",
+      "South Africa",
+      "South Korea",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Bosnia and Herzegovina",
+      "Qatar",
+      "Switzerland"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Haiti",
+      "Scotland"
+    ],
+    "D": [
+      "United States",
+      "Paraguay",
+      "Australia",
+      "Turkiye"
+    ],
+    "E": [
+      "Germany",
+      "Curacao",
+      "Ivory Coast",
+      "Ecuador"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Cape Verde",
+      "Saudi Arabia",
+      "Uruguay"
+    ],
+    "I": [
+      "France",
+      "Senegal",
+      "Iraq",
+      "Norway"
+    ],
+    "J": [
+      "Argentina",
+      "Algeria",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "DR Congo",
+      "Uzbekistan",
+      "Colombia"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "team_history": {
+    "Mexico": {
+      "apps": 17,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Quarter-finals (1970, 1986)"
+    },
+    "South Africa": {
+      "apps": 3,
+      "debut": 1998,
+      "last": 2010,
+      "best_ever": "Group stage"
+    },
+    "South Korea": {
+      "apps": 11,
+      "debut": 1954,
+      "last": 2022,
+      "best_ever": "Fourth place (2002)"
+    },
+    "Czechia": {
+      "apps": 9,
+      "debut": 1934,
+      "last": 2006,
+      "best_ever": "Runners-up (1934, 1962)"
+    },
+    "Canada": {
+      "apps": 2,
+      "debut": 1986,
+      "last": 2022,
+      "best_ever": "Group stage"
+    },
+    "Bosnia and Herzegovina": {
+      "apps": 1,
+      "debut": 2014,
+      "last": 2014,
+      "best_ever": "Group stage"
+    },
+    "Qatar": {
+      "apps": 1,
+      "debut": 2022,
+      "last": 2022,
+      "best_ever": "Group stage"
+    },
+    "Switzerland": {
+      "apps": 12,
+      "debut": 1934,
+      "last": 2022,
+      "best_ever": "Quarter-finals (1934, 1938, 1954)"
+    },
+    "Brazil": {
+      "apps": 22,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Champions (1958, 1962, 1970, 1994, 2002)"
+    },
+    "Morocco": {
+      "apps": 6,
+      "debut": 1970,
+      "last": 2022,
+      "best_ever": "Fourth place (2022)"
+    },
+    "Haiti": {
+      "apps": 1,
+      "debut": 1974,
+      "last": 1974,
+      "best_ever": "Group stage"
+    },
+    "Scotland": {
+      "apps": 8,
+      "debut": 1954,
+      "last": 1998,
+      "best_ever": "Group stage"
+    },
+    "United States": {
+      "apps": 11,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Quarter-finals (2002)"
+    },
+    "Paraguay": {
+      "apps": 8,
+      "debut": 1930,
+      "last": 2010,
+      "best_ever": "Quarter-finals (2010)"
+    },
+    "Australia": {
+      "apps": 6,
+      "debut": 1974,
+      "last": 2022,
+      "best_ever": "Round of 16 (2006, 2022)"
+    },
+    "Turkiye": {
+      "apps": 2,
+      "debut": 1954,
+      "last": 2002,
+      "best_ever": "Third place (2002)"
+    },
+    "Germany": {
+      "apps": 20,
+      "debut": 1934,
+      "last": 2022,
+      "best_ever": "Champions (1954, 1974, 1990, 2014)"
+    },
+    "Curacao": {
+      "apps": 0,
+      "debut": null,
+      "last": null,
+      "best_ever": "Debut in 2026"
+    },
+    "Ivory Coast": {
+      "apps": 3,
+      "debut": 2006,
+      "last": 2014,
+      "best_ever": "Group stage"
+    },
+    "Ecuador": {
+      "apps": 4,
+      "debut": 2002,
+      "last": 2022,
+      "best_ever": "Round of 16 (2006)"
+    },
+    "Netherlands": {
+      "apps": 11,
+      "debut": 1934,
+      "last": 2022,
+      "best_ever": "Runners-up (1974, 1978, 2010)"
+    },
+    "Japan": {
+      "apps": 7,
+      "debut": 1998,
+      "last": 2022,
+      "best_ever": "Round of 16 (2002, 2010, 2018, 2022)"
+    },
+    "Sweden": {
+      "apps": 12,
+      "debut": 1934,
+      "last": 2018,
+      "best_ever": "Runners-up (1958)"
+    },
+    "Tunisia": {
+      "apps": 6,
+      "debut": 1978,
+      "last": 2022,
+      "best_ever": "Group stage"
+    },
+    "Belgium": {
+      "apps": 14,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Third place (2018)"
+    },
+    "Egypt": {
+      "apps": 3,
+      "debut": 1934,
+      "last": 2018,
+      "best_ever": "Group stage"
+    },
+    "Iran": {
+      "apps": 6,
+      "debut": 1978,
+      "last": 2022,
+      "best_ever": "Group stage"
+    },
+    "New Zealand": {
+      "apps": 2,
+      "debut": 1982,
+      "last": 2010,
+      "best_ever": "Group stage"
+    },
+    "Spain": {
+      "apps": 16,
+      "debut": 1934,
+      "last": 2022,
+      "best_ever": "Champions (2010)"
+    },
+    "Cape Verde": {
+      "apps": 0,
+      "debut": null,
+      "last": null,
+      "best_ever": "Debut in 2026"
+    },
+    "Saudi Arabia": {
+      "apps": 6,
+      "debut": 1994,
+      "last": 2022,
+      "best_ever": "Round of 16 (1994)"
+    },
+    "Uruguay": {
+      "apps": 14,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Champions (1930, 1950)"
+    },
+    "France": {
+      "apps": 16,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Champions (1998, 2018)"
+    },
+    "Senegal": {
+      "apps": 3,
+      "debut": 2002,
+      "last": 2022,
+      "best_ever": "Quarter-finals (2002)"
+    },
+    "Iraq": {
+      "apps": 1,
+      "debut": 1986,
+      "last": 1986,
+      "best_ever": "Group stage"
+    },
+    "Norway": {
+      "apps": 3,
+      "debut": 1938,
+      "last": 1998,
+      "best_ever": "Round of 16 (1998)"
+    },
+    "Argentina": {
+      "apps": 18,
+      "debut": 1930,
+      "last": 2022,
+      "best_ever": "Champions (1978, 1986, 2022)"
+    },
+    "Algeria": {
+      "apps": 4,
+      "debut": 1982,
+      "last": 2014,
+      "best_ever": "Round of 16 (2014)"
+    },
+    "Austria": {
+      "apps": 7,
+      "debut": 1934,
+      "last": 1998,
+      "best_ever": "Third place (1954)"
+    },
+    "Jordan": {
+      "apps": 0,
+      "debut": null,
+      "last": null,
+      "best_ever": "Debut in 2026"
+    },
+    "Portugal": {
+      "apps": 8,
+      "debut": 1966,
+      "last": 2022,
+      "best_ever": "Third place (1966)"
+    },
+    "DR Congo": {
+      "apps": 1,
+      "debut": 1974,
+      "last": 1974,
+      "best_ever": "Group stage"
+    },
+    "Uzbekistan": {
+      "apps": 0,
+      "debut": null,
+      "last": null,
+      "best_ever": "Debut in 2026"
+    },
+    "Colombia": {
+      "apps": 6,
+      "debut": 1962,
+      "last": 2018,
+      "best_ever": "Quarter-finals (2014)"
+    },
+    "England": {
+      "apps": 16,
+      "debut": 1950,
+      "last": 2022,
+      "best_ever": "Champions (1966)"
+    },
+    "Croatia": {
+      "apps": 6,
+      "debut": 1998,
+      "last": 2022,
+      "best_ever": "Runners-up (2018)"
+    },
+    "Ghana": {
+      "apps": 4,
+      "debut": 2006,
+      "last": 2022,
+      "best_ever": "Quarter-finals (2010)"
+    },
+    "Panama": {
+      "apps": 1,
+      "debut": 2018,
+      "last": 2018,
+      "best_ever": "Group stage"
+    }
+  }
+}
