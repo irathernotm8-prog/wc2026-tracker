@@ -181,7 +181,7 @@ function renderGroupMatches() {
     const played = m.hs!==null&&m.hs!==undefined;
     html += `<div class="match-row" data-id="${m.id}">
       <span class="match-id">${m.id}</span>
-      <span class="match-teams" style="white-space:nowrap">${teamFlag(m.home,14)} vs ${teamFlag(m.away,14)}</span>
+      <span class="match-teams" style="white-space:nowrap">${teamFlag(m.home)} vs ${teamFlag(m.away)}</span>
       <input class="score-input" type="number" min="0" max="30" value="${hs}" placeholder="—" data-field="hs" data-id="${m.id}">
       <span class="score-dash">–</span>
       <input class="score-input" type="number" min="0" max="30" value="${as}" placeholder="—" data-field="as" data-id="${m.id}">
@@ -213,8 +213,8 @@ function renderKOGrid() {
       html += `<div class="ko-row">
         <span class="match-id">${id}</span>
         <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.5rem">
-          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t1||'TBD',12)}</div>
-          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t2||'TBD',12)}</div>
+          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t1||'TBD')}</div>
+          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t2||'TBD')}</div>
           <input class="ko-input" placeholder="Team 1 name" value="${esc(t1c)}" data-ko="${id}" data-field="t1">
           <input class="ko-input" placeholder="Team 2 name" value="${esc(t2c)}" data-ko="${id}" data-field="t2">
           <input class="ko-input" placeholder="Score (e.g. 2-1)" value="${esc(m.score||'')}" data-ko="${id}" data-field="score">
@@ -247,13 +247,16 @@ const FLAG_MAP = {
 
 function teamFlag(teamStr, size) {
   if(!teamStr) return '';
-  size = size || 16;
   const name = teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
   if(name === 'Draw' || name === 'TBD' || !name) return esc(teamStr);
   const code = FLAG_MAP[name];
   if(!code) return esc(teamStr);
-  const h = Math.round(size * 0.75);
-  return `<img src="https://flagcdn.com/${size}x${h}/${code}.png" width="${size}" height="${h}" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px">` + esc(name);
+  return `<img src="flags/${code}.png" width="16" height="12" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px;flex-shrink:0">` + esc(name);
+}
+
+function teamName(teamStr) {
+  if(!teamStr) return '';
+  return teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
 }
 
 
