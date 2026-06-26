@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-26T22:00:00Z"
+    "updated": "2026-06-26T23:28:50.453Z"
   },
   "friends": [
     "Bilal",
@@ -17,34 +17,34 @@
       "date": "2026-06-11",
       "time": "14:00",
       "group": "A",
-      "home": "🇲🇽 Mexico",
-      "away": "🇿🇦 South Africa",
+      "home": "ð²ð½ Mexico",
+      "away": "ð¿ð¦ South Africa",
       "home_name": "Mexico",
       "away_name": "South Africa",
       "hs": 2,
       "as": 0,
-      "winner": "🇲🇽 Mexico"
+      "winner": "ð²ð½ Mexico"
     },
     {
       "id": "A2",
       "date": "2026-06-11",
       "time": "17:00",
       "group": "A",
-      "home": "🇰🇷 South Korea",
-      "away": "🇨🇿 Czechia",
+      "home": "ð°ð· South Korea",
+      "away": "ð¨ð¿ Czechia",
       "home_name": "South Korea",
       "away_name": "Czechia",
       "hs": 2,
       "as": 1,
-      "winner": "🇰🇷 South Korea"
+      "winner": "ð°ð· South Korea"
     },
     {
       "id": "B1",
       "date": "2026-06-12",
       "time": "14:00",
       "group": "B",
-      "home": "🇨🇦 Canada",
-      "away": "🇧🇦 Bosnia and Herzegovina",
+      "home": "ð¨ð¦ Canada",
+      "away": "ð§ð¦ Bosnia and Herzegovina",
       "home_name": "Canada",
       "away_name": "Bosnia and Herzegovina",
       "hs": 1,
@@ -56,21 +56,21 @@
       "date": "2026-06-12",
       "time": "20:00",
       "group": "D",
-      "home": "🇺🇸 United States",
-      "away": "🇵🇾 Paraguay",
+      "home": "ðºð¸ United States",
+      "away": "ðµð¾ Paraguay",
       "home_name": "United States",
       "away_name": "Paraguay",
       "hs": 4,
       "as": 1,
-      "winner": "🇺🇸 United States"
+      "winner": "ðºð¸ United States"
     },
     {
       "id": "B2",
       "date": "2026-06-13",
       "time": "11:00",
       "group": "B",
-      "home": "🇶🇦 Qatar",
-      "away": "🇨🇭 Switzerland",
+      "home": "ð¶ð¦ Qatar",
+      "away": "ð¨ð­ Switzerland",
       "home_name": "Qatar",
       "away_name": "Switzerland",
       "hs": 1,
@@ -82,8 +82,8 @@
       "date": "2026-06-13",
       "time": "14:00",
       "group": "C",
-      "home": "🇧🇷 Brazil",
-      "away": "🇲🇦 Morocco",
+      "home": "ð§ð· Brazil",
+      "away": "ð²ð¦ Morocco",
       "home_name": "Brazil",
       "away_name": "Morocco",
       "hs": 1,
@@ -95,60 +95,60 @@
       "date": "2026-06-13",
       "time": "17:00",
       "group": "C",
-      "home": "🇭🇹 Haiti",
-      "away": "🏴 Scotland",
+      "home": "ð­ð¹ Haiti",
+      "away": "ð´ Scotland",
       "home_name": "Haiti",
       "away_name": "Scotland",
       "hs": 0,
       "as": 1,
-      "winner": "🏴 Scotland"
+      "winner": "ð´ Scotland"
     },
     {
       "id": "D2",
       "date": "2026-06-14",
       "time": "11:00",
       "group": "D",
-      "home": "🇦🇺 Australia",
-      "away": "🇹🇷 Turkiye",
+      "home": "ð¦ðº Australia",
+      "away": "ð¹ð· Turkiye",
       "home_name": "Australia",
       "away_name": "Turkiye",
       "hs": 2,
       "as": 0,
-      "winner": "🇦🇺 Australia"
+      "winner": "ð¦ðº Australia"
     },
     {
       "id": "E1",
       "date": "2026-06-14",
       "time": "14:00",
       "group": "E",
-      "home": "🇩🇪 Germany",
-      "away": "🇨🇼 Curacao",
+      "home": "ð©ðª Germany",
+      "away": "ð¨ð¼ Curacao",
       "home_name": "Germany",
       "away_name": "Curacao",
       "hs": 7,
       "as": 1,
-      "winner": "🇩🇪 Germany"
+      "winner": "ð©ðª Germany"
     },
     {
       "id": "E2",
       "date": "2026-06-14",
       "time": "14:00",
       "group": "E",
-      "home": "🇨🇮 Ivory Coast",
-      "away": "🇪🇨 Ecuador",
+      "home": "ð¨ð® Ivory Coast",
+      "away": "ðªð¨ Ecuador",
       "home_name": "Ivory Coast",
       "away_name": "Ecuador",
       "hs": 1,
       "as": 0,
-      "winner": "🇨🇮 Ivory Coast"
+      "winner": "ð¨ð® Ivory Coast"
     },
     {
       "id": "F1",
       "date": "2026-06-14",
       "time": "17:00",
       "group": "F",
-      "home": "🇳🇱 Netherlands",
-      "away": "🇯🇵 Japan",
+      "home": "ð³ð± Netherlands",
+      "away": "ð¯ðµ Japan",
       "home_name": "Netherlands",
       "away_name": "Japan",
       "hs": 2,
@@ -160,21 +160,21 @@
       "date": "2026-06-14",
       "time": "17:00",
       "group": "F",
-      "home": "🇸🇪 Sweden",
-      "away": "🇹🇳 Tunisia",
+      "home": "ð¸ðª Sweden",
+      "away": "ð¹ð³ Tunisia",
       "home_name": "Sweden",
       "away_name": "Tunisia",
       "hs": 5,
       "as": 1,
-      "winner": "🇸🇪 Sweden"
+      "winner": "ð¸ðª Sweden"
     },
     {
       "id": "H1",
       "date": "2026-06-15",
       "time": "11:00",
       "group": "H",
-      "home": "🇪🇸 Spain",
-      "away": "🇨🇻 Cape Verde",
+      "home": "ðªð¸ Spain",
+      "away": "ð¨ð» Cape Verde",
       "home_name": "Spain",
       "away_name": "Cape Verde",
       "hs": 0,
@@ -186,8 +186,8 @@
       "date": "2026-06-15",
       "time": "14:00",
       "group": "G",
-      "home": "🇧🇪 Belgium",
-      "away": "🇪🇬 Egypt",
+      "home": "ð§ðª Belgium",
+      "away": "ðªð¬ Egypt",
       "home_name": "Belgium",
       "away_name": "Egypt",
       "hs": 1,
@@ -199,8 +199,8 @@
       "date": "2026-06-15",
       "time": "17:00",
       "group": "H",
-      "home": "🇸🇦 Saudi Arabia",
-      "away": "🇺🇾 Uruguay",
+      "home": "ð¸ð¦ Saudi Arabia",
+      "away": "ðºð¾ Uruguay",
       "home_name": "Saudi Arabia",
       "away_name": "Uruguay",
       "hs": 1,
@@ -212,8 +212,8 @@
       "date": "2026-06-15",
       "time": "20:00",
       "group": "G",
-      "home": "🇮🇷 Iran",
-      "away": "🇳🇿 New Zealand",
+      "home": "ð®ð· Iran",
+      "away": "ð³ð¿ New Zealand",
       "home_name": "Iran",
       "away_name": "New Zealand",
       "hs": 2,
@@ -225,47 +225,47 @@
       "date": "2026-06-16",
       "time": "14:00",
       "group": "I",
-      "home": "🇫🇷 France",
-      "away": "🇸🇳 Senegal",
+      "home": "ð«ð· France",
+      "away": "ð¸ð³ Senegal",
       "home_name": "France",
       "away_name": "Senegal",
       "hs": 3,
       "as": 1,
-      "winner": "🇫🇷 France"
+      "winner": "ð«ð· France"
     },
     {
       "id": "I2",
       "date": "2026-06-16",
       "time": "17:00",
       "group": "I",
-      "home": "🇮🇶 Iraq",
-      "away": "🇳🇴 Norway",
+      "home": "ð®ð¶ Iraq",
+      "away": "ð³ð´ Norway",
       "home_name": "Iraq",
       "away_name": "Norway",
       "hs": 1,
       "as": 4,
-      "winner": "🇳🇴 Norway"
+      "winner": "ð³ð´ Norway"
     },
     {
       "id": "J1",
       "date": "2026-06-16",
       "time": "20:00",
       "group": "J",
-      "home": "🇦🇷 Argentina",
-      "away": "🇩🇿 Algeria",
+      "home": "ð¦ð· Argentina",
+      "away": "ð©ð¿ Algeria",
       "home_name": "Argentina",
       "away_name": "Algeria",
       "hs": 3,
       "as": 0,
-      "winner": "🇦🇷 Argentina"
+      "winner": "ð¦ð· Argentina"
     },
     {
       "id": "K1",
       "date": "2026-06-17",
       "time": "11:00",
       "group": "K",
-      "home": "🇵🇹 Portugal",
-      "away": "🇨🇩 DR Congo",
+      "home": "ðµð¹ Portugal",
+      "away": "ð¨ð© DR Congo",
       "home_name": "Portugal",
       "away_name": "DR Congo",
       "hs": 1,
@@ -277,60 +277,60 @@
       "date": "2026-06-17",
       "time": "14:00",
       "group": "J",
-      "home": "🇦🇹 Austria",
-      "away": "🇯🇴 Jordan",
+      "home": "ð¦ð¹ Austria",
+      "away": "ð¯ð´ Jordan",
       "home_name": "Austria",
       "away_name": "Jordan",
       "hs": 3,
       "as": 1,
-      "winner": "🇦🇹 Austria"
+      "winner": "ð¦ð¹ Austria"
     },
     {
       "id": "L1",
       "date": "2026-06-17",
       "time": "14:00",
       "group": "L",
-      "home": "🏴 England",
-      "away": "🇭🇷 Croatia",
+      "home": "ð´ England",
+      "away": "ð­ð· Croatia",
       "home_name": "England",
       "away_name": "Croatia",
       "hs": 4,
       "as": 2,
-      "winner": "🏴 England"
+      "winner": "ð´ England"
     },
     {
       "id": "L2",
       "date": "2026-06-17",
       "time": "18:00",
       "group": "L",
-      "home": "🇬🇭 Ghana",
-      "away": "🇵🇦 Panama",
+      "home": "ð¬ð­ Ghana",
+      "away": "ðµð¦ Panama",
       "home_name": "Ghana",
       "away_name": "Panama",
       "hs": 1,
       "as": 0,
-      "winner": "🇬🇭 Ghana"
+      "winner": "ð¬ð­ Ghana"
     },
     {
       "id": "K2",
       "date": "2026-06-17",
       "time": "19:00",
       "group": "K",
-      "home": "🇺🇿 Uzbekistan",
-      "away": "🇨🇴 Colombia",
+      "home": "ðºð¿ Uzbekistan",
+      "away": "ð¨ð´ Colombia",
       "home_name": "Uzbekistan",
       "away_name": "Colombia",
       "hs": 1,
       "as": 3,
-      "winner": "🇨🇴 Colombia"
+      "winner": "ð¨ð´ Colombia"
     },
     {
       "id": "A4",
       "date": "2026-06-18",
       "time": "11:00",
       "group": "A",
-      "home": "🇨🇿 Czechia",
-      "away": "🇿🇦 South Africa",
+      "home": "ð¨ð¿ Czechia",
+      "away": "ð¿ð¦ South Africa",
       "home_name": "Czechia",
       "away_name": "South Africa",
       "hs": 1,
@@ -342,125 +342,125 @@
       "date": "2026-06-18",
       "time": "14:00",
       "group": "B",
-      "home": "🇨🇭 Switzerland",
-      "away": "🇧🇦 Bosnia and Herzegovina",
+      "home": "ð¨ð­ Switzerland",
+      "away": "ð§ð¦ Bosnia and Herzegovina",
       "home_name": "Switzerland",
       "away_name": "Bosnia and Herzegovina",
       "hs": 6,
       "as": 0,
-      "winner": "🇨🇦 Canada"
+      "winner": "ð¨ð­ Switzerland"
     },
     {
       "id": "B4",
       "date": "2026-06-18",
       "time": "17:00",
       "group": "B",
-      "home": "🇨🇦 Canada",
-      "away": "🇶🇦 Qatar",
+      "home": "ð¨ð¦ Canada",
+      "away": "ð¶ð¦ Qatar",
       "home_name": "Canada",
       "away_name": "Qatar",
       "hs": 1,
       "as": 4,
-      "winner": "🇨🇭 Switzerland"
+      "winner": "ð¶ð¦ Qatar"
     },
     {
       "id": "A3",
       "date": "2026-06-18",
       "time": "20:00",
       "group": "A",
-      "home": "🇲🇽 Mexico",
-      "away": "🇰🇷 South Korea",
+      "home": "ð²ð½ Mexico",
+      "away": "ð°ð· South Korea",
       "home_name": "Mexico",
       "away_name": "South Korea",
       "hs": 1,
       "as": 0,
-      "winner": "🇲🇽 Mexico"
+      "winner": "ð²ð½ Mexico"
     },
     {
       "id": "D3",
       "date": "2026-06-19",
       "time": "14:00",
       "group": "D",
-      "home": "🇺🇸 United States",
-      "away": "🇦🇺 Australia",
+      "home": "ðºð¸ United States",
+      "away": "ð¦ðº Australia",
       "home_name": "United States",
       "away_name": "Australia",
       "hs": 2,
       "as": 0,
-      "winner": "🇺🇸 United States"
+      "winner": "ðºð¸ United States"
     },
     {
       "id": "C4",
       "date": "2026-06-19",
       "time": "14:00",
       "group": "C",
-      "home": "🏴 Scotland",
-      "away": "🇲🇦 Morocco",
+      "home": "ð´ Scotland",
+      "away": "ð²ð¦ Morocco",
       "home_name": "Scotland",
       "away_name": "Morocco",
       "hs": 1,
       "as": 0,
-      "winner": "🇲🇦 Morocco"
+      "winner": "ð´ Scotland"
     },
     {
       "id": "C3",
       "date": "2026-06-19",
       "time": "19:30",
       "group": "C",
-      "home": "🇧🇷 Brazil",
-      "away": "🇭🇹 Haiti",
+      "home": "ð§ð· Brazil",
+      "away": "ð­ð¹ Haiti",
       "home_name": "Brazil",
       "away_name": "Haiti",
       "hs": 3,
       "as": 0,
-      "winner": "🇧🇷 Brazil"
+      "winner": "ð§ð· Brazil"
     },
     {
       "id": "D4",
       "date": "2026-06-19",
       "time": "22:00",
       "group": "D",
-      "home": "🇹🇷 Turkiye",
-      "away": "🇵🇾 Paraguay",
+      "home": "ð¹ð· Turkiye",
+      "away": "ðµð¾ Paraguay",
       "home_name": "Turkiye",
       "away_name": "Paraguay",
       "hs": 1,
       "as": 0,
-      "winner": "🇵🇾 Paraguay"
+      "winner": "ð¹ð· Turkiye"
     },
     {
       "id": "F3",
       "date": "2026-06-20",
       "time": "12:00",
       "group": "F",
-      "home": "🇳🇱 Netherlands",
-      "away": "🇸🇪 Sweden",
+      "home": "ð³ð± Netherlands",
+      "away": "ð¸ðª Sweden",
       "home_name": "Netherlands",
       "away_name": "Sweden",
       "hs": 5,
       "as": 1,
-      "winner": "🇳🇱 Netherlands"
+      "winner": "ð³ð± Netherlands"
     },
     {
       "id": "E3",
       "date": "2026-06-20",
       "time": "15:00",
       "group": "E",
-      "home": "🇩🇪 Germany",
-      "away": "🇨🇮 Ivory Coast",
+      "home": "ð©ðª Germany",
+      "away": "ð¨ð® Ivory Coast",
       "home_name": "Germany",
       "away_name": "Ivory Coast",
       "hs": 2,
       "as": 1,
-      "winner": "🇩🇪 Germany"
+      "winner": "ð©ðª Germany"
     },
     {
       "id": "E4",
       "date": "2026-06-20",
       "time": "19:00",
       "group": "E",
-      "home": "🇪🇨 Ecuador",
-      "away": "🇨🇼 Curacao",
+      "home": "ðªð¨ Ecuador",
+      "away": "ð¨ð¼ Curacao",
       "home_name": "Ecuador",
       "away_name": "Curacao",
       "hs": 0,
@@ -472,34 +472,34 @@
       "date": "2026-06-20",
       "time": "23:00",
       "group": "F",
-      "home": "🇹🇳 Tunisia",
-      "away": "🇯🇵 Japan",
+      "home": "ð¹ð³ Tunisia",
+      "away": "ð¯ðµ Japan",
       "home_name": "Tunisia",
       "away_name": "Japan",
       "hs": 4,
       "as": 0,
-      "winner": "🇯🇵 Japan"
+      "winner": "ð¹ð³ Tunisia"
     },
     {
       "id": "H3",
       "date": "2026-06-21",
       "time": "11:00",
       "group": "H",
-      "home": "🇪🇸 Spain",
-      "away": "🇸🇦 Saudi Arabia",
+      "home": "ðªð¸ Spain",
+      "away": "ð¸ð¦ Saudi Arabia",
       "home_name": "Spain",
       "away_name": "Saudi Arabia",
       "hs": 4,
       "as": 0,
-      "winner": "🇪🇸 Spain"
+      "winner": "ðªð¸ Spain"
     },
     {
       "id": "G3",
       "date": "2026-06-21",
       "time": "14:00",
       "group": "G",
-      "home": "🇧🇪 Belgium",
-      "away": "🇮🇷 Iran",
+      "home": "ð§ðª Belgium",
+      "away": "ð®ð· Iran",
       "home_name": "Belgium",
       "away_name": "Iran",
       "hs": 0,
@@ -511,8 +511,8 @@
       "date": "2026-06-21",
       "time": "17:00",
       "group": "H",
-      "home": "🇺🇾 Uruguay",
-      "away": "🇨🇻 Cape Verde",
+      "home": "ðºð¾ Uruguay",
+      "away": "ð¨ð» Cape Verde",
       "home_name": "Uruguay",
       "away_name": "Cape Verde",
       "hs": 2,
@@ -524,86 +524,86 @@
       "date": "2026-06-21",
       "time": "20:00",
       "group": "G",
-      "home": "🇳🇿 New Zealand",
-      "away": "🇪🇬 Egypt",
+      "home": "ð³ð¿ New Zealand",
+      "away": "ðªð¬ Egypt",
       "home_name": "New Zealand",
       "away_name": "Egypt",
       "hs": 3,
       "as": 1,
-      "winner": "🇪🇬 Egypt"
+      "winner": "ð³ð¿ New Zealand"
     },
     {
       "id": "J3",
       "date": "2026-06-22",
       "time": "12:00",
       "group": "J",
-      "home": "🇦🇷 Argentina",
-      "away": "🇦🇹 Austria",
+      "home": "ð¦ð· Argentina",
+      "away": "ð¦ð¹ Austria",
       "home_name": "Argentina",
       "away_name": "Austria",
       "hs": 2,
       "as": 0,
-      "winner": "🇦🇷 Argentina"
+      "winner": "ð¦ð· Argentina"
     },
     {
       "id": "I3",
       "date": "2026-06-22",
       "time": "16:00",
       "group": "I",
-      "home": "🇫🇷 France",
-      "away": "🇮🇶 Iraq",
+      "home": "ð«ð· France",
+      "away": "ð®ð¶ Iraq",
       "home_name": "France",
       "away_name": "Iraq",
       "hs": 3,
       "as": 0,
-      "winner": "🇫🇷 France"
+      "winner": "ð«ð· France"
     },
     {
       "id": "I4",
       "date": "2026-06-22",
       "time": "19:00",
       "group": "I",
-      "home": "🇳🇴 Norway",
-      "away": "🇸🇳 Senegal",
+      "home": "ð³ð´ Norway",
+      "away": "ð¸ð³ Senegal",
       "home_name": "Norway",
       "away_name": "Senegal",
       "hs": 2,
       "as": 3,
-      "winner": "🇳🇴 Norway"
+      "winner": "ð¸ð³ Senegal"
     },
     {
       "id": "J4",
       "date": "2026-06-22",
       "time": "22:00",
       "group": "J",
-      "home": "🇯🇴 Jordan",
-      "away": "🇩🇿 Algeria",
+      "home": "ð¯ð´ Jordan",
+      "away": "ð©ð¿ Algeria",
       "home_name": "Jordan",
       "away_name": "Algeria",
       "hs": 2,
       "as": 1,
-      "winner": "🇩🇿 Algeria"
+      "winner": "ð¯ð´ Jordan"
     },
     {
       "id": "K3",
       "date": "2026-06-23",
       "time": "12:00",
       "group": "K",
-      "home": "🇵🇹 Portugal",
-      "away": "🇺🇿 Uzbekistan",
+      "home": "ðµð¹ Portugal",
+      "away": "ðºð¿ Uzbekistan",
       "home_name": "Portugal",
       "away_name": "Uzbekistan",
       "hs": 5,
       "as": 0,
-      "winner": "🇵🇹 Portugal"
+      "winner": "ðµð¹ Portugal"
     },
     {
       "id": "L3",
       "date": "2026-06-23",
       "time": "15:00",
       "group": "L",
-      "home": "🏴 England",
-      "away": "🇬🇭 Ghana",
+      "home": "ð´ England",
+      "away": "ð¬ð­ Ghana",
       "home_name": "England",
       "away_name": "Ghana",
       "hs": 0,
@@ -615,151 +615,151 @@
       "date": "2026-06-23",
       "time": "18:00",
       "group": "L",
-      "home": "🇵🇦 Panama",
-      "away": "🇭🇷 Croatia",
+      "home": "ðµð¦ Panama",
+      "away": "ð­ð· Croatia",
       "home_name": "Panama",
       "away_name": "Croatia",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 0,
+      "as": 1,
+      "winner": "ð­ð· Croatia"
     },
     {
       "id": "K4",
       "date": "2026-06-23",
       "time": "21:00",
       "group": "K",
-      "home": "🇨🇴 Colombia",
-      "away": "🇨🇩 DR Congo",
+      "home": "ð¨ð´ Colombia",
+      "away": "ð¨ð© DR Congo",
       "home_name": "Colombia",
       "away_name": "DR Congo",
       "hs": 0,
       "as": 1,
-      "winner": "🇨🇴 Colombia"
+      "winner": "ð¨ð© DR Congo"
     },
     {
       "id": "B5",
       "date": "2026-06-24",
       "time": "14:00",
       "group": "B",
-      "home": "🇧🇦 Bosnia and Herzegovina",
-      "away": "🇶🇦 Qatar",
+      "home": "ð§ð¦ Bosnia and Herzegovina",
+      "away": "ð¶ð¦ Qatar",
       "home_name": "Bosnia and Herzegovina",
       "away_name": "Qatar",
       "hs": 1,
       "as": 2,
-      "winner": "🇨🇭 Switzerland"
+      "winner": "ð¶ð¦ Qatar"
     },
     {
       "id": "B6",
       "date": "2026-06-24",
       "time": "14:00",
       "group": "B",
-      "home": "🇨🇭 Switzerland",
-      "away": "🇨🇦 Canada",
+      "home": "ð¨ð­ Switzerland",
+      "away": "ð¨ð¦ Canada",
       "home_name": "Switzerland",
       "away_name": "Canada",
       "hs": 3,
       "as": 1,
-      "winner": "🇧🇦 Bosnia and Herzegovina"
+      "winner": "ð¨ð­ Switzerland"
     },
     {
       "id": "C5",
       "date": "2026-06-24",
       "time": "17:00",
       "group": "C",
-      "home": "🇲🇦 Morocco",
-      "away": "🇭🇹 Haiti",
+      "home": "ð²ð¦ Morocco",
+      "away": "ð­ð¹ Haiti",
       "home_name": "Morocco",
       "away_name": "Haiti",
       "hs": 3,
       "as": 0,
-      "winner": "🇧🇷 Brazil"
+      "winner": "ð²ð¦ Morocco"
     },
     {
       "id": "C6",
       "date": "2026-06-24",
       "time": "17:00",
       "group": "C",
-      "home": "🏴 Scotland",
-      "away": "🇧🇷 Brazil",
+      "home": "ð´ Scotland",
+      "away": "ð§ð· Brazil",
       "home_name": "Scotland",
       "away_name": "Brazil",
       "hs": 4,
       "as": 2,
-      "winner": "🇲🇦 Morocco"
+      "winner": "ð´ Scotland"
     },
     {
       "id": "A5",
       "date": "2026-06-24",
       "time": "20:00",
       "group": "A",
-      "home": "🇨🇿 Czechia",
-      "away": "🇲🇽 Mexico",
+      "home": "ð¨ð¿ Czechia",
+      "away": "ð²ð½ Mexico",
       "home_name": "Czechia",
       "away_name": "Mexico",
       "hs": 3,
       "as": 0,
-      "winner": "🇲🇽 Mexico"
+      "winner": "ð¨ð¿ Czechia"
     },
     {
       "id": "A6",
       "date": "2026-06-24",
       "time": "20:00",
       "group": "A",
-      "home": "🇿🇦 South Africa",
-      "away": "🇰🇷 South Korea",
+      "home": "ð¿ð¦ South Africa",
+      "away": "ð°ð· South Korea",
       "home_name": "South Africa",
       "away_name": "South Korea",
       "hs": 1,
       "as": 0,
-      "winner": "🇿🇦 South Africa"
+      "winner": "ð¿ð¦ South Africa"
     },
     {
       "id": "E5",
       "date": "2026-06-25",
       "time": "15:00",
       "group": "E",
-      "home": "🇨🇼 Curacao",
-      "away": "🇨🇮 Ivory Coast",
+      "home": "ð¨ð¼ Curacao",
+      "away": "ð¨ð® Ivory Coast",
       "home_name": "Curacao",
       "away_name": "Ivory Coast",
       "hs": 1,
       "as": 2,
-      "winner": "🇪🇨 Ecuador"
+      "winner": "ð¨ð® Ivory Coast"
     },
     {
       "id": "E6",
       "date": "2026-06-25",
       "time": "15:00",
       "group": "E",
-      "home": "🇪🇨 Ecuador",
-      "away": "🇩🇪 Germany",
+      "home": "ðªð¨ Ecuador",
+      "away": "ð©ðª Germany",
       "home_name": "Ecuador",
       "away_name": "Germany",
       "hs": 0,
       "as": 2,
-      "winner": "🇨🇮 Ivory Coast"
+      "winner": "ð©ðª Germany"
     },
     {
       "id": "F5",
       "date": "2026-06-25",
       "time": "18:00",
       "group": "F",
-      "home": "🇯🇵 Japan",
-      "away": "🇸🇪 Sweden",
+      "home": "ð¯ðµ Japan",
+      "away": "ð¸ðª Sweden",
       "home_name": "Japan",
       "away_name": "Sweden",
       "hs": 3,
       "as": 1,
-      "winner": "🇳🇱 Netherlands"
+      "winner": "ð¯ðµ Japan"
     },
     {
       "id": "F6",
       "date": "2026-06-25",
       "time": "18:00",
       "group": "F",
-      "home": "🇹🇳 Tunisia",
-      "away": "🇳🇱 Netherlands",
+      "home": "ð¹ð³ Tunisia",
+      "away": "ð³ð± Netherlands",
       "home_name": "Tunisia",
       "away_name": "Netherlands",
       "hs": 1,
@@ -771,21 +771,21 @@
       "date": "2026-06-25",
       "time": "21:00",
       "group": "D",
-      "home": "🇹🇷 Turkiye",
-      "away": "🇺🇸 United States",
+      "home": "ð¹ð· Turkiye",
+      "away": "ðºð¸ United States",
       "home_name": "Turkiye",
       "away_name": "United States",
       "hs": 2,
       "as": 3,
-      "winner": "🇹🇷 Turkiye"
+      "winner": "ðºð¸ United States"
     },
     {
       "id": "D6",
       "date": "2026-06-25",
       "time": "21:00",
       "group": "D",
-      "home": "🇵🇾 Paraguay",
-      "away": "🇦🇺 Australia",
+      "home": "ðµð¾ Paraguay",
+      "away": "ð¦ðº Australia",
       "home_name": "Paraguay",
       "away_name": "Australia",
       "hs": 0,
@@ -797,34 +797,34 @@
       "date": "2026-06-26",
       "time": "14:00",
       "group": "I",
-      "home": "🇳🇴 Norway",
-      "away": "🇫🇷 France",
+      "home": "ð³ð´ Norway",
+      "away": "ð«ð· France",
       "home_name": "Norway",
       "away_name": "France",
       "hs": 4,
       "as": 1,
-      "winner": "🇫🇷 France"
+      "winner": "ð³ð´ Norway"
     },
     {
       "id": "I6",
       "date": "2026-06-26",
       "time": "14:00",
       "group": "I",
-      "home": "🇸🇳 Senegal",
-      "away": "🇮🇶 Iraq",
+      "home": "ð¸ð³ Senegal",
+      "away": "ð®ð¶ Iraq",
       "home_name": "Senegal",
       "away_name": "Iraq",
       "hs": 5,
       "as": 0,
-      "winner": "🇸🇳 Senegal"
+      "winner": "ð¸ð³ Senegal"
     },
     {
       "id": "H5",
       "date": "2026-06-26",
       "time": "19:00",
       "group": "H",
-      "home": "🇨🇻 Cape Verde",
-      "away": "🇸🇦 Saudi Arabia",
+      "home": "ð¨ð» Cape Verde",
+      "away": "ð¸ð¦ Saudi Arabia",
       "home_name": "Cape Verde",
       "away_name": "Saudi Arabia",
       "hs": null,
@@ -836,8 +836,8 @@
       "date": "2026-06-26",
       "time": "19:00",
       "group": "H",
-      "home": "🇺🇾 Uruguay",
-      "away": "🇪🇸 Spain",
+      "home": "ðºð¾ Uruguay",
+      "away": "ðªð¸ Spain",
       "home_name": "Uruguay",
       "away_name": "Spain",
       "hs": null,
@@ -849,8 +849,8 @@
       "date": "2026-06-26",
       "time": "22:00",
       "group": "G",
-      "home": "🇪🇬 Egypt",
-      "away": "🇮🇷 Iran",
+      "home": "ðªð¬ Egypt",
+      "away": "ð®ð· Iran",
       "home_name": "Egypt",
       "away_name": "Iran",
       "hs": null,
@@ -862,8 +862,8 @@
       "date": "2026-06-26",
       "time": "22:00",
       "group": "G",
-      "home": "🇳🇿 New Zealand",
-      "away": "🇧🇪 Belgium",
+      "home": "ð³ð¿ New Zealand",
+      "away": "ð§ðª Belgium",
       "home_name": "New Zealand",
       "away_name": "Belgium",
       "hs": null,
@@ -875,8 +875,8 @@
       "date": "2026-06-27",
       "time": "16:00",
       "group": "L",
-      "home": "🇵🇦 Panama",
-      "away": "🏴 England",
+      "home": "ðµð¦ Panama",
+      "away": "ð´ England",
       "home_name": "Panama",
       "away_name": "England",
       "hs": null,
@@ -888,8 +888,8 @@
       "date": "2026-06-27",
       "time": "16:00",
       "group": "L",
-      "home": "🇭🇷 Croatia",
-      "away": "🇬🇭 Ghana",
+      "home": "ð­ð· Croatia",
+      "away": "ð¬ð­ Ghana",
       "home_name": "Croatia",
       "away_name": "Ghana",
       "hs": null,
@@ -901,8 +901,8 @@
       "date": "2026-06-27",
       "time": "18:30",
       "group": "K",
-      "home": "🇨🇴 Colombia",
-      "away": "🇵🇹 Portugal",
+      "home": "ð¨ð´ Colombia",
+      "away": "ðµð¹ Portugal",
       "home_name": "Colombia",
       "away_name": "Portugal",
       "hs": null,
@@ -914,8 +914,8 @@
       "date": "2026-06-27",
       "time": "18:30",
       "group": "K",
-      "home": "🇨🇩 DR Congo",
-      "away": "🇺🇿 Uzbekistan",
+      "home": "ð¨ð© DR Congo",
+      "away": "ðºð¿ Uzbekistan",
       "home_name": "DR Congo",
       "away_name": "Uzbekistan",
       "hs": null,
@@ -927,8 +927,8 @@
       "date": "2026-06-27",
       "time": "21:00",
       "group": "J",
-      "home": "🇩🇿 Algeria",
-      "away": "🇦🇹 Austria",
+      "home": "ð©ð¿ Algeria",
+      "away": "ð¦ð¹ Austria",
       "home_name": "Algeria",
       "away_name": "Austria",
       "hs": null,
@@ -940,8 +940,8 @@
       "date": "2026-06-27",
       "time": "21:00",
       "group": "J",
-      "home": "🇯🇴 Jordan",
-      "away": "🇦🇷 Argentina",
+      "home": "ð¯ð´ Jordan",
+      "away": "ð¦ð· Argentina",
       "home_name": "Jordan",
       "away_name": "Argentina",
       "hs": null,
@@ -952,113 +952,113 @@
   "ko": {
     "KO1": {
       "round": "Round of 32",
-      "t1": "🇨🇿 Czechia",
-      "t2": "🇧🇦 Bosnia and Herzegovina",
+      "t1": "Czechia",
+      "t2": "Bosnia and Herzegovina",
       "score": null,
       "winner": null
     },
     "KO2": {
       "round": "Round of 32",
-      "t1": "🇩🇪 Germany",
-      "t2": "🇯🇵 Japan",
+      "t1": "Germany",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO3": {
       "round": "Round of 32",
-      "t1": "🇸🇪 Sweden",
-      "t2": "🇲🇦 Morocco",
+      "t1": "Sweden",
+      "t2": "Morocco",
       "score": null,
       "winner": null
     },
     "KO4": {
       "round": "Round of 32",
-      "t1": "🏴 Scotland",
-      "t2": "🇯🇵 Japan",
+      "t1": "Scotland",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO5": {
       "round": "Round of 32",
-      "t1": "🇳🇴 Norway",
-      "t2": "🇯🇵 Japan",
+      "t1": "Norway",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO6": {
       "round": "Round of 32",
-      "t1": "🇪🇨 Ecuador",
-      "t2": "🇸🇳 Senegal",
+      "t1": "Ecuador",
+      "t2": "Senegal",
       "score": null,
       "winner": null
     },
     "KO7": {
       "round": "Round of 32",
-      "t1": "🇲🇽 Mexico",
-      "t2": "🇯🇵 Japan",
+      "t1": "Mexico",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO8": {
       "round": "Round of 32",
-      "t1": "🏴 England",
-      "t2": "🇨🇩 DR Congo",
+      "t1": "England",
+      "t2": "DR Congo",
       "score": null,
       "winner": null
     },
     "KO9": {
       "round": "Round of 32",
-      "t1": "🇺🇸 United States",
-      "t2": "🇯🇵 Japan",
+      "t1": "United States",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO10": {
       "round": "Round of 32",
-      "t1": "🇮🇷 Iran",
-      "t2": "🇪🇸 Spain",
+      "t1": "Iran",
+      "t2": "Spain",
       "score": null,
       "winner": null
     },
     "KO11": {
       "round": "Round of 32",
-      "t1": "🇨🇩 DR Congo",
-      "t2": "🇵🇦 Panama",
+      "t1": "DR Congo",
+      "t2": "Panama",
       "score": null,
       "winner": null
     },
     "KO12": {
       "round": "Round of 32",
-      "t1": "🇸🇦 Saudi Arabia",
-      "t2": "🇯🇴 Jordan",
+      "t1": "Saudi Arabia",
+      "t2": "Jordan",
       "score": null,
       "winner": null
     },
     "KO13": {
       "round": "Round of 32",
-      "t1": "🇨🇦 Canada",
-      "t2": "🇯🇵 Japan",
+      "t1": "Canada",
+      "t2": "Japan",
       "score": null,
       "winner": null
     },
     "KO14": {
       "round": "Round of 32",
-      "t1": "🇦🇷 Argentina",
-      "t2": "🇪🇸 Spain",
+      "t1": "Argentina",
+      "t2": "Spain",
       "score": null,
       "winner": null
     },
     "KO15": {
       "round": "Round of 32",
-      "t1": "🇨🇴 Colombia",
-      "t2": "🇪🇨 Ecuador",
+      "t1": "Colombia",
+      "t2": "Ecuador",
       "score": null,
       "winner": null
     },
     "KO16": {
       "round": "Round of 32",
-      "t1": "🇹🇷 Turkiye",
-      "t2": "🇧🇪 Belgium",
+      "t1": "Turkiye",
+      "t2": "Belgium",
       "score": null,
       "winner": null
     },
@@ -1178,7 +1178,7 @@
   "standings": {
     "A": [
       {
-        "team": "🇲🇽 Mexico",
+        "team": "ð²ð½ Mexico",
         "p": 3,
         "w": 3,
         "d": 0,
@@ -1189,7 +1189,7 @@
         "pts": 9
       },
       {
-        "team": "🇿🇦 South Africa",
+        "team": "ð¿ð¦ South Africa",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1200,7 +1200,7 @@
         "pts": 4
       },
       {
-        "team": "🇰🇷 South Korea",
+        "team": "ð°ð· South Korea",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1211,7 +1211,7 @@
         "pts": 3
       },
       {
-        "team": "🇨🇿 Czechia",
+        "team": "ð¨ð¿ Czechia",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1224,7 +1224,7 @@
     ],
     "B": [
       {
-        "team": "🇨🇭 Switzerland",
+        "team": "ð¨ð­ Switzerland",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1235,7 +1235,7 @@
         "pts": 7
       },
       {
-        "team": "🇨🇦 Canada",
+        "team": "ð¨ð¦ Canada",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1246,7 +1246,7 @@
         "pts": 4
       },
       {
-        "team": "🇧🇦 Bosnia and Herzegovina",
+        "team": "ð§ð¦ Bosnia and Herzegovina",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1257,7 +1257,7 @@
         "pts": 4
       },
       {
-        "team": "🇶🇦 Qatar",
+        "team": "ð¶ð¦ Qatar",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1270,7 +1270,7 @@
     ],
     "C": [
       {
-        "team": "🇧🇷 Brazil",
+        "team": "ð§ð· Brazil",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1281,7 +1281,7 @@
         "pts": 7
       },
       {
-        "team": "🇲🇦 Morocco",
+        "team": "ð²ð¦ Morocco",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1292,7 +1292,7 @@
         "pts": 7
       },
       {
-        "team": "🏴 Scotland",
+        "team": "ð´ Scotland",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1303,7 +1303,7 @@
         "pts": 3
       },
       {
-        "team": "🇭🇹 Haiti",
+        "team": "ð­ð¹ Haiti",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1316,7 +1316,7 @@
     ],
     "D": [
       {
-        "team": "🇺🇸 United States",
+        "team": "ðºð¸ United States",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1327,7 +1327,7 @@
         "pts": 6
       },
       {
-        "team": "🇦🇺 Australia",
+        "team": "ð¦ðº Australia",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1338,7 +1338,7 @@
         "pts": 4
       },
       {
-        "team": "🇵🇾 Paraguay",
+        "team": "ðµð¾ Paraguay",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1349,7 +1349,7 @@
         "pts": 4
       },
       {
-        "team": "🇹🇷 Turkiye",
+        "team": "ð¹ð· Turkiye",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1362,7 +1362,7 @@
     ],
     "E": [
       {
-        "team": "🇩🇪 Germany",
+        "team": "ð©ðª Germany",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1373,7 +1373,7 @@
         "pts": 6
       },
       {
-        "team": "🇨🇮 Ivory Coast",
+        "team": "ð¨ð® Ivory Coast",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1384,7 +1384,7 @@
         "pts": 6
       },
       {
-        "team": "🇪🇨 Ecuador",
+        "team": "ðªð¨ Ecuador",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1395,7 +1395,7 @@
         "pts": 4
       },
       {
-        "team": "🇨🇼 Curacao",
+        "team": "ð¨ð¼ Curacao",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1408,7 +1408,7 @@
     ],
     "F": [
       {
-        "team": "🇳🇱 Netherlands",
+        "team": "ð³ð± Netherlands",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1419,7 +1419,7 @@
         "pts": 7
       },
       {
-        "team": "🇯🇵 Japan",
+        "team": "ð¯ðµ Japan",
         "p": 3,
         "w": 1,
         "d": 2,
@@ -1430,7 +1430,7 @@
         "pts": 5
       },
       {
-        "team": "🇸🇪 Sweden",
+        "team": "ð¸ðª Sweden",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1441,7 +1441,7 @@
         "pts": 4
       },
       {
-        "team": "🇹🇳 Tunisia",
+        "team": "ð¹ð³ Tunisia",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1454,7 +1454,7 @@
     ],
     "G": [
       {
-        "team": "🇪🇬 Egypt",
+        "team": "ðªð¬ Egypt",
         "p": 2,
         "w": 1,
         "d": 1,
@@ -1465,7 +1465,7 @@
         "pts": 4
       },
       {
-        "team": "🇧🇪 Belgium",
+        "team": "ð§ðª Belgium",
         "p": 2,
         "w": 0,
         "d": 2,
@@ -1476,7 +1476,7 @@
         "pts": 2
       },
       {
-        "team": "🇮🇷 Iran",
+        "team": "ð®ð· Iran",
         "p": 2,
         "w": 0,
         "d": 2,
@@ -1487,7 +1487,7 @@
         "pts": 2
       },
       {
-        "team": "🇳🇿 New Zealand",
+        "team": "ð³ð¿ New Zealand",
         "p": 2,
         "w": 0,
         "d": 1,
@@ -1500,7 +1500,7 @@
     ],
     "H": [
       {
-        "team": "🇪🇸 Spain",
+        "team": "ðªð¸ Spain",
         "p": 2,
         "w": 1,
         "d": 1,
@@ -1511,7 +1511,7 @@
         "pts": 4
       },
       {
-        "team": "🇨🇻 Cape Verde",
+        "team": "ð¨ð» Cape Verde",
         "p": 2,
         "w": 0,
         "d": 2,
@@ -1522,7 +1522,7 @@
         "pts": 2
       },
       {
-        "team": "🇺🇾 Uruguay",
+        "team": "ðºð¾ Uruguay",
         "p": 2,
         "w": 0,
         "d": 2,
@@ -1533,7 +1533,7 @@
         "pts": 2
       },
       {
-        "team": "🇸🇦 Saudi Arabia",
+        "team": "ð¸ð¦ Saudi Arabia",
         "p": 2,
         "w": 0,
         "d": 1,
@@ -1546,7 +1546,7 @@
     ],
     "I": [
       {
-        "team": "🇫🇷 France",
+        "team": "ð«ð· France",
         "p": 3,
         "w": 3,
         "d": 0,
@@ -1557,7 +1557,7 @@
         "pts": 9
       },
       {
-        "team": "🇳🇴 Norway",
+        "team": "ð³ð´ Norway",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1568,7 +1568,7 @@
         "pts": 6
       },
       {
-        "team": "🇸🇳 Senegal",
+        "team": "ð¸ð³ Senegal",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1579,7 +1579,7 @@
         "pts": 3
       },
       {
-        "team": "🇮🇶 Iraq",
+        "team": "ð®ð¶ Iraq",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1592,7 +1592,7 @@
     ],
     "J": [
       {
-        "team": "🇦🇷 Argentina",
+        "team": "ð¦ð· Argentina",
         "p": 2,
         "w": 2,
         "d": 0,
@@ -1603,7 +1603,7 @@
         "pts": 6
       },
       {
-        "team": "🇩🇿 Algeria",
+        "team": "ð©ð¿ Algeria",
         "p": 2,
         "w": 1,
         "d": 0,
@@ -1614,7 +1614,7 @@
         "pts": 3
       },
       {
-        "team": "🇦🇹 Austria",
+        "team": "ð¦ð¹ Austria",
         "p": 2,
         "w": 1,
         "d": 0,
@@ -1625,7 +1625,7 @@
         "pts": 3
       },
       {
-        "team": "🇯🇴 Jordan",
+        "team": "ð¯ð´ Jordan",
         "p": 2,
         "w": 0,
         "d": 0,
@@ -1638,7 +1638,7 @@
     ],
     "K": [
       {
-        "team": "🇨🇴 Colombia",
+        "team": "ð¨ð´ Colombia",
         "p": 2,
         "w": 2,
         "d": 0,
@@ -1649,7 +1649,7 @@
         "pts": 6
       },
       {
-        "team": "🇵🇹 Portugal",
+        "team": "ðµð¹ Portugal",
         "p": 2,
         "w": 1,
         "d": 1,
@@ -1660,7 +1660,7 @@
         "pts": 4
       },
       {
-        "team": "🇨🇩 DR Congo",
+        "team": "ð¨ð© DR Congo",
         "p": 2,
         "w": 0,
         "d": 1,
@@ -1671,7 +1671,7 @@
         "pts": 1
       },
       {
-        "team": "🇺🇿 Uzbekistan",
+        "team": "ðºð¿ Uzbekistan",
         "p": 2,
         "w": 0,
         "d": 0,
@@ -1684,7 +1684,7 @@
     ],
     "L": [
       {
-        "team": "🏴 England",
+        "team": "ð´ England",
         "p": 2,
         "w": 1,
         "d": 1,
@@ -1695,7 +1695,7 @@
         "pts": 4
       },
       {
-        "team": "🇬🇭 Ghana",
+        "team": "ð¬ð­ Ghana",
         "p": 2,
         "w": 1,
         "d": 1,
@@ -1706,7 +1706,7 @@
         "pts": 4
       },
       {
-        "team": "🇭🇷 Croatia",
+        "team": "ð­ð· Croatia",
         "p": 1,
         "w": 0,
         "d": 0,
@@ -1717,7 +1717,7 @@
         "pts": 0
       },
       {
-        "team": "🇵🇦 Panama",
+        "team": "ðµð¦ Panama",
         "p": 1,
         "w": 0,
         "d": 0,
@@ -1733,15 +1733,15 @@
     "Bilal": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A4": {
@@ -1749,11 +1749,11 @@
           "pts": 1
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "B1": {
@@ -1761,51 +1761,51 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇨🇭 Switzerland",
+          "pick": "ð¨ð­ Switzerland",
           "pts": 0
         },
         "B3": {
-          "pick": "🇨🇦 Canada",
-          "pts": 1
+          "pick": "ð¨ð¦ Canada",
+          "pts": 0
         },
         "B4": {
-          "pick": "🇨🇭 Switzerland",
-          "pts": 1
+          "pick": "ð¨ð­ Switzerland",
+          "pts": 0
         },
         "B5": {
           "pick": "Draw",
           "pts": 0
         },
         "B6": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
-          "pts": 1
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
+          "pts": 0
         },
         "C1": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 0
         },
         "C2": {
-          "pick": "🏴 Scotland",
+          "pick": "ð´ Scotland",
           "pts": 1
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "C5": {
-          "pick": "🇧🇷 Brazil",
-          "pts": 1
+          "pick": "ð§ð· Brazil",
+          "pts": 0
         },
         "C6": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
@@ -1813,23 +1813,23 @@
           "pts": 0
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
-          "pick": "🇹🇷 Turkiye",
-          "pts": 0
+          "pick": "ð¹ð· Turkiye",
+          "pts": 1
         },
         "D5": {
-          "pick": "🇺🇸 United States",
-          "pts": 0
+          "pick": "ðºð¸ United States",
+          "pts": 1
         },
         "D6": {
-          "pick": "🇦🇺 Australia",
+          "pick": "ð¦ðº Australia",
           "pts": 0
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
@@ -1837,27 +1837,27 @@
           "pts": 0
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
-          "pick": "🇪🇨 Ecuador",
+          "pick": "ðªð¨ Ecuador",
           "pts": 0
         },
         "E5": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 0
         },
         "E6": {
-          "pick": "🇨🇮 Ivory Coast",
-          "pts": 1
+          "pick": "ð¨ð® Ivory Coast",
+          "pts": 0
         },
         "F1": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 0
         },
         "F2": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 1
         },
         "F3": {
@@ -1865,188 +1865,188 @@
           "pts": 0
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
-          "pick": "🇳🇱 Netherlands",
-          "pts": 1
+          "pick": "ð³ð± Netherlands",
+          "pts": 0
         },
         "F6": {
           "pick": "Draw",
           "pts": 1
         },
         "G1": {
-          "pick": "🇪🇬 Egypt",
+          "pick": "ðªð¬ Egypt",
           "pts": 0
         },
         "G2": {
-          "pick": "🇮🇷 Iran",
+          "pick": "ð®ð· Iran",
           "pts": 0
         },
         "G3": {
-          "pick": "🇮🇷 Iran",
+          "pick": "ð®ð· Iran",
           "pts": 0
         },
         "G4": {
-          "pick": "🇪🇬 Egypt",
-          "pts": 1
+          "pick": "ðªð¬ Egypt",
+          "pts": 0
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
-          "pick": "🇪🇬 Egypt",
+          "pick": "ðªð¬ Egypt",
           "pts": 0
         },
         "H1": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H2": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
-          "pick": "🇸🇦 Saudi Arabia",
+          "pick": "ð¸ð¦ Saudi Arabia",
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
-          "pick": "🇳🇴 Norway",
-          "pts": 1
-        },
-        "I5": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 0
         },
+        "I5": {
+          "pick": "ð³ð´ Norway",
+          "pts": 1
+        },
         "I6": {
-          "pick": "🇸🇳 Senegal",
+          "pick": "ð¸ð³ Senegal",
           "pts": 1
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 1
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
-          "pick": "🇯🇴 Jordan",
-          "pts": 0
+          "pick": "ð¯ð´ Jordan",
+          "pts": 1
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇺🇿 Uzbekistan",
+          "pick": "ðºð¿ Uzbekistan",
           "pts": 0
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
-          "pick": "🇨🇩 DR Congo",
-          "pts": 0
+          "pick": "ð¨ð© DR Congo",
+          "pts": 1
         },
         "K5": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K6": {
-          "pick": "🇺🇿 Uzbekistan",
+          "pick": "ðºð¿ Uzbekistan",
           "pts": 0
         },
         "L1": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         },
         "L2": {
-          "pick": "🇵🇦 Panama",
+          "pick": "ðµð¦ Panama",
           "pts": 0
         },
         "L3": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         }
       },
-      "total": 34
+      "total": 28
     },
     "Kiana": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A4": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 0
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 1
         },
         "B1": {
@@ -2058,288 +2058,288 @@
           "pts": 1
         },
         "B3": {
-          "pick": "🇶🇦 Qatar",
+          "pick": "ð¶ð¦ Qatar",
           "pts": 0
         },
         "B4": {
-          "pick": "🇨🇭 Switzerland",
-          "pts": 1
+          "pick": "ð¨ð­ Switzerland",
+          "pts": 0
         },
         "B5": {
           "pick": "Draw",
           "pts": 0
         },
         "B6": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
-          "pts": 1
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
+          "pts": 0
         },
         "C1": {
           "pick": "Draw",
           "pts": 1
         },
         "C2": {
-          "pick": "🇭🇹 Haiti",
+          "pick": "ð­ð¹ Haiti",
           "pts": 0
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "C5": {
-          "pick": "🏴 Scotland",
+          "pick": "ð´ Scotland",
           "pts": 0
         },
         "C6": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
-          "pick": "🇦🇺 Australia",
+          "pick": "ð¦ðº Australia",
           "pts": 1
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
-          "pick": "🇵🇾 Paraguay",
-          "pts": 1
+          "pick": "ðµð¾ Paraguay",
+          "pts": 0
         },
         "D5": {
-          "pick": "🇹🇷 Turkiye",
-          "pts": 1
+          "pick": "ð¹ð· Turkiye",
+          "pts": 0
         },
         "D6": {
-          "pick": "🇵🇾 Paraguay",
+          "pick": "ðµð¾ Paraguay",
           "pts": 0
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
-          "pick": "🇨🇮 Ivory Coast",
+          "pick": "ð¨ð® Ivory Coast",
           "pts": 1
         },
         "E3": {
-          "pick": "🇨🇮 Ivory Coast",
+          "pick": "ð¨ð® Ivory Coast",
           "pts": 0
         },
         "E4": {
-          "pick": "🇪🇨 Ecuador",
+          "pick": "ðªð¨ Ecuador",
           "pts": 0
         },
         "E5": {
-          "pick": "🇪🇨 Ecuador",
-          "pts": 1
+          "pick": "ðªð¨ Ecuador",
+          "pts": 0
         },
         "E6": {
-          "pick": "🇨🇮 Ivory Coast",
-          "pts": 1
+          "pick": "ð¨ð® Ivory Coast",
+          "pts": 0
         },
         "F1": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 0
         },
         "F2": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 1
         },
         "F3": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 1
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
-          "pick": "🇹🇳 Tunisia",
+          "pick": "ð¹ð³ Tunisia",
           "pts": 0
         },
         "F6": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 0
         },
         "G1": {
-          "pick": "🇪🇬 Egypt",
+          "pick": "ðªð¬ Egypt",
           "pts": 0
         },
         "G2": {
-          "pick": "🇳🇿 New Zealand",
+          "pick": "ð³ð¿ New Zealand",
           "pts": 0
         },
         "G3": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G4": {
-          "pick": "🇳🇿 New Zealand",
-          "pts": 0
+          "pick": "ð³ð¿ New Zealand",
+          "pts": 1
         },
         "G5": {
-          "pick": "🇳🇿 New Zealand",
+          "pick": "ð³ð¿ New Zealand",
           "pts": 0
         },
         "G6": {
-          "pick": "🇪🇬 Egypt",
+          "pick": "ðªð¬ Egypt",
           "pts": 0
         },
         "H1": {
-          "pick": "🇨🇻 Cape Verde",
+          "pick": "ð¨ð» Cape Verde",
           "pts": 0
         },
         "H2": {
-          "pick": "🇸🇦 Saudi Arabia",
+          "pick": "ð¸ð¦ Saudi Arabia",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
-          "pick": "🇨🇻 Cape Verde",
+          "pick": "ð¨ð» Cape Verde",
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇮🇶 Iraq",
+          "pick": "ð®ð¶ Iraq",
           "pts": 0
         },
         "I4": {
-          "pick": "🇸🇳 Senegal",
-          "pts": 0
+          "pick": "ð¸ð³ Senegal",
+          "pts": 1
         },
         "I5": {
-          "pick": "🇫🇷 France",
-          "pts": 1
+          "pick": "ð«ð· France",
+          "pts": 0
         },
         "I6": {
           "pick": "Draw",
           "pts": 0
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇯🇴 Jordan",
+          "pick": "ð¯ð´ Jordan",
           "pts": 0
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
-          "pick": "🇯🇴 Jordan",
-          "pts": 0
+          "pick": "ð¯ð´ Jordan",
+          "pts": 1
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇺🇿 Uzbekistan",
+          "pick": "ðºð¿ Uzbekistan",
           "pts": 0
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
-          "pick": "🇨🇩 DR Congo",
-          "pts": 0
+          "pick": "ð¨ð© DR Congo",
+          "pts": 1
         },
         "K5": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 0
         },
         "K6": {
-          "pick": "🇺🇿 Uzbekistan",
+          "pick": "ðºð¿ Uzbekistan",
           "pts": 0
         },
         "L1": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         },
         "L2": {
-          "pick": "🇵🇦 Panama",
+          "pick": "ðµð¦ Panama",
           "pts": 0
         },
         "L3": {
-          "pick": "🇬🇭 Ghana",
+          "pick": "ð¬ð­ Ghana",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         }
       },
-      "total": 32
+      "total": 26
     },
     "Humza": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "A4": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 0
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "B1": {
@@ -2347,27 +2347,27 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇶🇦 Qatar",
+          "pick": "ð¶ð¦ Qatar",
           "pts": 0
         },
         "B3": {
-          "pick": "🇨🇦 Canada",
-          "pts": 1
+          "pick": "ð¨ð¦ Canada",
+          "pts": 0
         },
         "B4": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
           "pts": 0
         },
         "B5": {
-          "pick": "🇨🇦 Canada",
+          "pick": "ð¨ð¦ Canada",
           "pts": 0
         },
         "B6": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
-          "pts": 1
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
+          "pts": 0
         },
         "C1": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 0
         },
         "C2": {
@@ -2375,12 +2375,12 @@
           "pts": 0
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "C5": {
           "pick": "Draw",
@@ -2391,15 +2391,15 @@
           "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
-          "pick": "🇹🇷 Turkiye",
+          "pick": "ð¹ð· Turkiye",
           "pts": 0
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
@@ -2415,15 +2415,15 @@
           "pts": 1
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
-          "pick": "🇨🇮 Ivory Coast",
+          "pick": "ð¨ð® Ivory Coast",
           "pts": 1
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
@@ -2431,7 +2431,7 @@
           "pts": 1
         },
         "E5": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 0
         },
         "E6": {
@@ -2439,7 +2439,7 @@
           "pts": 0
         },
         "F1": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "F2": {
@@ -2451,35 +2451,35 @@
           "pts": 0
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
-          "pick": "🇳🇱 Netherlands",
-          "pts": 1
+          "pick": "ð³ð± Netherlands",
+          "pts": 0
         },
         "F6": {
           "pick": "Draw",
           "pts": 1
         },
         "G1": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G2": {
-          "pick": "🇳🇿 New Zealand",
+          "pick": "ð³ð¿ New Zealand",
           "pts": 0
         },
         "G3": {
-          "pick": "🇮🇷 Iran",
+          "pick": "ð®ð· Iran",
           "pts": 0
         },
         "G4": {
-          "pick": "🇪🇬 Egypt",
-          "pts": 1
+          "pick": "ðªð¬ Egypt",
+          "pts": 0
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
@@ -2495,31 +2495,31 @@
           "pts": 1
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇨🇻 Cape Verde",
+          "pick": "ð¨ð» Cape Verde",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
-          "pick": "🇸🇦 Saudi Arabia",
+          "pick": "ð¸ð¦ Saudi Arabia",
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
@@ -2535,15 +2535,15 @@
           "pts": 0
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇯🇴 Jordan",
+          "pick": "ð¯ð´ Jordan",
           "pts": 0
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
@@ -2551,7 +2551,7 @@
           "pts": 0
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
@@ -2563,11 +2563,11 @@
           "pts": 1
         },
         "K2": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 1
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
@@ -2575,7 +2575,7 @@
           "pts": 0
         },
         "K5": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 0
         },
         "K6": {
@@ -2583,7 +2583,7 @@
           "pts": 0
         },
         "L1": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         },
         "L2": {
@@ -2591,15 +2591,15 @@
           "pts": 0
         },
         "L3": {
-          "pick": "🇬🇭 Ghana",
+          "pick": "ð¬ð­ Ghana",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
@@ -2607,24 +2607,24 @@
           "pts": 0
         }
       },
-      "total": 30
+      "total": 24
     },
     "Anu": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "A4": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 0
         },
         "A5": {
@@ -2632,7 +2632,7 @@
           "pts": 0
         },
         "A6": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "B1": {
@@ -2640,7 +2640,7 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇨🇭 Switzerland",
+          "pick": "ð¨ð­ Switzerland",
           "pts": 0
         },
         "B3": {
@@ -2648,56 +2648,56 @@
           "pts": 0
         },
         "B4": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
           "pts": 0
         },
         "B5": {
-          "pick": "🇨🇭 Switzerland",
-          "pts": 1
+          "pick": "ð¨ð­ Switzerland",
+          "pts": 0
         },
         "B6": {
           "pick": "Draw",
           "pts": 0
         },
         "C1": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 0
         },
         "C2": {
-          "pick": "🏴 Scotland",
+          "pick": "ð´ Scotland",
           "pts": 1
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
-          "pick": "🏴 Scotland",
-          "pts": 0
+          "pick": "ð´ Scotland",
+          "pts": 1
         },
         "C5": {
-          "pick": "🇧🇷 Brazil",
-          "pts": 1
+          "pick": "ð§ð· Brazil",
+          "pts": 0
         },
         "C6": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
-          "pick": "🇹🇷 Turkiye",
+          "pick": "ð¹ð· Turkiye",
           "pts": 0
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
-          "pick": "🇵🇾 Paraguay",
-          "pts": 1
+          "pick": "ðµð¾ Paraguay",
+          "pts": 0
         },
         "D5": {
           "pick": "Draw",
@@ -2708,15 +2708,15 @@
           "pts": 1
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
-          "pick": "🇨🇮 Ivory Coast",
+          "pick": "ð¨ð® Ivory Coast",
           "pts": 1
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
@@ -2724,7 +2724,7 @@
           "pts": 1
         },
         "E5": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 0
         },
         "E6": {
@@ -2732,7 +2732,7 @@
           "pts": 0
         },
         "F1": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "F2": {
@@ -2740,39 +2740,39 @@
           "pts": 0
         },
         "F3": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 1
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
-          "pick": "🇳🇱 Netherlands",
-          "pts": 1
+          "pick": "ð³ð± Netherlands",
+          "pts": 0
         },
         "F6": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 0
         },
         "G1": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G2": {
-          "pick": "🇮🇷 Iran",
+          "pick": "ð®ð· Iran",
           "pts": 0
         },
         "G3": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G4": {
-          "pick": "🇳🇿 New Zealand",
-          "pts": 0
+          "pick": "ð³ð¿ New Zealand",
+          "pts": 1
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
@@ -2780,55 +2780,55 @@
           "pts": 0
         },
         "H1": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H2": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
-          "pick": "🇸🇦 Saudi Arabia",
+          "pick": "ð¸ð¦ Saudi Arabia",
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
-          "pick": "🇳🇴 Norway",
-          "pts": 1
+          "pick": "ð³ð´ Norway",
+          "pts": 0
         },
         "I5": {
-          "pick": "🇫🇷 France",
-          "pts": 1
+          "pick": "ð«ð· France",
+          "pts": 0
         },
         "I6": {
           "pick": "Draw",
           "pts": 0
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
@@ -2836,15 +2836,15 @@
           "pts": 0
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
-          "pick": "🇩🇿 Algeria",
-          "pts": 1
+          "pick": "ð©ð¿ Algeria",
+          "pts": 0
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
@@ -2852,15 +2852,15 @@
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 1
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
@@ -2868,15 +2868,15 @@
           "pts": 0
         },
         "K5": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K6": {
-          "pick": "🇨🇩 DR Congo",
+          "pick": "ð¨ð© DR Congo",
           "pts": 0
         },
         "L1": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         },
         "L2": {
@@ -2884,36 +2884,36 @@
           "pts": 0
         },
         "L3": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         }
       },
-      "total": 30
+      "total": 24
     },
     "R2": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "A4": {
@@ -2921,11 +2921,11 @@
           "pts": 1
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "B1": {
@@ -2933,55 +2933,55 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇨🇭 Switzerland",
+          "pick": "ð¨ð­ Switzerland",
           "pts": 0
         },
         "B3": {
-          "pick": "🇨🇦 Canada",
-          "pts": 1
+          "pick": "ð¨ð¦ Canada",
+          "pts": 0
         },
         "B4": {
-          "pick": "🇨🇭 Switzerland",
-          "pts": 1
+          "pick": "ð¨ð­ Switzerland",
+          "pts": 0
         },
         "B5": {
           "pick": "Draw",
           "pts": 0
         },
         "B6": {
-          "pick": "🇶🇦 Qatar",
+          "pick": "ð¶ð¦ Qatar",
           "pts": 0
         },
         "C1": {
-          "pick": "🇲🇦 Morocco",
+          "pick": "ð²ð¦ Morocco",
           "pts": 0
         },
         "C2": {
-          "pick": "🏴 Scotland",
+          "pick": "ð´ Scotland",
           "pts": 1
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "C5": {
-          "pick": "🇧🇷 Brazil",
-          "pts": 1
+          "pick": "ð§ð· Brazil",
+          "pts": 0
         },
         "C6": {
-          "pick": "🇲🇦 Morocco",
-          "pts": 1
+          "pick": "ð²ð¦ Morocco",
+          "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
-          "pick": "🇹🇷 Turkiye",
+          "pick": "ð¹ð· Turkiye",
           "pts": 0
         },
         "D3": {
@@ -2989,19 +2989,19 @@
           "pts": 0
         },
         "D4": {
-          "pick": "🇹🇷 Turkiye",
-          "pts": 0
+          "pick": "ð¹ð· Turkiye",
+          "pts": 1
         },
         "D5": {
           "pick": "Draw",
           "pts": 0
         },
         "D6": {
-          "pick": "🇦🇺 Australia",
+          "pick": "ð¦ðº Australia",
           "pts": 0
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
@@ -3009,11 +3009,11 @@
           "pts": 0
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
-          "pick": "🇪🇨 Ecuador",
+          "pick": "ðªð¨ Ecuador",
           "pts": 0
         },
         "E5": {
@@ -3021,11 +3021,11 @@
           "pts": 0
         },
         "E6": {
-          "pick": "🇨🇮 Ivory Coast",
-          "pts": 1
+          "pick": "ð¨ð® Ivory Coast",
+          "pts": 0
         },
         "F1": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 0
         },
         "F2": {
@@ -3033,23 +3033,23 @@
           "pts": 0
         },
         "F3": {
-          "pick": "🇳🇱 Netherlands",
+          "pick": "ð³ð± Netherlands",
           "pts": 1
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
-          "pick": "🇳🇱 Netherlands",
-          "pts": 1
+          "pick": "ð³ð± Netherlands",
+          "pts": 0
         },
         "F6": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "G1": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G2": {
@@ -3057,7 +3057,7 @@
           "pts": 1
         },
         "G3": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G4": {
@@ -3065,31 +3065,31 @@
           "pts": 0
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
-          "pick": "🇪🇬 Egypt",
+          "pick": "ðªð¬ Egypt",
           "pts": 0
         },
         "H1": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H2": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
@@ -3097,15 +3097,15 @@
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
@@ -3113,31 +3113,31 @@
           "pts": 0
         },
         "I5": {
-          "pick": "🇫🇷 France",
-          "pts": 1
+          "pick": "ð«ð· France",
+          "pts": 0
         },
         "I6": {
-          "pick": "🇸🇳 Senegal",
+          "pick": "ð¸ð³ Senegal",
           "pts": 1
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 1
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
-          "pick": "🇩🇿 Algeria",
-          "pts": 1
+          "pick": "ð©ð¿ Algeria",
+          "pts": 0
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
@@ -3145,27 +3145,27 @@
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 1
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
-          "pick": "🇨🇴 Colombia",
-          "pts": 1
+          "pick": "ð¨ð´ Colombia",
+          "pts": 0
         },
         "K5": {
           "pick": "Draw",
           "pts": 0
         },
         "K6": {
-          "pick": "🇺🇿 Uzbekistan",
+          "pick": "ðºð¿ Uzbekistan",
           "pts": 0
         },
         "L1": {
@@ -3173,52 +3173,52 @@
           "pts": 0
         },
         "L2": {
-          "pick": "🇬🇭 Ghana",
+          "pick": "ð¬ð­ Ghana",
           "pts": 1
         },
         "L3": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         }
       },
-      "total": 34
+      "total": 24
     },
     "Ray": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A4": {
-          "pick": "🇨🇿 Czechia",
+          "pick": "ð¨ð¿ Czechia",
           "pts": 0
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 0
         },
         "B1": {
@@ -3226,12 +3226,12 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇨🇭 Switzerland",
+          "pick": "ð¨ð­ Switzerland",
           "pts": 0
         },
         "B3": {
-          "pick": "🇨🇦 Canada",
-          "pts": 1
+          "pick": "ð¨ð¦ Canada",
+          "pts": 0
         },
         "B4": {
           "pick": "Draw",
@@ -3242,19 +3242,19 @@
           "pts": 0
         },
         "B6": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
-          "pts": 1
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
+          "pts": 0
         },
         "C1": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 0
         },
         "C2": {
-          "pick": "🏴 Scotland",
+          "pick": "ð´ Scotland",
           "pts": 1
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
@@ -3262,23 +3262,23 @@
           "pts": 0
         },
         "C5": {
-          "pick": "🇧🇷 Brazil",
-          "pts": 1
+          "pick": "ð§ð· Brazil",
+          "pts": 0
         },
         "C6": {
           "pick": "Draw",
           "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
-          "pick": "🇦🇺 Australia",
+          "pick": "ð¦ðº Australia",
           "pts": 1
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
@@ -3286,23 +3286,23 @@
           "pts": 0
         },
         "D5": {
-          "pick": "🇺🇸 United States",
-          "pts": 0
+          "pick": "ðºð¸ United States",
+          "pts": 1
         },
         "D6": {
-          "pick": "🇵🇾 Paraguay",
+          "pick": "ðµð¾ Paraguay",
           "pts": 0
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
-          "pick": "🇪🇨 Ecuador",
+          "pick": "ðªð¨ Ecuador",
           "pts": 0
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
@@ -3310,7 +3310,7 @@
           "pts": 1
         },
         "E5": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 0
         },
         "E6": {
@@ -3318,39 +3318,39 @@
           "pts": 0
         },
         "F1": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "F2": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 1
         },
         "F3": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 0
         },
         "F4": {
-          "pick": "🇯🇵 Japan",
-          "pts": 1
+          "pick": "ð¯ðµ Japan",
+          "pts": 0
         },
         "F5": {
           "pick": "Draw",
           "pts": 0
         },
         "F6": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "G1": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G2": {
-          "pick": "🇳🇿 New Zealand",
+          "pick": "ð³ð¿ New Zealand",
           "pts": 0
         },
         "G3": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G4": {
@@ -3358,7 +3358,7 @@
           "pts": 0
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
@@ -3366,15 +3366,15 @@
           "pts": 0
         },
         "H1": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H2": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
@@ -3382,7 +3382,7 @@
           "pts": 1
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
@@ -3390,39 +3390,39 @@
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
-          "pick": "🇳🇴 Norway",
+          "pick": "ð³ð´ Norway",
           "pts": 1
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
-          "pick": "🇳🇴 Norway",
-          "pts": 1
+          "pick": "ð³ð´ Norway",
+          "pts": 0
         },
         "I5": {
-          "pick": "🇫🇷 France",
-          "pts": 1
+          "pick": "ð«ð· France",
+          "pts": 0
         },
         "I6": {
           "pick": "Draw",
           "pts": 0
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 1
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
@@ -3430,23 +3430,23 @@
           "pts": 0
         },
         "J5": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 0
         },
         "J6": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 1
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
@@ -3454,7 +3454,7 @@
           "pts": 0
         },
         "K5": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K6": {
@@ -3462,7 +3462,7 @@
           "pts": 0
         },
         "L1": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 1
         },
         "L2": {
@@ -3470,48 +3470,48 @@
           "pts": 0
         },
         "L3": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L4": {
-          "pick": "🇭🇷 Croatia",
-          "pts": 0
+          "pick": "ð­ð· Croatia",
+          "pts": 1
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
-          "pick": "🇭🇷 Croatia",
+          "pick": "ð­ð· Croatia",
           "pts": 0
         }
       },
-      "total": 31
+      "total": 26
     },
     "Laura": {
       "matches": {
         "A1": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A2": {
-          "pick": "🇰🇷 South Korea",
+          "pick": "ð°ð· South Korea",
           "pts": 1
         },
         "A3": {
-          "pick": "🇲🇽 Mexico",
+          "pick": "ð²ð½ Mexico",
           "pts": 1
         },
         "A4": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 0
         },
         "A5": {
-          "pick": "🇲🇽 Mexico",
-          "pts": 1
+          "pick": "ð²ð½ Mexico",
+          "pts": 0
         },
         "A6": {
-          "pick": "🇿🇦 South Africa",
+          "pick": "ð¿ð¦ South Africa",
           "pts": 1
         },
         "B1": {
@@ -3519,35 +3519,35 @@
           "pts": 1
         },
         "B2": {
-          "pick": "🇶🇦 Qatar",
+          "pick": "ð¶ð¦ Qatar",
           "pts": 0
         },
         "B3": {
-          "pick": "🇨🇦 Canada",
-          "pts": 1
+          "pick": "ð¨ð¦ Canada",
+          "pts": 0
         },
         "B4": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
           "pts": 0
         },
         "B5": {
-          "pick": "🇨🇦 Canada",
+          "pick": "ð¨ð¦ Canada",
           "pts": 0
         },
         "B6": {
-          "pick": "🇧🇦 Bosnia and Herzegovina",
-          "pts": 1
+          "pick": "ð§ð¦ Bosnia and Herzegovina",
+          "pts": 0
         },
         "C1": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 0
         },
         "C2": {
-          "pick": "🇭🇹 Haiti",
+          "pick": "ð­ð¹ Haiti",
           "pts": 0
         },
         "C3": {
-          "pick": "🇧🇷 Brazil",
+          "pick": "ð§ð· Brazil",
           "pts": 1
         },
         "C4": {
@@ -3555,15 +3555,15 @@
           "pts": 0
         },
         "C5": {
-          "pick": "🇧🇷 Brazil",
-          "pts": 1
+          "pick": "ð§ð· Brazil",
+          "pts": 0
         },
         "C6": {
-          "pick": "🇭🇹 Haiti",
+          "pick": "ð­ð¹ Haiti",
           "pts": 0
         },
         "D1": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D2": {
@@ -3571,7 +3571,7 @@
           "pts": 0
         },
         "D3": {
-          "pick": "🇺🇸 United States",
+          "pick": "ðºð¸ United States",
           "pts": 1
         },
         "D4": {
@@ -3579,23 +3579,23 @@
           "pts": 0
         },
         "D5": {
-          "pick": "🇺🇸 United States",
-          "pts": 0
+          "pick": "ðºð¸ United States",
+          "pts": 1
         },
         "D6": {
-          "pick": "🇦🇺 Australia",
+          "pick": "ð¦ðº Australia",
           "pts": 0
         },
         "E1": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E2": {
-          "pick": "🇪🇨 Ecuador",
+          "pick": "ðªð¨ Ecuador",
           "pts": 0
         },
         "E3": {
-          "pick": "🇩🇪 Germany",
+          "pick": "ð©ðª Germany",
           "pts": 1
         },
         "E4": {
@@ -3607,19 +3607,19 @@
           "pts": 0
         },
         "E6": {
-          "pick": "🇨🇮 Ivory Coast",
-          "pts": 1
+          "pick": "ð¨ð® Ivory Coast",
+          "pts": 0
         },
         "F1": {
-          "pick": "🇯🇵 Japan",
+          "pick": "ð¯ðµ Japan",
           "pts": 0
         },
         "F2": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 1
         },
         "F3": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 0
         },
         "F4": {
@@ -3627,19 +3627,19 @@
           "pts": 0
         },
         "F5": {
-          "pick": "🇹🇳 Tunisia",
+          "pick": "ð¹ð³ Tunisia",
           "pts": 0
         },
         "F6": {
-          "pick": "🇸🇪 Sweden",
+          "pick": "ð¸ðª Sweden",
           "pts": 0
         },
         "G1": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G2": {
-          "pick": "🇮🇷 Iran",
+          "pick": "ð®ð· Iran",
           "pts": 0
         },
         "G3": {
@@ -3647,11 +3647,11 @@
           "pts": 1
         },
         "G4": {
-          "pick": "🇪🇬 Egypt",
-          "pts": 1
+          "pick": "ðªð¬ Egypt",
+          "pts": 0
         },
         "G5": {
-          "pick": "🇧🇪 Belgium",
+          "pick": "ð§ðª Belgium",
           "pts": 0
         },
         "G6": {
@@ -3659,31 +3659,31 @@
           "pts": 0
         },
         "H1": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H2": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H3": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 1
         },
         "H4": {
-          "pick": "🇺🇾 Uruguay",
+          "pick": "ðºð¾ Uruguay",
           "pts": 0
         },
         "H5": {
-          "pick": "🇪🇸 Spain",
+          "pick": "ðªð¸ Spain",
           "pts": 0
         },
         "H6": {
-          "pick": "🇨🇻 Cape Verde",
+          "pick": "ð¨ð» Cape Verde",
           "pts": 0
         },
         "I1": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I2": {
@@ -3691,12 +3691,12 @@
           "pts": 0
         },
         "I3": {
-          "pick": "🇫🇷 France",
+          "pick": "ð«ð· France",
           "pts": 1
         },
         "I4": {
-          "pick": "🇸🇳 Senegal",
-          "pts": 0
+          "pick": "ð¸ð³ Senegal",
+          "pts": 1
         },
         "I5": {
           "pick": "Draw",
@@ -3707,55 +3707,55 @@
           "pts": 0
         },
         "J1": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J2": {
-          "pick": "🇦🇹 Austria",
+          "pick": "ð¦ð¹ Austria",
           "pts": 1
         },
         "J3": {
-          "pick": "🇦🇷 Argentina",
+          "pick": "ð¦ð· Argentina",
           "pts": 1
         },
         "J4": {
-          "pick": "🇩🇿 Algeria",
-          "pts": 1
+          "pick": "ð©ð¿ Algeria",
+          "pts": 0
         },
         "J5": {
           "pick": "Draw",
           "pts": 0
         },
         "J6": {
-          "pick": "🇩🇿 Algeria",
+          "pick": "ð©ð¿ Algeria",
           "pts": 0
         },
         "K1": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 0
         },
         "K2": {
-          "pick": "🇨🇴 Colombia",
+          "pick": "ð¨ð´ Colombia",
           "pts": 1
         },
         "K3": {
-          "pick": "🇵🇹 Portugal",
+          "pick": "ðµð¹ Portugal",
           "pts": 1
         },
         "K4": {
-          "pick": "🇨🇴 Colombia",
-          "pts": 1
+          "pick": "ð¨ð´ Colombia",
+          "pts": 0
         },
         "K5": {
           "pick": "Draw",
           "pts": 0
         },
         "K6": {
-          "pick": "🇨🇩 DR Congo",
+          "pick": "ð¨ð© DR Congo",
           "pts": 0
         },
         "L1": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 1
         },
         "L2": {
@@ -3763,7 +3763,7 @@
           "pts": 0
         },
         "L3": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L4": {
@@ -3771,7 +3771,7 @@
           "pts": 0
         },
         "L5": {
-          "pick": "🏴 England",
+          "pick": "ð´ England",
           "pts": 0
         },
         "L6": {
@@ -3779,58 +3779,58 @@
           "pts": 0
         }
       },
-      "total": 30
+      "total": 24
     }
   },
   "flags": {
-    "Mexico": "🇲🇽",
-    "South Africa": "🇿🇦",
-    "South Korea": "🇰🇷",
-    "Czechia": "🇨🇿",
-    "Canada": "🇨🇦",
-    "Bosnia and Herzegovina": "🇧🇦",
-    "Qatar": "🇶🇦",
-    "Switzerland": "🇨🇭",
-    "Brazil": "🇧🇷",
-    "Morocco": "🇲🇦",
-    "Haiti": "🇭🇹",
-    "Scotland": "🏴",
-    "United States": "🇺🇸",
-    "Paraguay": "🇵🇾",
-    "Australia": "🇦🇺",
-    "Turkiye": "🇹🇷",
-    "Germany": "🇩🇪",
-    "Curacao": "🇨🇼",
-    "Ivory Coast": "🇨🇮",
-    "Ecuador": "🇪🇨",
-    "Netherlands": "🇳🇱",
-    "Japan": "🇯🇵",
-    "Sweden": "🇸🇪",
-    "Tunisia": "🇹🇳",
-    "Belgium": "🇧🇪",
-    "Egypt": "🇪🇬",
-    "Iran": "🇮🇷",
-    "New Zealand": "🇳🇿",
-    "Spain": "🇪🇸",
-    "Cape Verde": "🇨🇻",
-    "Saudi Arabia": "🇸🇦",
-    "Uruguay": "🇺🇾",
-    "France": "🇫🇷",
-    "Senegal": "🇸🇳",
-    "Iraq": "🇮🇶",
-    "Norway": "🇳🇴",
-    "Argentina": "🇦🇷",
-    "Algeria": "🇩🇿",
-    "Austria": "🇦🇹",
-    "Jordan": "🇯🇴",
-    "Portugal": "🇵🇹",
-    "DR Congo": "🇨🇩",
-    "Uzbekistan": "🇺🇿",
-    "Colombia": "🇨🇴",
-    "England": "🏴",
-    "Croatia": "🇭🇷",
-    "Ghana": "🇬🇭",
-    "Panama": "🇵🇦"
+    "Mexico": "ð²ð½",
+    "South Africa": "ð¿ð¦",
+    "South Korea": "ð°ð·",
+    "Czechia": "ð¨ð¿",
+    "Canada": "ð¨ð¦",
+    "Bosnia and Herzegovina": "ð§ð¦",
+    "Qatar": "ð¶ð¦",
+    "Switzerland": "ð¨ð­",
+    "Brazil": "ð§ð·",
+    "Morocco": "ð²ð¦",
+    "Haiti": "ð­ð¹",
+    "Scotland": "ð´",
+    "United States": "ðºð¸",
+    "Paraguay": "ðµð¾",
+    "Australia": "ð¦ðº",
+    "Turkiye": "ð¹ð·",
+    "Germany": "ð©ðª",
+    "Curacao": "ð¨ð¼",
+    "Ivory Coast": "ð¨ð®",
+    "Ecuador": "ðªð¨",
+    "Netherlands": "ð³ð±",
+    "Japan": "ð¯ðµ",
+    "Sweden": "ð¸ðª",
+    "Tunisia": "ð¹ð³",
+    "Belgium": "ð§ðª",
+    "Egypt": "ðªð¬",
+    "Iran": "ð®ð·",
+    "New Zealand": "ð³ð¿",
+    "Spain": "ðªð¸",
+    "Cape Verde": "ð¨ð»",
+    "Saudi Arabia": "ð¸ð¦",
+    "Uruguay": "ðºð¾",
+    "France": "ð«ð·",
+    "Senegal": "ð¸ð³",
+    "Iraq": "ð®ð¶",
+    "Norway": "ð³ð´",
+    "Argentina": "ð¦ð·",
+    "Algeria": "ð©ð¿",
+    "Austria": "ð¦ð¹",
+    "Jordan": "ð¯ð´",
+    "Portugal": "ðµð¹",
+    "DR Congo": "ð¨ð©",
+    "Uzbekistan": "ðºð¿",
+    "Colombia": "ð¨ð´",
+    "England": "ð´",
+    "Croatia": "ð­ð·",
+    "Ghana": "ð¬ð­",
+    "Panama": "ðµð¦"
   },
   "groups": {
     "A": [
@@ -4773,5 +4773,6 @@
       "pts": 0,
       "status": "out"
     }
-  ]
+  ],
+  "_sha": "5f13b9da492675383119f875600438edccf79c3b"
 }
