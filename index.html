@@ -28,11 +28,11 @@ nav a:hover{color:var(--text);border-bottom-color:var(--cyan)}
 .nav-pts strong{color:var(--amber);font-family:var(--font-display);font-size:16px}
 
 /* LIVE BANNER */
-#live-banner{padding:10px 1.5rem;font-size:13px;font-weight:500;display:none;align-items:center;gap:.75rem;background:#1a0a0a;border-bottom:1px solid #3a0a0a}
+#live-banner{padding:14px 1.5rem;font-size:15px;font-weight:600;display:none;align-items:center;justify-content:center;gap:1rem;background:#1a0a0a;border-bottom:1px solid #3a0a0a;text-align:center;flex-wrap:wrap}
 #live-banner.visible{display:flex}
 #live-banner.live-now{background:linear-gradient(90deg,#2a0505,#1a0808);border-bottom-color:#ff3b3b44;animation:pulse-border 2s infinite}
 @keyframes pulse-border{0%,100%{border-bottom-color:#ff3b3b44}50%{border-bottom-color:#ff3b3b99}}
-.live-dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;animation:blink 1s infinite}
+.live-dot{width:11px;height:11px;border-radius:50%;background:var(--red);flex-shrink:0;animation:blink 1s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .live-match{display:flex;align-items:center;gap:.5rem}
 .live-vs{color:var(--muted);font-size:11px;margin:0 4px}
@@ -149,8 +149,8 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
 
 /* UTILS */
 .emoji-flag{display:inline-block;width:1.2em;text-align:center}
-.tag-live{background:var(--red);color:#fff;font-size:9px;font-weight:700;padding:2px 5px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
-.tag-next{background:var(--cyan)22;color:var(--cyan);font-size:9px;font-weight:700;padding:2px 5px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
+.tag-live{background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
+.tag-next{background:var(--cyan)22;color:var(--cyan);font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
 .medal{font-size:14px}
 @media(max-width:600px){
   nav a{display:none}nav a:nth-child(-n+4){display:flex}
@@ -170,6 +170,8 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
   <a href="#viewer">👁 Match</a>
   <a href="#trend">📈 Trend</a>
   <a href="#history">📜 History</a>
+  <a href="#rankings">🏅 Rankings</a>
+  <a href="#schedule">📅 Schedule</a>
   <div class="nav-pts" id="nav-leader"></div>
 </nav>
 
@@ -223,6 +225,27 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
   <div style="overflow-x:auto"><table class="th-table" id="th-table"></table></div>
 </section>
 
+
+<section id="rankings">
+  <div class="section-hdr"><h2>TEAM RANKINGS</h2><span class="badge" id="rankings-badge">By tournament performance</span></div>
+  <div style="overflow-x:auto"><table class="th-table" id="rankings-table"></table></div>
+</section>
+
+<section id="schedule">
+  <div class="section-hdr"><h2>MATCH SCHEDULE</h2><span class="badge" id="schedule-badge">All 72 group stage matches · CST</span></div>
+  <div class="mv-controls">
+    <select class="mv-select" id="sched-filter" onchange="renderSchedule()">
+      <option value="all">All matches</option>
+      <option value="played">Played</option>
+      <option value="upcoming">Upcoming</option>
+    </select>
+    <select class="mv-select" id="sched-group" onchange="renderSchedule()">
+      <option value="all">All groups</option>
+    </select>
+  </div>
+  <div style="overflow-x:auto"><table class="th-table" id="schedule-table"></table></div>
+</section>
+
 <footer>
   World Cup 2026 · Private prediction league · <span id="updated-ts">—</span>
 </footer>
@@ -259,8 +282,7 @@ const FLAG_MAP = {
   'Spain': "es", 'Sweden': "se", 'Switzerland': "ch", 'Tunisia': "tn",
   'Turkiye': "tr", 'United States': "us", 'Uruguay': "uy", 'Uzbekistan': "uz"
 };
-
-function teamFlag(teamStr, size) {
+function teamFlag(teamStr) {
   if(!teamStr) return '';
   const name = teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
   if(name === 'Draw' || name === 'TBD' || !name) return esc(teamStr);
@@ -268,7 +290,6 @@ function teamFlag(teamStr, size) {
   if(!code) return esc(teamStr);
   return `<img src="flags/${code}.png" width="16" height="12" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px;flex-shrink:0">` + esc(name);
 }
-
 function teamName(teamStr) {
   if(!teamStr) return '';
   return teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
@@ -305,15 +326,35 @@ function render() {
   renderMatchViewer();
   renderHistory();
   document.getElementById('updated-ts').textContent = 'Data from ' + new Date(D.meta.updated).toLocaleString();
+  renderRankings();
+  renderScheduleFilters();
+  renderSchedule();
   setInterval(renderLiveBanner, 60000);
 }
 
 // ── Live Banner ──────────────────────────────────────────────
 function renderLiveBanner() {
-  const live = D.schedule.filter(m => isLive(m));
-  const now_naive = new Date(now_cst().toISOString().slice(0,16));
-  const upcoming = D.schedule.filter(m => matchStatus(m)==='upcoming' && !isLive(m))
-    .sort((a,b) => new Date(a.date+'T'+a.time) - new Date(b.date+'T'+b.time));
+  // Times in data.json are stored as CST (UTC-6 during CDT season = UTC-5 standard)
+  // We compare against the user's local time converted to CST
+  const nowMs = Date.now();
+  const cstOffset = 6 * 60 * 60 * 1000; // UTC-6 (CDT for summer 2026)
+  const nowCST = new Date(nowMs - cstOffset);
+  const nowCSTStr = nowCST.toISOString().slice(0, 16); // "YYYY-MM-DDTHH:mm"
+
+  function matchStart(m) { return m.date + 'T' + m.time.padStart(5,'0'); }
+  function matchEnd(m) {
+    const start = new Date(matchStart(m) + ':00Z'); // treat as UTC for arithmetic
+    return new Date(start.getTime() + 115 * 60 * 1000); // ~115 min per match
+  }
+
+  const unplayed = D.schedule.filter(m => m.hs === null || m.hs === undefined);
+  const live = unplayed.filter(m => {
+    const start = matchStart(m);
+    const end = matchEnd(m).toISOString().slice(0,16);
+    return nowCSTStr >= start && nowCSTStr <= end;
+  });
+  const upcoming = unplayed.filter(m => nowCSTStr < matchStart(m))
+    .sort((a,b) => matchStart(a).localeCompare(matchStart(b)));
 
   const banner = document.getElementById('live-banner');
   const txt = document.getElementById('live-text');
@@ -322,23 +363,43 @@ function renderLiveBanner() {
   if(live.length > 0) {
     banner.className = 'visible live-now';
     dot.style.background = 'var(--red)';
+    dot.style.animation = '';
     const parts = live.map(m =>
       `<span class="live-match"><span class="tag-live">LIVE</span> <b>${esc(m.id)}</b> ${teamFlag(m.home)} <span class="live-vs">vs</span> ${teamFlag(m.away)}</span>`
     );
-    txt.innerHTML = parts.join('<span class="live-sep">|</span>');
+    txt.innerHTML = parts.join('<span class="live-sep"> &nbsp;|&nbsp; </span>');
   } else if(upcoming.length > 0) {
     const next = upcoming[0];
-    const nextTime = new Date(next.date+'T'+next.time+':00');
-    const concur = upcoming.filter(m => m.date===next.date && m.time===next.time);
+    const concur = upcoming.filter(m => matchStart(m) === matchStart(next));
     banner.className = 'visible';
     dot.style.background = 'var(--cyan)';
     dot.style.animation = 'none';
-    const timeStr = nextTime.toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    // Format time: parse as CST
+    const [datePart, timePart] = matchStart(next).split('T');
+    const [y,mo,dy] = datePart.split('-');
+    const [hr,mn] = timePart.split(':');
+    const d = new Date(Date.UTC(+y, +mo-1, +dy, +hr+cstOffset/3600000/1000, +mn));
+    // Simpler: just display the stored time directly
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    // Reconstruct a CST Date for display
+    const cstDate = new Date(nowMs); // placeholder — just format stored string
+    const timeStr = (() => {
+      const h = parseInt(timePart.split(':')[0]);
+      const m = timePart.split(':')[1];
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      const h12 = h % 12 || 12;
+      const [yy,mm,dd] = datePart.split('-').map(Number);
+      const jsDate = new Date(yy, mm-1, dd);
+      const dayName = days[jsDate.getDay()];
+      const monName = months[mm-1];
+      return `${dayName} ${monName} ${dd}, ${h12}:${m} ${ampm} CST`;
+    })();
     if(concur.length > 1) {
-      const parts = concur.map(m => `<b>${esc(m.id)}</b> ${teamFlag(m.home)} vs ${teamFlag(m.away)}`);
-      txt.innerHTML = `<span class="next-label">Next (×${concur.length}):</span> ` + parts.join(' <span class="live-sep">|</span> ') + ` · <span class="next-label">${timeStr} CST</span>`;
+      const parts = concur.map(m => `${teamFlag(m.home)} <span class="live-vs">vs</span> ${teamFlag(m.away)} <span style="color:var(--muted);font-size:12px">(${m.id})</span>`);
+      txt.innerHTML = `<span class="next-label">Next (×${concur.length}):</span> ` + parts.join(' <span class="live-sep">&nbsp;|&nbsp;</span> ') + ` &nbsp;·&nbsp; <span class="next-label">${timeStr}</span>`;
     } else {
-      txt.innerHTML = `<span class="next-label">Next:</span> <b>${esc(next.id)}</b> ${teamFlag(next.home)} vs ${teamFlag(next.away)} · <span class="next-label">${timeStr} CST</span>`;
+      txt.innerHTML = `<span class="next-label">Next:</span> ${teamFlag(next.home)} <span class="live-vs">vs</span> ${teamFlag(next.away)} <span style="color:var(--muted);font-size:13px">(${next.id})</span> &nbsp;·&nbsp; <span class="next-label">${timeStr}</span>`;
     }
   } else {
     banner.className = '';
@@ -608,6 +669,112 @@ function filterHistory(q) {
   const f = q.toLowerCase();
   const filtered = historyData.filter(r => r.team.toLowerCase().includes(f) || r.group.toLowerCase().includes(f));
   renderHistoryTable(filtered);
+}
+
+
+// ── Team Rankings ─────────────────────────────────────────────
+function renderRankings() {
+  const rows = D.team_rankings || [];
+  const inPlay = rows.filter(r => r.status === 'in').length;
+  const elim   = rows.filter(r => r.status === 'out').length;
+  document.getElementById('rankings-badge').textContent = `${inPlay} in tournament · ${elim} eliminated`;
+
+  const head = `<thead><tr>
+    <th style="text-align:center">Rk</th>
+    <th>Team</th>
+    <th style="text-align:center">Grp</th>
+    <th style="text-align:center">MP</th>
+    <th style="text-align:center">W</th>
+    <th style="text-align:center">D</th>
+    <th style="text-align:center">L</th>
+    <th style="text-align:center">GF</th>
+    <th style="text-align:center">Pts</th>
+    <th style="text-align:center">Status</th>
+  </tr></thead>`;
+
+  const body = rows.map(r => {
+    const eliminated = r.status === 'out';
+    const style = eliminated ? 'opacity:.45' : '';
+    const statusBadge = eliminated
+      ? `<span style="font-size:10px;color:var(--red);padding:2px 6px;background:var(--red)15;border-radius:4px">Out</span>`
+      : `<span style="font-size:10px;color:var(--green);padding:2px 6px;background:var(--green)15;border-radius:4px">In</span>`;
+    return `<tr style="${style}">
+      <td style="text-align:center;font-family:var(--font-display);font-size:16px;color:var(--muted)">${r.rk}</td>
+      <td style="white-space:nowrap">${teamFlag(r.team)}</td>
+      <td style="text-align:center;color:var(--muted)">${r.grp}</td>
+      <td style="text-align:center;color:var(--muted)">${r.mp}</td>
+      <td style="text-align:center;color:var(--muted)">${r.w}</td>
+      <td style="text-align:center;color:var(--muted)">${r.d}</td>
+      <td style="text-align:center;color:var(--muted)">${r.l}</td>
+      <td style="text-align:center;color:var(--muted)">${r.gf}</td>
+      <td style="text-align:center;color:var(--amber);font-family:var(--font-display);font-size:16px">${r.pts}</td>
+      <td style="text-align:center">${statusBadge}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('rankings-table').innerHTML = head + `<tbody>${body}</tbody>`;
+}
+
+// ── Match Schedule ─────────────────────────────────────────────
+function renderScheduleFilters() {
+  const groups = [...new Set(D.schedule.map(m => m.group))].sort();
+  const sel = document.getElementById('sched-group');
+  sel.innerHTML = '<option value="all">All groups</option>' +
+    groups.map(g => `<option value="${g}">Group ${g}</option>`).join('');
+}
+
+function renderSchedule() {
+  const filter = document.getElementById('sched-filter').value;
+  const grp    = document.getElementById('sched-group').value;
+
+  let rows = [...D.schedule];
+  if(filter === 'played')   rows = rows.filter(m => m.hs !== null && m.hs !== undefined);
+  if(filter === 'upcoming') rows = rows.filter(m => m.hs === null || m.hs === undefined);
+  if(grp !== 'all')         rows = rows.filter(m => m.group === grp);
+
+  const played  = rows.filter(m => m.hs !== null && m.hs !== undefined).length;
+  const total   = rows.length;
+  document.getElementById('schedule-badge').textContent = `${played}/${total} played · times in CST`;
+
+  const head = `<thead><tr>
+    <th>ID</th><th>Date</th><th>Time (CST)</th><th>Grp</th>
+    <th>Home</th><th style="text-align:center">Score</th><th>Away</th><th>Result</th>
+  </tr></thead>`;
+
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const days   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  const body = rows.map(m => {
+    const played = m.hs !== null && m.hs !== undefined;
+    const [y,mo,dy] = m.date.split('-').map(Number);
+    const jsDate  = new Date(y, mo-1, dy);
+    const dateStr = `${days[jsDate.getDay()]} ${months[mo-1]} ${dy}`;
+    const [hr,mn] = m.time.split(':').map(Number);
+    const ampm = hr >= 12 ? 'PM' : 'AM';
+    const h12  = hr % 12 || 12;
+    const timeStr = `${h12}:${String(mn).padStart(2,'0')} ${ampm}`;
+    const scoreStr = played
+      ? `<span style="font-family:var(--font-display);font-size:18px;color:var(--amber)">${m.hs} – ${m.as}</span>`
+      : `<span style="color:var(--muted)">vs</span>`;
+    const winnerStr = played
+      ? (m.winner === 'Draw'
+          ? `<span style="color:var(--muted)">Draw</span>`
+          : `<span style="color:var(--green)">${teamFlag(m.winner)}</span>`)
+      : `<span style="color:var(--border)">—</span>`;
+    const rowStyle = played ? '' : 'opacity:.6';
+    return `<tr style="${rowStyle}">
+      <td style="font-family:var(--font-display);font-size:15px;color:var(--amber)">${m.id}</td>
+      <td style="color:var(--muted);white-space:nowrap">${dateStr}</td>
+      <td style="color:var(--muted);white-space:nowrap">${timeStr}</td>
+      <td style="color:var(--muted);text-align:center">${m.group}</td>
+      <td style="white-space:nowrap">${teamFlag(m.home)}</td>
+      <td style="text-align:center">${scoreStr}</td>
+      <td style="white-space:nowrap">${teamFlag(m.away)}</td>
+      <td style="white-space:nowrap">${winnerStr}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('schedule-table').innerHTML = head + `<tbody>${body}</tbody>`;
 }
 
 init();
