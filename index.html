@@ -433,9 +433,11 @@ function renderHeroStats() {
 }
 
 function rankFriends() {
-  // Group stage page uses gs_totals (frozen once KO begins)
-  return D.friends.map(f => ({ name: f, total: (D.gs_totals && D.gs_totals[f] !== undefined ? D.gs_totals[f] : D.predictions[f]?.total) || 0 }))
-    .sort((a,b) => b.total - a.total);
+  // Use predictions[f].total — always current, already GS-only until KO scoring begins
+  return D.friends.map(f => ({
+    name: f,
+    total: D.predictions[f]?.total || 0
+  })).sort((a,b) => b.total - a.total);
 }
 
 // ── Leaderboard ──────────────────────────────────────────────
