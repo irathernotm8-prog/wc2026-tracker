@@ -49,23 +49,6 @@ input:focus,select:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
 .group-btn.active{background:var(--cyan)22;border-color:var(--cyan);color:var(--cyan)}
 .ko-row{display:flex;align-items:center;gap:.5rem;padding:8px 0;border-bottom:1px solid var(--border)55}
 .ko-row:last-child{border-bottom:none}
-/* TABS */
-.admin-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1.5rem}
-.admin-tab{background:none;border:none;color:var(--muted);font-size:13px;font-weight:600;padding:.6rem 1.25rem;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;font-family:'Inter',sans-serif;transition:all .15s}
-.admin-tab.active{color:var(--cyan);border-bottom-color:var(--cyan)}
-.admin-tab:hover{color:var(--text)}
-.tab-panel{display:none}.tab-panel.active{display:block}
-/* BRACKET EDITOR */
-.bracket-edit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:.75rem;max-width:1200px}
-.bracket-row{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.85rem 1rem;display:flex;align-items:center;gap:.75rem}
-.bracket-row.has-winner{border-color:var(--green)44}
-.bracket-ko-id{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--amber);min-width:44px;flex-shrink:0}
-.bracket-round-label{font-family:'Bebas Neue',sans-serif;font-size:13px;color:var(--muted);min-width:90px;flex-shrink:0}
-.bracket-fields{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.4rem}
-.bracket-fields input{background:var(--card2);border:1px solid var(--border);color:var(--text);padding:5px 8px;border-radius:4px;font-size:12px;font-family:'Inter',sans-serif}
-.bracket-fields input:focus{outline:1px solid var(--cyan);border-color:var(--cyan)}
-.bracket-fields input.winner-field{border-color:var(--green)44;color:var(--green)}
-.round-section-hdr{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--cyan);letter-spacing:.5px;margin:1.25rem 0 .6rem;border-bottom:1px solid var(--border);padding-bottom:.4rem;max-width:1200px}
 .ko-input{width:100%;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:6px 8px;border-radius:4px;font-size:12px}
 .save-bar{display:flex;align-items:center;gap:1rem;padding:1rem 0;border-top:1px solid var(--border);margin-top:1rem}
 #global-status{font-size:12px;color:var(--muted)}
@@ -76,7 +59,7 @@ input:focus,select:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
 <body>
 
 <h1>WC26 · ADMIN</h1>
-<p class="sub">Score entry panel · <a href="index.html">⚽ Group Stage</a> · <a href="knockout.html">🏆 Knockout</a> · <a href="predictions.html">🎯 KO Picks</a></p>
+<p class="sub">Score entry panel · <a href="index.html">← Back to site</a></p>
 
 <!-- SETUP: GitHub credentials -->
 <div id="setup-panel">
@@ -118,30 +101,13 @@ input:focus,select:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
     <button class="btn ghost" style="margin-left:auto;font-size:11px" onclick="clearCredentials()">Disconnect</button>
   </div>
 
-  <div class="admin-tabs">
-    <button class="admin-tab active" onclick="switchTab('tab-group')">⚽ Group Stage Scores</button>
-    <button class="admin-tab" onclick="switchTab('tab-bracket')">🏆 KO Bracket Editor</button>
-    <button class="admin-tab" onclick="switchTab('tab-ko-scores')">🎯 KO Scores</button>
-  </div>
+  <div class="section-title">GROUP STAGE SCORES</div>
+  <div class="group-filter" id="group-filter"></div>
+  <div id="group-matches"></div>
 
-  <!-- Tab 1: Group scores -->
-  <div class="tab-panel active" id="tab-group">
-    <div class="group-filter" id="group-filter"></div>
-    <div id="group-matches"></div>
-  </div>
-
-  <!-- Tab 2: KO bracket editor (set matchups) -->
-  <div class="tab-panel" id="tab-bracket">
-    <p style="font-size:12px;color:var(--muted);margin-bottom:1.25rem">Set team names for each knockout slot. Leave blank for TBD. Changes are saved when you click Save All Changes.</p>
-    <div id="bracket-editor"></div>
-  </div>
-
-  <!-- Tab 3: KO scores -->
-  <div class="tab-panel" id="tab-ko-scores">
-    <p style="font-size:12px;color:var(--muted);margin-bottom:1.25rem">Enter scores and winners for played knockout matches.</p>
-    <div style="max-width:900px">
-      <div class="admin-grid" id="ko-grid"></div>
-    </div>
+  <div class="section-title" style="margin-top:2rem">KNOCKOUT BRACKET</div>
+  <div style="max-width:900px">
+    <div class="admin-grid" id="ko-grid"></div>
   </div>
 </div>
 
@@ -179,7 +145,6 @@ async function loadData() {
     const r = await fetch(url, { headers: { Authorization: `Bearer ${CREDS.pat}`, Accept: 'application/vnd.github.v3+json' }});
     if(!r.ok) throw new Error(`GitHub API: ${r.status} ${r.statusText}`);
     const meta = await r.json();
-    // Decode base64 → UTF-8 properly (preserves emoji)
     const b64 = meta.content.replace(/\n/g,'');
     const binary = atob(b64);
     const bytes = new Uint8Array(binary.length);
@@ -198,60 +163,7 @@ function showAdmin() {
   document.getElementById('setup-panel').style.display='none';
   document.getElementById('admin-panel').style.display='block';
   renderGroupMatches();
-  renderBracketEditor();
   renderKOGrid();
-}
-
-function switchTab(id) {
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  event.target.classList.add('active');
-}
-
-function renderBracketEditor() {
-  const ko = D.ko || {};
-  const rounds = [
-    {label:'Round of 32',   ids:[...Array(16)].map((_,i)=>`KO${i+1}`)},
-    {label:'Round of 16',  ids:[...Array(8)].map((_,i)=>`KO${i+17}`)},
-    {label:'Quarter-finals',ids:[...Array(4)].map((_,i)=>`KO${i+25}`)},
-    {label:'Semi-finals',  ids:['KO29','KO30']},
-    {label:'Final',        ids:['KO31']},
-    {label:'3rd Place',    ids:['KO32']},
-  ];
-
-  let html = '';
-  for(const round of rounds) {
-    html += `<div class="round-section-hdr">${round.label}</div><div class="bracket-edit-grid">`;
-    for(const id of round.ids) {
-      const m = ko[id] || {};
-      const t1 = cleanTeam(m.t1||'');
-      const t2 = cleanTeam(m.t2||'');
-      const w  = cleanTeam(m.winner||'');
-      const hasWin = !!w;
-      html += `<div class="bracket-row${hasWin?' has-winner':''}">
-        <span class="bracket-ko-id">${id}</span>
-        <div class="bracket-fields">
-          <input class="bracket-t1" placeholder="Team 1 name" value="${esc(t1)}" data-ko="${id}" data-field="t1">
-          <input class="bracket-t2" placeholder="Team 2 name" value="${esc(t2)}" data-ko="${id}" data-field="t2">
-          <input placeholder="Date (YYYY-MM-DD)" value="${esc(m.date||'')}" data-ko="${id}" data-field="date">
-          <input placeholder="Time CST (HH:MM)" value="${esc(m.time||'')}" data-ko="${id}" data-field="time">
-        </div>
-      </div>`;
-    }
-    html += `</div>`;
-  }
-  document.getElementById('bracket-editor').innerHTML = html;
-
-  // Live-bind changes
-  document.getElementById('bracket-editor').addEventListener('input', e => {
-    const el = e.target;
-    const id = el.dataset.ko;
-    const field = el.dataset.field;
-    if(!id || !field) return;
-    if(!D.ko[id]) D.ko[id] = {round:'',t1:'',t2:'',score:null,winner:null,date:null,time:null};
-    D.ko[id][field] = el.value.trim();
-  });
 }
 
 // ── Group matches editor ───────────────────────────────────────
@@ -314,30 +226,7 @@ function renderKOGrid() {
   document.getElementById('ko-grid').innerHTML = html;
 }
 
-
-const FLAG_MAP = {
-  'Algeria':"dz",'Argentina':"ar",'Australia':"au",'Austria':"at",
-  'Belgium':"be",'Bosnia and Herzegovina':"ba",'Brazil':"br",'Canada':"ca",
-  'Cape Verde':"cv",'Colombia':"co",'Croatia':"hr",'Curacao':"cw",
-  'Czechia':"cz",'DR Congo':"cd",'Ecuador':"ec",'Egypt':"eg",
-  'England':"gb-eng",'France':"fr",'Germany':"de",'Ghana':"gh",
-  'Haiti':"ht",'Iran':"ir",'Iraq':"iq",'Ivory Coast':"ci",
-  'Japan':"jp",'Jordan':"jo",'Mexico':"mx",'Morocco':"ma",
-  'Netherlands':"nl",'New Zealand':"nz",'Norway':"no",'Panama':"pa",
-  'Paraguay':"py",'Portugal':"pt",'Qatar':"qa",'Saudi Arabia':"sa",
-  'Scotland':"gb-sct",'Senegal':"sn",'South Africa':"za",'South Korea':"kr",
-  'Spain':"es",'Sweden':"se",'Switzerland':"ch",'Tunisia':"tn",
-  'Turkiye':"tr",'United States':"us",'Uruguay':"uy",'Uzbekistan':"uz"
-};
-function cleanTeam(s){ return s?s.replace(/^[^A-Za-z]+/,'').trim():''; }
-function esc(s){ return s?String(s).replace(/"/g,'&quot;'):''; }
-function teamFlag(name) {
-  const n = cleanTeam(name||'');
-  if(!n||n==='TBD') return n||'TBD';
-  const code = FLAG_MAP[n];
-  if(!code) return n;
-  return `<img src="flags/${code}.png" width="14" height="11" alt="${n}" style="vertical-align:middle;border-radius:1px;margin-right:3px">` + n;
-}
+function esc(s){return s?String(s).replace(/"/g,'&quot;'):'';}
 
 // ── Collect edits & save ───────────────────────────────────────
 function collectEdits() {
@@ -352,37 +241,24 @@ function collectEdits() {
     else { m[field] = parseInt(val,10); }
   });
 
-  function cleanTeam(s) { return s ? s.replace(/^[^A-Za-z]+/,'').trim() : ''; }
-  function esc(s) { return s ? String(s).replace(/"/g,'&quot;') : ''; }
-
-  // Restore home/away from home_name/away_name; derive winner from clean name fields
+  // Derive winner for group matches
   D.schedule.forEach(m => {
-    if(m.home_name) m.home = m.home_name;
-    if(m.away_name) m.away = m.away_name;
     if(m.hs!==null&&m.hs!==undefined&&m.as!==null&&m.as!==undefined) {
-      if(m.hs > m.as)      m.winner = m.home_name;
-      else if(m.as > m.hs) m.winner = m.away_name;
-      else                  m.winner = 'Draw';
+      if(m.hs > m.as) m.winner = m.home;   // full flag+name, matches predictions
+      else if(m.as > m.hs) m.winner = m.away;
+      else m.winner = 'Draw';
     } else {
       m.winner = null;
     }
-    const wClean = m.winner==='Draw'?'Draw':(m.winner||'');
+    // Also recompute prediction points
     D.friends.forEach(f => {
       const p = D.predictions[f]?.matches?.[m.id];
       if(!p?.pick) return;
-      if(!m.winner) { p.pts = 0; return; }
-      p.pts = cleanTeam(p.pick) === wClean ? 1 : 0;
-    });
-  });
-
-  // Also recompute KO prediction points
-  Object.entries(D.ko||{}).forEach(([id, m]) => {
-    if(!m.winner) return;
-    const wClean = cleanTeam(m.winner);
-    D.friends.forEach(f => {
-      const p = D.predictions[f]?.matches?.[id];
-      if(!p?.pick) return;
-      p.pts = cleanTeam(p.pick) === wClean ? 1 : 0;
+      const pick = p.pick;
+      const won = m.winner;
+      if(!won) { p.pts = 0; return; }
+      const matchesPick = won === pick || won === 'Draw' && pick === 'Draw';
+      p.pts = matchesPick ? 1 : 0;
     });
   });
 
@@ -421,6 +297,17 @@ function collectEdits() {
     if(D.predictions[f]) D.predictions[f].total = total;
   });
 
+  // Keep gs_totals in sync (group stage only, no KO prefix)
+  if(!D.gs_totals) D.gs_totals = {};
+  D.friends.forEach(f => {
+    const preds = D.predictions[f]?.matches || {};
+    let gsTotal = 0;
+    Object.entries(preds).forEach(([mid, p]) => {
+      if(!mid.startsWith('KO')) gsTotal += (p.pts||0);
+    });
+    D.gs_totals[f] = gsTotal;
+  });
+
   D.meta.updated = new Date().toISOString();
 }
 
@@ -435,8 +322,7 @@ async function saveAll() {
   try {
     const json = JSON.stringify(D, null, 2);
     const encBytes = new TextEncoder().encode(json);
-    let binary = '';
-    encBytes.forEach(b => binary += String.fromCharCode(b));
+    let binary = ''; encBytes.forEach(b => binary += String.fromCharCode(b));
     const content = btoa(binary);
     const url = `https://api.github.com/repos/${CREDS.owner}/${CREDS.repo}/contents/data.json`;
     const body = {

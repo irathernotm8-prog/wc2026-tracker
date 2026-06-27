@@ -311,7 +311,7 @@ function renderGSSummary() {
 // ── Live Banner ───────────────────────────────────────────────
 function renderLiveBanner() {
   const nowMs = Date.now();
-  const cstOffset = 6*60*60*1000;
+  const cstOffset = 5*60*60*1000;
   const nowCSTStr = new Date(nowMs - cstOffset).toISOString().slice(0,16);
 
   const kos = koMatches().filter(m => m.date && m.time);

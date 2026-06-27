@@ -345,7 +345,7 @@ function renderLiveBanner() {
   // Times in data.json are stored as CST (UTC-6 during CDT season = UTC-5 standard)
   // We compare against the user's local time converted to CST
   const nowMs = Date.now();
-  const cstOffset = 6 * 60 * 60 * 1000; // UTC-6 (CDT for summer 2026)
+  const cstOffset = 5 * 60 * 60 * 1000; // UTC-5 (CDT for summer 2026)
   const nowCST = new Date(nowMs - cstOffset);
   const nowCSTStr = nowCST.toISOString().slice(0, 16); // "YYYY-MM-DDTHH:mm"
 
