@@ -383,7 +383,6 @@ function renderLeaderboard() {
   const playedCount = koPlayed().length;
   document.getElementById('lb-badge').textContent = `KO stage only · ${playedCount} matches played`;
 
-  const gsTotals = D.gs_totals || {};
   let rank = 1;
   let rows = '';
   for(let i=0; i<ranked.length; i++) {
@@ -392,13 +391,11 @@ function renderLeaderboard() {
     const medal = MEDAL[rank] || rank;
     const pct = Math.round((f.ko_pts/max)*100);
     const cls = rank<=3 ? `rank-${rank}` : '';
-    const gsTotal = gsTotals[f.name] ?? '—';
     rows += `<tr class="${cls}">
       <td>${medal}</td>
       <td class="name">${esc(f.name)}</td>
       <td class="bar"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
       <td class="pts">${f.ko_pts}</td>
-      <td class="gs-pts" title="Group stage pts">+${gsTotal} GS</td>
     </tr>`;
   }
   document.getElementById('lb-table').innerHTML = rows;
