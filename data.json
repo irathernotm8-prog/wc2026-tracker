@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T03:11:54.010Z"
+    "updated": "2026-06-27T19:31:20.870Z"
   },
   "friends": [
     "Bilal",
@@ -956,8 +956,8 @@
       "t2": "Bosnia and Herzegovina",
       "score": null,
       "winner": null,
-      "date": "2026-07-01",
-      "time": "12:00"
+      "date": "2026-06-28",
+      "time": "14:00"
     },
     "KO2": {
       "round": "Round of 32",
@@ -965,8 +965,8 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-01",
-      "time": "16:00"
+      "date": "2026-06-29",
+      "time": "12:00"
     },
     "KO3": {
       "round": "Round of 32",
@@ -974,8 +974,8 @@
       "t2": "Morocco",
       "score": null,
       "winner": null,
-      "date": "2026-07-01",
-      "time": "20:00"
+      "date": "2026-06-29",
+      "time": "15:30"
     },
     "KO4": {
       "round": "Round of 32",
@@ -983,8 +983,8 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-01",
-      "time": "23:59"
+      "date": "2026-06-29",
+      "time": "20:00"
     },
     "KO5": {
       "round": "Round of 32",
@@ -992,7 +992,7 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
+      "date": "2026-06-30",
       "time": "12:00"
     },
     "KO6": {
@@ -1001,7 +1001,7 @@
       "t2": "Senegal",
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
+      "date": "2026-06-30",
       "time": "16:00"
     },
     "KO7": {
@@ -1010,7 +1010,7 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
+      "date": "2026-06-30",
       "time": "20:00"
     },
     "KO8": {
@@ -1019,8 +1019,8 @@
       "t2": "DR Congo",
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
-      "time": "23:59"
+      "date": "2026-07-01",
+      "time": "11:00"
     },
     "KO9": {
       "round": "Round of 32",
@@ -1028,8 +1028,8 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "12:00"
+      "date": "2026-07-01",
+      "time": "15:00"
     },
     "KO10": {
       "round": "Round of 32",
@@ -1037,8 +1037,8 @@
       "t2": "Spain",
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "16:00"
+      "date": "2026-07-01",
+      "time": "19:00"
     },
     "KO11": {
       "round": "Round of 32",
@@ -1046,8 +1046,8 @@
       "t2": "Panama",
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "20:00"
+      "date": "2026-07-02",
+      "time": "14:00"
     },
     "KO12": {
       "round": "Round of 32",
@@ -1055,8 +1055,8 @@
       "t2": "Jordan",
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "23:59"
+      "date": "2026-07-02",
+      "time": "18:00"
     },
     "KO13": {
       "round": "Round of 32",
@@ -1064,8 +1064,8 @@
       "t2": "Japan",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "12:00"
+      "date": "2026-07-02",
+      "time": "22:00"
     },
     "KO14": {
       "round": "Round of 32",
@@ -1073,8 +1073,8 @@
       "t2": "Spain",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "16:00"
+      "date": "2026-07-03",
+      "time": "15:00"
     },
     "KO15": {
       "round": "Round of 32",
@@ -1082,8 +1082,8 @@
       "t2": "Ecuador",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "20:00"
+      "date": "2026-07-03",
+      "time": "17:00"
     },
     "KO16": {
       "round": "Round of 32",
@@ -1091,8 +1091,8 @@
       "t2": "Belgium",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "23:59"
+      "date": "2026-07-3",
+      "time": "20:30"
     },
     "KO17": {
       "round": "Round of 16",
@@ -4838,7 +4838,7 @@
       "status": "out"
     }
   ],
-  "_sha": "d7b287b1562e368510307a57371bc14737b7d5cf",
+  "_sha": "02cdce01c022495b9d2ab599670b282df033e7d2",
   "gs_totals": {
     "Bilal": 35,
     "Kiana": 33,
