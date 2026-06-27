@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T03:23:59.347Z"
+    "updated": "2026-06-27T03:53:08.878Z"
   },
   "friends": [
     "Bilal",
@@ -974,7 +974,7 @@
     "KO4": {
       "round": "Round of 32",
       "t1": "Scotland",
-      "t2": "Japan",
+      "t2": "Cape Verde",
       "score": null,
       "winner": null
     },
@@ -4774,5 +4774,5 @@
       "status": "out"
     }
   ],
-  "_sha": "a8fec05835625fc0487ceda2fed925e29bbca871"
+  "_sha": "8c350e9bb4417fb220b6441567d09534b87bd941"
 }
