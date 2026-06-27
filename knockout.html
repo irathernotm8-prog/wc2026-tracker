@@ -55,13 +55,6 @@ nav a.nav-page.active{color:var(--cyan);border-bottom-color:var(--cyan)}
 .h-stat-num.green{color:var(--green)}
 .h-stat-label{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-top:2px}
 
-/* GS SUMMARY BANNER */
-#gs-summary{padding:1rem 1.5rem;background:var(--card);border-bottom:1px solid var(--border);display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
-.gs-summary-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
-.gs-chips{display:flex;gap:.5rem;flex-wrap:wrap}
-.gs-chip{background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px}
-.gs-chip .gs-rank{font-family:var(--font-display);font-size:15px;color:var(--muted)}
-.gs-chip .gs-pts{font-family:var(--font-display);font-size:15px;color:var(--amber)}
 
 /* SECTIONS */
 section{padding:2rem 1.5rem;border-bottom:1px solid var(--border)}
@@ -162,9 +155,6 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
   <div id="live-text"></div>
 </div>
 
-<!-- Group Stage final summary -->
-<div id="gs-summary">
-  <div class="gs-summary-label">Group Stage Final</div>
   <div class="gs-chips" id="gs-chips"></div>
 </div>
 
@@ -283,7 +273,6 @@ function rankFriendsKO() {
 }
 
 function render() {
-  renderGSSummary();
   renderLiveBanner();
   renderHeroStats();
   renderLeaderboard();
@@ -295,18 +284,6 @@ function render() {
   setInterval(renderLiveBanner, 60000);
 }
 
-// ── GS Summary strip ─────────────────────────────────────────
-function renderGSSummary() {
-  const gsTotals = D.gs_totals || {};
-  const ranked = Object.entries(gsTotals).sort((a,b)=>b[1]-a[1]);
-  let rank = 1;
-  const chips = ranked.map(([name, pts], i) => {
-    if(i>0 && pts < ranked[i-1][1]) rank = i+1;
-    const medal = MEDAL[rank] || rank;
-    return `<div class="gs-chip"><span class="gs-rank">${medal}</span> ${esc(name)} <span class="gs-pts">${pts}</span></div>`;
-  }).join('');
-  document.getElementById('gs-chips').innerHTML = chips;
-}
 
 // ── Live Banner ───────────────────────────────────────────────
 function renderLiveBanner() {
