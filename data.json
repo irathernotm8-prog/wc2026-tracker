@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T19:53:45.897Z"
+    "updated": "2026-06-27T23:21:09.704Z"
   },
   "friends": [
     "Bilal",
@@ -879,9 +879,9 @@
       "away": "Panama",
       "home_name": "England",
       "away_name": "Panama",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 2,
+      "as": 0,
+      "winner": "England"
     },
     {
       "id": "L6",
@@ -892,9 +892,9 @@
       "away": "Ghana",
       "home_name": "Croatia",
       "away_name": "Ghana",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 2,
+      "as": 1,
+      "winner": "Croatia"
     },
     {
       "id": "K5",
@@ -2078,14 +2078,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 0
+          "pts": 1
         }
       },
-      "total": 37
+      "total": 39
     },
     "Kiana": {
       "matches": {
@@ -2371,14 +2371,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 0
+          "pts": 1
         }
       },
-      "total": 34
+      "total": 36
     },
     "Humza": {
       "matches": {
@@ -2664,14 +2664,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Draw",
           "pts": 0
         }
       },
-      "total": 34
+      "total": 35
     },
     "Anu": {
       "matches": {
@@ -2957,14 +2957,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 0
+          "pts": 1
         }
       },
-      "total": 34
+      "total": 36
     },
     "R2": {
       "matches": {
@@ -3250,14 +3250,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 0
+          "pts": 1
         }
       },
-      "total": 38
+      "total": 40
     },
     "Ray": {
       "matches": {
@@ -3543,14 +3543,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 0
+          "pts": 1
         }
       },
-      "total": 36
+      "total": 38
     },
     "Laura": {
       "matches": {
@@ -3836,14 +3836,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 0
+          "pts": 1
         },
         "L6": {
           "pick": "Draw",
           "pts": 0
         }
       },
-      "total": 33
+      "total": 34
     }
   },
   "flags": {
@@ -4838,14 +4838,14 @@
       "status": "out"
     }
   ],
-  "_sha": "6de015eb73e14081927dddd79dc9d01938b3eab1",
+  "_sha": "77ee4eef27f3b7d93914db9fb3b383fe45eded6f",
   "gs_totals": {
-    "Bilal": 35,
-    "Kiana": 33,
-    "Humza": 31,
-    "Anu": 31,
-    "R2": 35,
-    "Ray": 32,
-    "Laura": 30
+    "Bilal": 39,
+    "Kiana": 36,
+    "Humza": 35,
+    "Anu": 36,
+    "R2": 40,
+    "Ray": 38,
+    "Laura": 34
   }
 }
