@@ -181,7 +181,7 @@ function renderGroupMatches() {
     const played = m.hs!==null&&m.hs!==undefined;
     html += `<div class="match-row" data-id="${m.id}">
       <span class="match-id">${m.id}</span>
-      <span class="match-teams" style="white-space:nowrap">${teamFlag(m.home)} vs ${teamFlag(m.away)}</span>
+      <span class="match-teams">${teamFlag(m.home_name)} vs ${teamFlag(m.away_name)}</span>
       <input class="score-input" type="number" min="0" max="30" value="${hs}" placeholder="—" data-field="hs" data-id="${m.id}">
       <span class="score-dash">–</span>
       <input class="score-input" type="number" min="0" max="30" value="${as}" placeholder="—" data-field="as" data-id="${m.id}">
@@ -207,18 +207,13 @@ function renderKOGrid() {
     html += `<div class="admin-card"><h3>${round.label}</h3>`;
     for(const id of round.ids) {
       const m = D.ko[id] || {};
-      const t1c = (m.t1||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
-      const t2c = (m.t2||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
-      const wc  = (m.winner||'').replace(/[^\u0000-\u007F]+\s*/g,'').trim();
       html += `<div class="ko-row">
         <span class="match-id">${id}</span>
         <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.5rem">
-          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t1||'TBD')}</div>
-          <div style="font-size:11px;color:var(--muted);padding:2px 0;display:flex;align-items:center">${teamFlag(m.t2||'TBD')}</div>
-          <input class="ko-input" placeholder="Team 1 name" value="${esc(t1c)}" data-ko="${id}" data-field="t1">
-          <input class="ko-input" placeholder="Team 2 name" value="${esc(t2c)}" data-ko="${id}" data-field="t2">
+          <input class="ko-input" placeholder="Team 1" value="${esc(m.t1||'')}" data-ko="${id}" data-field="t1">
+          <input class="ko-input" placeholder="Team 2" value="${esc(m.t2||'')}" data-ko="${id}" data-field="t2">
           <input class="ko-input" placeholder="Score (e.g. 2-1)" value="${esc(m.score||'')}" data-ko="${id}" data-field="score">
-          <input class="ko-input" placeholder="Winner name" value="${esc(wc)}" data-ko="${id}" data-field="winner">
+          <input class="ko-input" placeholder="Winner team name" value="${esc(m.winner||'')}" data-ko="${id}" data-field="winner">
         </div>
       </div>`;
     }
@@ -229,7 +224,6 @@ function renderKOGrid() {
 
 function esc(s){return s?String(s).replace(/"/g,'&quot;'):'';}
 
-// ── Flag image helper ─────────────────────────────────────────
 const FLAG_MAP = {
   'Algeria': "dz", 'Argentina': "ar", 'Australia': "au", 'Austria': "at",
   'Belgium': "be", 'Bosnia and Herzegovina': "ba", 'Brazil': "br", 'Canada': "ca",
@@ -244,19 +238,12 @@ const FLAG_MAP = {
   'Spain': "es", 'Sweden': "se", 'Switzerland': "ch", 'Tunisia': "tn",
   'Turkiye': "tr", 'United States': "us", 'Uruguay': "uy", 'Uzbekistan': "uz"
 };
-
-function teamFlag(teamStr, size) {
-  if(!teamStr) return '';
-  const name = teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
-  if(name === 'Draw' || name === 'TBD' || !name) return esc(teamStr);
-  const code = FLAG_MAP[name];
-  if(!code) return esc(teamStr);
-  return `<img src="flags/${code}.png" width="16" height="12" alt="${name}" style="vertical-align:middle;border-radius:1px;margin-right:4px;flex-shrink:0">` + esc(name);
-}
-
-function teamName(teamStr) {
-  if(!teamStr) return '';
-  return teamStr.replace(/[^\u0000-\u007F]+\s*/g, '').trim();
+function teamFlag(name) {
+  if(!name || name==='Draw'||name==='TBD') return name||'';
+  const clean = name.replace(/[^\u0000-\u007F]+\s*/g,'').trim();
+  const code = FLAG_MAP[clean];
+  if(!code) return esc(clean);
+  return `<img src="flags/${code}.png" width="16" height="12" alt="${clean}" style="vertical-align:middle;border-radius:1px;margin-right:4px">` + esc(clean);
 }
 
 
@@ -274,23 +261,36 @@ function collectEdits() {
   });
 
   // Derive winner for group matches
+  // Always use home_name/away_name (clean ASCII) to build winner — never m.home/m.away which may be emoji-corrupted
+  const FLAGS = D.flags || {};
+  function flaggedName(name) {
+    if(!name || name === 'Draw') return 'Draw';
+    const f = FLAGS[name] || '';
+    return f ? f + ' ' + name : name;
+  }
+  function stripEmoji(s) {
+    return s ? s.replace(/[^\u0000-\u007F]+\s*/g, '').trim() : '';
+  }
+
   D.schedule.forEach(m => {
+    // Restore clean home/away from name fields to prevent emoji corruption accumulating
+    if(m.home_name) m.home = flaggedName(m.home_name);
+    if(m.away_name) m.away = flaggedName(m.away_name);
+
     if(m.hs!==null&&m.hs!==undefined&&m.as!==null&&m.as!==undefined) {
-      if(m.hs > m.as) m.winner = m.home;   // full flag+name, matches predictions
-      else if(m.as > m.hs) m.winner = m.away;
-      else m.winner = 'Draw';
+      if(m.hs > m.as)      m.winner = flaggedName(m.home_name);
+      else if(m.as > m.hs) m.winner = flaggedName(m.away_name);
+      else                  m.winner = 'Draw';
     } else {
       m.winner = null;
     }
-    // Also recompute prediction points
+    // Recompute prediction points — strip emoji from both sides so comparison never fails
+    const winnerClean = stripEmoji(m.winner || '');
     D.friends.forEach(f => {
       const p = D.predictions[f]?.matches?.[m.id];
       if(!p?.pick) return;
-      const pick = p.pick;
-      const won = m.winner;
-      if(!won) { p.pts = 0; return; }
-      const matchesPick = won === pick || won === 'Draw' && pick === 'Draw';
-      p.pts = matchesPick ? 1 : 0;
+      if(!m.winner) { p.pts = 0; return; }
+      p.pts = stripEmoji(p.pick) === winnerClean ? 1 : 0;
     });
   });
 
@@ -341,7 +341,12 @@ async function saveAll() {
   statusEl.textContent = 'Saving to GitHub…';
 
   try {
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(D, null, 2))));
+    const json = JSON.stringify(D, null, 2);
+    // Encode as UTF-8 base64 without corrupting emoji
+    const bytes = new TextEncoder().encode(json);
+    let binary = '';
+    bytes.forEach(b => binary += String.fromCharCode(b));
+    const content = btoa(binary);
     const url = `https://api.github.com/repos/${CREDS.owner}/${CREDS.repo}/contents/data.json`;
     const body = {
       message: `Update scores – ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`,
