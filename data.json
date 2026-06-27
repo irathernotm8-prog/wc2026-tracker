@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T03:53:08.878Z"
+    "updated": "2026-06-27T15:39:18.499Z"
   },
   "friends": [
     "Bilal",
@@ -853,9 +853,9 @@
       "away": "New Zealand",
       "home_name": "Belgium",
       "away_name": "New Zealand",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 5,
+      "as": 1,
+      "winner": "Belgium"
     },
     {
       "id": "G6",
@@ -866,9 +866,9 @@
       "away": "Iran",
       "home_name": "Egypt",
       "away_name": "Iran",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 1,
+      "as": 1,
+      "winner": "Draw"
     },
     {
       "id": "L5",
@@ -1894,7 +1894,7 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Egypt",
@@ -2021,7 +2021,7 @@
           "pts": 0
         }
       },
-      "total": 36
+      "total": 37
     },
     "Kiana": {
       "matches": {
@@ -2480,11 +2480,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "H1": {
           "pick": "Draw",
@@ -2607,7 +2607,7 @@
           "pts": 0
         }
       },
-      "total": 32
+      "total": 34
     },
     "Anu": {
       "matches": {
@@ -2773,11 +2773,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "H1": {
           "pick": "Spain",
@@ -2900,7 +2900,7 @@
           "pts": 0
         }
       },
-      "total": 32
+      "total": 34
     },
     "R2": {
       "matches": {
@@ -3066,7 +3066,7 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Egypt",
@@ -3193,7 +3193,7 @@
           "pts": 0
         }
       },
-      "total": 37
+      "total": 38
     },
     "Ray": {
       "matches": {
@@ -3359,11 +3359,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "H1": {
           "pick": "Spain",
@@ -3486,7 +3486,7 @@
           "pts": 0
         }
       },
-      "total": 34
+      "total": 36
     },
     "Laura": {
       "matches": {
@@ -3652,11 +3652,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 0
+          "pts": 1
         },
         "G6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "H1": {
           "pick": "Spain",
@@ -3779,7 +3779,7 @@
           "pts": 0
         }
       },
-      "total": 31
+      "total": 33
     }
   },
   "flags": {
@@ -4774,5 +4774,5 @@
       "status": "out"
     }
   ],
-  "_sha": "8c350e9bb4417fb220b6441567d09534b87bd941"
+  "_sha": "4b845db210e0da1d6684bf06d36f7325a1ad3b85"
 }
