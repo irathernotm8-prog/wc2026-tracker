@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T03:11:54.010Z"
+    "updated": "2026-06-27T19:45:52.797Z"
   },
   "friends": [
     "Bilal",
@@ -827,9 +827,9 @@
       "away": "Uruguay",
       "home_name": "Spain",
       "away_name": "Uruguay",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 1,
+      "as": 0,
+      "winner": "Spain"
     },
     {
       "id": "H6",
@@ -840,9 +840,9 @@
       "away": "Saudi Arabia",
       "home_name": "Cape Verde",
       "away_name": "Saudi Arabia",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 0,
+      "as": 0,
+      "winner": "Draw"
     },
     {
       "id": "G5",
@@ -1982,7 +1982,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2085,7 +2085,7 @@
           "pts": 0
         }
       },
-      "total": 35
+      "total": 36
     },
     "Kiana": {
       "matches": {
@@ -2275,7 +2275,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Cape Verde",
@@ -2378,7 +2378,7 @@
           "pts": 0
         }
       },
-      "total": 33
+      "total": 34
     },
     "Humza": {
       "matches": {
@@ -2568,7 +2568,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2671,7 +2671,7 @@
           "pts": 0
         }
       },
-      "total": 31
+      "total": 32
     },
     "Anu": {
       "matches": {
@@ -2861,7 +2861,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2964,7 +2964,7 @@
           "pts": 0
         }
       },
-      "total": 31
+      "total": 32
     },
     "R2": {
       "matches": {
@@ -3154,11 +3154,11 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "I1": {
           "pick": "France",
@@ -3257,7 +3257,7 @@
           "pts": 0
         }
       },
-      "total": 35
+      "total": 37
     },
     "Ray": {
       "matches": {
@@ -3447,11 +3447,11 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "I1": {
           "pick": "France",
@@ -3550,7 +3550,7 @@
           "pts": 0
         }
       },
-      "total": 32
+      "total": 34
     },
     "Laura": {
       "matches": {
@@ -3740,7 +3740,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 0
+          "pts": 1
         },
         "H6": {
           "pick": "Cape Verde",
@@ -3843,7 +3843,7 @@
           "pts": 0
         }
       },
-      "total": 30
+      "total": 31
     }
   },
   "flags": {
@@ -4838,7 +4838,7 @@
       "status": "out"
     }
   ],
-  "_sha": "d7b287b1562e368510307a57371bc14737b7d5cf",
+  "_sha": "2a47a0547be54615e11d0cc0b0926598d3dc444e",
   "gs_totals": {
     "Bilal": 35,
     "Kiana": 33,
