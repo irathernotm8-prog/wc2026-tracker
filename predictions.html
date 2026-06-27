@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WC26 · KO Predictions</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09111F;--card:#0E1A2B;--card2:#152238;--border:#1E3250;
+  --cyan:#00D9FF;--amber:#F5A623;--red:#FF3B3B;--green:#1DB954;
+  --text:#E8F0FB;--muted:#6B7FA3;--locked:#2A1A1A;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;min-height:100vh}
+
+/* ── Header ── */
+.site-header{padding:1rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.site-header h1{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--cyan);letter-spacing:1px}
+.site-header a{color:var(--muted);font-size:12px;text-decoration:none}
+.site-header a:hover{color:var(--cyan)}
+
+/* ── Name picker ── */
+#name-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;padding:2rem;text-align:center}
+.name-title{font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--text);line-height:1;margin-bottom:.5rem}
+.name-sub{color:var(--muted);font-size:14px;margin-bottom:2.5rem}
+.name-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;max-width:600px;width:100%}
+.name-btn{background:var(--card);border:1px solid var(--border);color:var(--text);padding:1rem;border-radius:10px;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.5px;cursor:pointer;transition:all .15s}
+.name-btn:hover{border-color:var(--cyan);color:var(--cyan);background:var(--card2)}
+
+/* ── Main form ── */
+#pred-screen{display:none;padding:1.5rem;max-width:860px;margin:0 auto}
+.pred-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem}
+.pred-header h2{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--text)}
+.pred-header .player-badge{background:var(--cyan)22;border:1px solid var(--cyan)55;color:var(--cyan);padding:5px 14px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer}
+.round-block{margin-bottom:2rem}
+.round-label{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--amber);letter-spacing:.5px;margin-bottom:.75rem;display:flex;align-items:center;gap:.75rem}
+.round-count{font-family:'Inter',sans-serif;font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0}
+.match-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.match-card.locked{background:var(--locked);border-color:#3a1a1a;opacity:.7}
+.match-card.picked .pick-t1,.match-card.picked .pick-t2{opacity:.5}
+.ko-id{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--amber);min-width:40px;flex-shrink:0}
+.matchup{flex:1;display:flex;align-items:center;gap:.5rem;min-width:200px;flex-wrap:wrap}
+.team-pill{display:flex;align-items:center;gap:6px;background:var(--card2);border:2px solid var(--border);border-radius:8px;padding:7px 12px;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;white-space:nowrap;user-select:none}
+.team-pill:hover:not(.disabled){border-color:var(--cyan);color:var(--cyan)}
+.team-pill.selected{border-color:var(--cyan);background:var(--cyan)18;color:var(--cyan)}
+.team-pill.disabled{cursor:not-allowed;opacity:.5}
+.team-pill img{width:16px;height:12px;border-radius:1px;flex-shrink:0}
+.vs-sep{color:var(--muted);font-size:11px;font-weight:600;flex-shrink:0}
+.lock-badge{font-size:10px;color:var(--red);padding:2px 7px;background:var(--red)15;border-radius:4px;flex-shrink:0;white-space:nowrap}
+.tbd-row{background:var(--card2)88;border:1px dashed var(--border);border-radius:10px;padding:.85rem 1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.75rem;color:var(--muted);font-size:12px}
+.tbd-ko-id{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--border);min-width:40px}
+
+/* ── Summary ── */
+#summary-screen{display:none;padding:1.5rem;max-width:680px;margin:0 auto}
+.summary-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.summary-card h3{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--amber);margin-bottom:1rem;letter-spacing:.5px}
+.summary-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)55;font-size:13px}
+.summary-row:last-child{border-bottom:none}
+.summary-ko{color:var(--muted);font-size:11px;min-width:40px}
+.summary-matchup{color:var(--muted);font-size:12px;flex:1;padding:0 .75rem}
+.summary-pick{color:var(--cyan);font-weight:600;display:flex;align-items:center;gap:5px}
+.summary-unpicked{color:var(--red);font-size:11px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--cyan);color:#09111F;border:none;padding:10px 20px;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;font-family:'Inter',sans-serif;transition:opacity .15s}
+.btn:hover{opacity:.9}
+.btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.action-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+.progress-bar{height:3px;background:var(--border);border-radius:2px;margin-bottom:1.5rem;overflow:hidden}
+.progress-fill{height:100%;background:var(--cyan);border-radius:2px;transition:width .3s}
+.warning{background:var(--amber)15;border:1px solid var(--amber)44;color:var(--amber);padding:10px 14px;border-radius:8px;font-size:12px;margin-bottom:1rem}
+
+@media(max-width:560px){
+  .matchup{flex-direction:column;align-items:flex-start}
+  .name-grid{grid-template-columns:1fr 1fr}
+  .name-title{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <h1>WC26 · KO PREDICTIONS</h1>
+  <a href="index.html">← Back to dashboard</a>
+</div>
+
+<!-- SCREEN 1: Name picker -->
+<div id="name-screen">
+  <div class="name-title">WHO ARE YOU?</div>
+  <div class="name-sub">Pick your name to enter your knockout predictions</div>
+  <div class="name-grid" id="name-grid"></div>
+</div>
+
+<!-- SCREEN 2: Prediction form -->
+<div id="pred-screen">
+  <div class="pred-header">
+    <h2 id="pred-title">YOUR KO PREDICTIONS</h2>
+    <div class="player-badge" id="player-badge" onclick="changeName()">▸ Change name</div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  <div id="rounds-container"></div>
+  <div class="action-row">
+    <button class="btn" onclick="showSummary()">Review & Confirm →</button>
+  </div>
+</div>
+
+<!-- SCREEN 3: Summary -->
+<div id="summary-screen">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:.5rem">
+    <div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:28px" id="summary-title">YOUR PICKS</div>
+      <div style="color:var(--muted);font-size:12px" id="summary-sub"></div>
+    </div>
+    <div style="display:flex;gap:.5rem">
+      <button class="btn ghost" onclick="goBack()">← Edit picks</button>
+      <button class="btn" onclick="copyPicks()">📋 Copy picks</button>
+    </div>
+  </div>
+  <div id="summary-content"></div>
+  <div class="warning" id="summary-warning" style="display:none"></div>
+</div>
+
+<script>
+let D = null;
+let currentPlayer = null;
+// picks[koId] = teamName (plain string, no emoji)
+let picks = {};
+
+const KO_ROUNDS = [
+  {label:'Round of 32',   ids:[...Array(16)].map((_,i)=>`KO${i+1}`),  pts:2},
+  {label:'Round of 16',  ids:[...Array(8)].map((_,i)=>`KO${i+17}`),  pts:3},
+  {label:'Quarter-finals',ids:[...Array(4)].map((_,i)=>`KO${i+25}`), pts:4},
+  {label:'Semi-finals',  ids:['KO29','KO30'],                          pts:5},
+  {label:'Final',        ids:['KO31'],                                 pts:7},
+  {label:'3rd Place',    ids:['KO32'],                                 pts:4},
+];
+
+const FLAG_MAP = {
+  'Algeria':"dz",'Argentina':"ar",'Australia':"au",'Austria':"at",
+  'Belgium':"be",'Bosnia and Herzegovina':"ba",'Brazil':"br",'Canada':"ca",
+  'Cape Verde':"cv",'Colombia':"co",'Croatia':"hr",'Curacao':"cw",
+  'Czechia':"cz",'DR Congo':"cd",'Ecuador':"ec",'Egypt':"eg",
+  'England':"gb-eng",'France':"fr",'Germany':"de",'Ghana':"gh",
+  'Haiti':"ht",'Iran':"ir",'Iraq':"iq",'Ivory Coast':"ci",
+  'Japan':"jp",'Jordan':"jo",'Mexico':"mx",'Morocco':"ma",
+  'Netherlands':"nl",'New Zealand':"nz",'Norway':"no",'Panama':"pa",
+  'Paraguay':"py",'Portugal':"pt",'Qatar':"qa",'Saudi Arabia':"sa",
+  'Scotland':"gb-sct",'Senegal':"sn",'South Africa':"za",'South Korea':"kr",
+  'Spain':"es",'Sweden':"se",'Switzerland':"ch",'Tunisia':"tn",
+  'Turkiye':"tr",'United States':"us",'Uruguay':"uy",'Uzbekistan':"uz"
+};
+
+function cleanName(s) {
+  if(!s) return '';
+  return s.replace(/^[^A-Za-z]+/,'').trim();
+}
+function flagImg(name, size=16) {
+  const code = FLAG_MAP[name];
+  if(!code) return '';
+  const h = Math.round(size*0.75);
+  return `<img src="flags/${code}.png" width="${size}" height="${h}" alt="${name}" style="vertical-align:middle;border-radius:1px">`;
+}
+function teamHTML(name) {
+  if(!name || name==='TBD') return `<span style="color:var(--muted)">TBD</span>`;
+  return `${flagImg(name)} ${name}`;
+}
+function esc(s){ return s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):''; }
+
+// ── Load data ────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch('data.json?t='+Date.now());
+    D = await r.json();
+    // Restore existing KO picks for the current player if any
+    init();
+  } catch(e) {
+    document.body.innerHTML = '<div style="padding:2rem;color:var(--red)">Could not load data.json. Make sure you\'re running from the same folder as the site files.</div>';
+  }
+}
+
+function init() {
+  renderNameGrid();
+}
+
+// ── Screen 1: Name picker ─────────────────────────────────────
+function renderNameGrid() {
+  const friends = D.friends || [];
+  document.getElementById('name-grid').innerHTML = friends.map(f =>
+    `<button class="name-btn" onclick="selectPlayer('${f}')">${f}</button>`
+  ).join('');
+}
+
+function selectPlayer(name) {
+  currentPlayer = name;
+  picks = {};
+  // Load existing KO picks from data.json if they exist
+  const existing = D.predictions?.[name]?.matches || {};
+  Object.entries(existing).forEach(([mid, info]) => {
+    if(mid.startsWith('KO') && info.pick) {
+      picks[mid] = cleanName(info.pick);
+    }
+  });
+  document.getElementById('name-screen').style.display = 'none';
+  document.getElementById('pred-screen').style.display = 'block';
+  document.getElementById('summary-screen').style.display = 'none';
+  document.getElementById('pred-title').textContent = `${name.toUpperCase()}'S KO PREDICTIONS`;
+  document.getElementById('player-badge').innerHTML = `Playing as <strong>${name}</strong> · Change`;
+  renderRounds();
+}
+
+function changeName() {
+  document.getElementById('name-screen').style.display = 'flex';
+  document.getElementById('pred-screen').style.display = 'none';
+  document.getElementById('summary-screen').style.display = 'none';
+}
+
+// ── Screen 2: Prediction form ─────────────────────────────────
+function isLocked(koId) {
+  // A KO match is locked if it already has a winner set
+  const m = D.ko?.[koId];
+  return m?.winner ? true : false;
+}
+
+function isTeamSet(koId) {
+  const m = D.ko?.[koId];
+  return m?.t1 && m?.t2 && m.t1 !== 'TBD' && m.t2 !== 'TBD';
+}
+
+function renderRounds() {
+  let html = '';
+  KO_ROUNDS.forEach(round => {
+    const available = round.ids.filter(id => isTeamSet(id));
+    const tbd = round.ids.filter(id => !isTeamSet(id));
+    const locked = round.ids.filter(id => isLocked(id));
+
+    if(round.ids.length === tbd.length) {
+      // Whole round is TBD — show collapsed placeholder
+      html += `<div class="round-block">
+        <div class="round-label">${round.label} <span class="round-count">${round.pts} pts each · teams TBD</span></div>
+        <div class="tbd-row">⏳ Matchups not yet confirmed — check back once the bracket is set</div>
+      </div>`;
+      return;
+    }
+
+    html += `<div class="round-block">
+      <div class="round-label">${round.label} <span class="round-count">${round.pts} pts per correct pick</span></div>`;
+
+    round.ids.forEach(id => {
+      const m = D.ko?.[id] || {};
+      const t1 = cleanName(m.t1 || '');
+      const t2 = cleanName(m.t2 || '');
+      const locked = !!m.winner;
+      const set = t1 && t2 && t1 !== 'TBD' && t2 !== 'TBD';
+
+      if(!set) {
+        html += `<div class="tbd-row">
+          <span class="tbd-ko-id">${id}</span>
+          <span>Teams TBD</span>
+        </div>`;
+        return;
+      }
+
+      const pick = picks[id];
+      html += `<div class="match-card${locked?' locked':''}" id="card-${id}">
+        <span class="ko-id">${id}</span>
+        <div class="matchup">
+          <div class="team-pill${pick===t1?' selected':''}${locked?' disabled':''}" 
+               onclick="${locked?'':'pickTeam(\''+id+'\',\''+t1+'\')'}" id="pill-${id}-t1">
+            ${flagImg(t1)} ${esc(t1)}
+          </div>
+          <span class="vs-sep">VS</span>
+          <div class="team-pill${pick===t2?' selected':''}${locked?' disabled':''}" 
+               onclick="${locked?'':'pickTeam(\''+id+'\',\''+t2+'\')'}" id="pill-${id}-t2">
+            ${flagImg(t2)} ${esc(t2)}
+          </div>
+        </div>
+        ${locked ? `<span class="lock-badge">🔒 Match started</span>` : ''}
+      </div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  document.getElementById('rounds-container').innerHTML = html;
+  updateProgress();
+}
+
+function pickTeam(koId, team) {
+  if(isLocked(koId)) return;
+  picks[koId] = picks[koId] === team ? null : team; // toggle
+  if(!picks[koId]) delete picks[koId];
+
+  // Update pills without full re-render
+  const m = D.ko?.[koId] || {};
+  const t1 = cleanName(m.t1||'');
+  const t2 = cleanName(m.t2||'');
+  const p1 = document.getElementById(`pill-${koId}-t1`);
+  const p2 = document.getElementById(`pill-${koId}-t2`);
+  if(p1) p1.className = `team-pill${picks[koId]===t1?' selected':''}`;
+  if(p2) p2.className = `team-pill${picks[koId]===t2?' selected':''}`;
+  updateProgress();
+}
+
+function updateProgress() {
+  // Count available (non-TBD, non-locked) slots
+  let total = 0, done = 0;
+  KO_ROUNDS.forEach(round => {
+    round.ids.forEach(id => {
+      if(isTeamSet(id) && !isLocked(id)) {
+        total++;
+        if(picks[id]) done++;
+      }
+    });
+  });
+  const pct = total === 0 ? 0 : Math.round(done/total*100);
+  document.getElementById('progress-fill').style.width = pct+'%';
+}
+
+// ── Screen 3: Summary ─────────────────────────────────────────
+function showSummary() {
+  // Count unpicked available slots
+  let unpicked = [];
+  KO_ROUNDS.forEach(round => {
+    round.ids.forEach(id => {
+      if(isTeamSet(id) && !isLocked(id) && !picks[id]) {
+        unpicked.push(id);
+      }
+    });
+  });
+
+  document.getElementById('pred-screen').style.display = 'none';
+  document.getElementById('summary-screen').style.display = 'block';
+  document.getElementById('summary-title').textContent = `${currentPlayer.toUpperCase()}'S PICKS`;
+
+  const now = new Date();
+  document.getElementById('summary-sub').textContent =
+    `${Object.keys(picks).length} predictions · ${now.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
+
+  let html = '';
+  KO_ROUNDS.forEach(round => {
+    const hasAny = round.ids.some(id => isTeamSet(id));
+    if(!hasAny) return;
+    html += `<div class="summary-card"><h3>${round.label} · ${round.pts}pts</h3>`;
+    round.ids.forEach(id => {
+      const m = D.ko?.[id] || {};
+      const t1 = cleanName(m.t1||'');
+      const t2 = cleanName(m.t2||'');
+      if(!isTeamSet(id)) return;
+      const pick = picks[id];
+      const locked = isLocked(id);
+      html += `<div class="summary-row">
+        <span class="summary-ko">${id}</span>
+        <span class="summary-matchup">${teamHTML(t1)} <span style="color:var(--border)">vs</span> ${teamHTML(t2)}</span>
+        <span class="${pick?'summary-pick':'summary-unpicked'}">
+          ${pick ? `${flagImg(pick)} ${esc(pick)}` : (locked ? '<span style="color:var(--muted)">locked</span>' : '— no pick')}
+        </span>
+      </div>`;
+    });
+    html += `</div>`;
+  });
+
+  document.getElementById('summary-content').innerHTML = html;
+
+  const warn = document.getElementById('summary-warning');
+  if(unpicked.length > 0) {
+    warn.style.display = 'block';
+    warn.textContent = `⚠️ You haven't picked ${unpicked.length} available match${unpicked.length>1?'es':''}: ${unpicked.join(', ')}. Go back to fill them in, or send this to Bilal as-is.`;
+  } else {
+    warn.style.display = 'none';
+  }
+}
+
+function goBack() {
+  document.getElementById('summary-screen').style.display = 'none';
+  document.getElementById('pred-screen').style.display = 'block';
+}
+
+function copyPicks() {
+  let text = `WC2026 KO Predictions — ${currentPlayer}\n`;
+  text += `${'─'.repeat(40)}\n`;
+  KO_ROUNDS.forEach(round => {
+    const hasAny = round.ids.some(id => isTeamSet(id));
+    if(!hasAny) return;
+    text += `\n${round.label} (${round.pts}pts each)\n`;
+    round.ids.forEach(id => {
+      const m = D.ko?.[id] || {};
+      const t1 = cleanName(m.t1||'');
+      const t2 = cleanName(m.t2||'');
+      if(!isTeamSet(id)) return;
+      const pick = picks[id] || '—';
+      text += `  ${id}: ${t1} vs ${t2} → ${pick}\n`;
+    });
+  });
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = '📋 Copy picks', 2000);
+  }).catch(() => {
+    // Fallback: show in alert
+    alert(text);
+  });
+}
+
+loadData();
+</script>
+</body>
+</html>
