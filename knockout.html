@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WC26 · Knockout Stage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09111F;--card:#0E1A2B;--card2:#152238;--border:#1E3250;
+  --cyan:#00D9FF;--amber:#F5A623;--red:#FF3B3B;--green:#1DB954;
+  --text:#E8F0FB;--muted:#6B7FA3;--gold:#FFD700;
+  --font-display:'Bebas Neue',sans-serif;--font-body:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:14px;line-height:1.5;min-height:100vh}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(9,17,31,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0;padding:0 1.5rem;height:48px}
+nav .logo{font-family:var(--font-display);font-size:22px;color:var(--cyan);letter-spacing:1px;margin-right:2rem;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;font-size:12px;font-weight:500;padding:0 .75rem;height:48px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
+nav a:hover{color:var(--text);border-bottom-color:var(--cyan)}
+nav a.nav-page{font-weight:600}
+nav a.nav-page.active{color:var(--cyan);border-bottom-color:var(--cyan)}
+.nav-divider{width:1px;height:20px;background:var(--border);margin:0 .5rem;flex-shrink:0}
+.nav-pts{margin-left:auto;display:flex;align-items:center;gap:.5rem;font-size:12px}
+.nav-pts span{color:var(--muted)}
+.nav-pts strong{color:var(--amber);font-family:var(--font-display);font-size:16px}
+
+/* LIVE BANNER */
+#live-banner{padding:14px 1.5rem;font-size:15px;font-weight:600;display:none;align-items:center;justify-content:center;gap:1rem;background:#1a0a0a;border-bottom:1px solid #3a0a0a;text-align:center;flex-wrap:wrap}
+#live-banner.visible{display:flex}
+#live-banner.live-now{background:linear-gradient(90deg,#2a0505,#1a0808);border-bottom-color:#ff3b3b44;animation:pulse-border 2s infinite}
+@keyframes pulse-border{0%,100%{border-bottom-color:#ff3b3b44}50%{border-bottom-color:#ff3b3b99}}
+.live-dot{width:11px;height:11px;border-radius:50%;background:var(--red);flex-shrink:0;animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.live-match{display:flex;align-items:center;gap:.5rem}
+.live-vs{color:var(--muted);font-size:11px;margin:0 4px}
+.live-sep{color:var(--border);margin:0 .5rem}
+.next-label{color:var(--muted);font-size:11px}
+.tag-live{background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
+.tag-next{background:var(--cyan)22;color:var(--cyan);font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:.5px;vertical-align:middle}
+
+/* HERO */
+#hero{padding:2.5rem 1.5rem 2rem;border-bottom:1px solid var(--border)}
+.hero-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:.5rem}
+.hero-title{font-family:var(--font-display);font-size:clamp(36px,6vw,72px);line-height:.95;letter-spacing:1px;margin-bottom:1rem}
+.hero-title span{color:var(--cyan)}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.5rem}
+.h-stat{text-align:center}
+.h-stat-num{font-family:var(--font-display);font-size:42px;color:var(--cyan);line-height:1}
+.h-stat-num.gold{color:var(--amber)}
+.h-stat-num.green{color:var(--green)}
+.h-stat-label{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-top:2px}
+
+/* GS SUMMARY BANNER */
+#gs-summary{padding:1rem 1.5rem;background:var(--card);border-bottom:1px solid var(--border);display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.gs-summary-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.gs-chips{display:flex;gap:.5rem;flex-wrap:wrap}
+.gs-chip{background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px}
+.gs-chip .gs-rank{font-family:var(--font-display);font-size:15px;color:var(--muted)}
+.gs-chip .gs-pts{font-family:var(--font-display);font-size:15px;color:var(--amber)}
+
+/* SECTIONS */
+section{padding:2rem 1.5rem;border-bottom:1px solid var(--border)}
+.section-hdr{display:flex;align-items:baseline;gap:.75rem;margin-bottom:1.25rem}
+.section-hdr h2{font-family:var(--font-display);font-size:24px;letter-spacing:.5px}
+.section-hdr .badge{font-size:10px;padding:2px 8px;background:var(--card2);color:var(--muted);border-radius:99px;font-weight:500;border:1px solid var(--border)}
+
+/* LEADERBOARD */
+.lb-table{width:100%;border-collapse:collapse}
+.lb-table tr{border-bottom:1px solid var(--border);transition:background .1s}
+.lb-table tr:hover{background:var(--card)}
+.lb-table td{padding:10px 8px;font-size:13px}
+.lb-table td:first-child{width:36px;text-align:center;font-family:var(--font-display);font-size:18px;color:var(--muted)}
+.lb-table td.name{font-weight:500}
+.lb-table td.pts{font-family:var(--font-display);font-size:20px;color:var(--amber);text-align:right}
+.lb-table td.gs-pts{font-family:var(--font-display);font-size:14px;color:var(--muted);text-align:right;padding-right:1rem}
+.lb-table td.bar{width:30%}
+.bar-bg{background:var(--card2);border-radius:2px;height:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;background:var(--amber);transition:width .4s}
+.rank-1 td:first-child{color:var(--gold)}
+.rank-2 td:first-child{color:#C0C0C0}
+.rank-3 td:first-child{color:#CD7F32}
+
+/* BRACKET */
+.bracket-scroll{overflow-x:auto;padding-bottom:1rem}
+.bracket-grid{display:grid;grid-template-columns:repeat(5,220px);gap:0;min-width:1100px}
+.round-col{padding:0 8px}
+.round-label{font-family:var(--font-display);font-size:13px;letter-spacing:1px;color:var(--cyan);margin-bottom:1rem;text-align:center;border-bottom:1px solid var(--border);padding-bottom:.5rem}
+.match-box{background:var(--card);border:1px solid var(--border);border-radius:6px;margin-bottom:8px;overflow:hidden;position:relative}
+.match-box.has-winner{border-color:var(--green)33}
+.match-team{padding:8px 10px;font-size:12px;display:flex;justify-content:space-between;align-items:center;gap:4px}
+.match-team:first-child{border-bottom:1px solid var(--border)}
+.match-team .team-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.match-team.winner{background:var(--green)18;color:var(--green);font-weight:500}
+.match-team .score{font-family:var(--font-display);font-size:16px;color:var(--amber);min-width:20px;text-align:right;flex-shrink:0}
+.match-id-badge{position:absolute;top:4px;right:6px;font-size:9px;color:var(--muted);font-weight:500}
+.bracket-spacer{height:16px}
+.champion-box{background:linear-gradient(135deg,#1a1400,#2a2000);border:1px solid var(--amber)55;border-radius:8px;padding:1rem;text-align:center;margin-top:.5rem}
+.champion-label{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--amber);margin-bottom:.25rem}
+.champion-name{font-family:var(--font-display);font-size:22px;color:var(--gold)}
+
+/* SCHEDULE */
+.mv-controls{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.mv-select{background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:6px;font-size:13px;font-family:var(--font-body);cursor:pointer}
+.mv-select:focus{outline:2px solid var(--cyan);border-color:var(--cyan)}
+.th-table{width:100%;border-collapse:collapse;font-size:12px}
+.th-table th{text-align:left;padding:8px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border);font-size:11px}
+.th-table td{padding:8px;border-bottom:1px solid var(--border)55}
+.th-table tr:hover td{background:var(--card2)}
+
+/* MATCH VIEWER */
+.mv-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.mv-header{display:grid;grid-template-columns:1fr auto 1fr;background:var(--card2);border-bottom:1px solid var(--border)}
+.mv-team{padding:1rem;font-size:clamp(13px,2vw,18px);font-weight:600;display:flex;align-items:center;gap:.5rem}
+.mv-team.away{justify-content:flex-end;text-align:right}
+.mv-score-box{padding:1rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.mv-score{font-family:var(--font-display);font-size:36px;color:var(--amber)}
+.mv-dash{color:var(--muted);font-size:20px}
+.mv-result{text-align:center;padding:.5rem;font-size:12px;color:var(--green);border-bottom:1px solid var(--border);background:var(--green)0a}
+.mv-picks{display:grid;grid-template-columns:1fr auto 1fr;border-top:1px solid var(--border)}
+.mv-col{padding:.75rem}
+.mv-col-hdr{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.5rem;text-align:center}
+.mv-col.home .mv-col-hdr{color:#4FC3F7}
+.mv-col.away-col .mv-col-hdr{color:#FF6B6B}
+.pick-chip{display:inline-block;padding:4px 8px;border-radius:4px;font-size:12px;font-weight:500;margin:2px 0;width:100%;text-align:center;background:var(--card2)}
+.pick-chip.correct{background:var(--green)22;color:var(--green)}
+.pick-chip.wrong{background:var(--red)22;color:#ff6b6b}
+
+/* TREND */
+#koTrendChart{max-height:280px}
+
+footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border-top:1px solid var(--border)}
+@media(max-width:600px){
+  nav a{display:none}nav a:nth-child(-n+4){display:flex}
+  .hero-stats{gap:1rem}.h-stat-num{font-size:32px}
+  .mv-picks{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">WC26</span>
+  <a href="index.html" class="nav-page">⚽ Group Stage</a>
+  <a href="knockout.html" class="nav-page active">🏆 Knockout</a>
+  <a href="predictions.html" class="nav-page">🎯 KO Picks</a>
+  <span class="nav-divider"></span>
+  <a href="#leaderboard">Standings</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#viewer">Match</a>
+  <a href="#trend">Trend</a>
+  <div class="nav-pts" id="nav-leader"></div>
+</nav>
+
+<div id="live-banner">
+  <div class="live-dot" id="live-dot"></div>
+  <div id="live-text"></div>
+</div>
+
+<!-- Group Stage final summary -->
+<div id="gs-summary">
+  <div class="gs-summary-label">Group Stage Final</div>
+  <div class="gs-chips" id="gs-chips"></div>
+</div>
+
+<section id="hero">
+  <div class="hero-eyebrow">Knockout Stage · Prediction League · 2026</div>
+  <h1 class="hero-title">KNOCKOUT <span>STAGE</span></h1>
+  <div class="hero-stats">
+    <div class="h-stat"><div class="h-stat-num" id="stat-played">—</div><div class="h-stat-label">KO matches played</div></div>
+    <div class="h-stat"><div class="h-stat-num gold" id="stat-goals">—</div><div class="h-stat-label">Goals scored</div></div>
+    <div class="h-stat"><div class="h-stat-num green" id="stat-remaining">—</div><div class="h-stat-label">Matches remaining</div></div>
+    <div class="h-stat"><div class="h-stat-num" id="stat-friends">7</div><div class="h-stat-label">Predictors</div></div>
+  </div>
+</section>
+
+<section id="leaderboard">
+  <div class="section-hdr"><h2>KO LEADERBOARD</h2><span class="badge" id="lb-badge">Starting from zero · KO stage only</span></div>
+  <table class="lb-table" id="lb-table"></table>
+</section>
+
+<section id="bracket">
+  <div class="section-hdr"><h2>BRACKET</h2><span class="badge">Round of 32 → Final</span></div>
+  <div class="bracket-scroll"><div class="bracket-grid" id="bracket-grid"></div></div>
+</section>
+
+<section id="schedule">
+  <div class="section-hdr"><h2>KO SCHEDULE</h2><span class="badge" id="sched-badge">All knockout matches · CST</span></div>
+  <div class="mv-controls">
+    <select class="mv-select" id="sched-filter" onchange="renderSchedule()">
+      <option value="all">All matches</option>
+      <option value="played">Played</option>
+      <option value="upcoming">Upcoming</option>
+    </select>
+    <select class="mv-select" id="sched-round" onchange="renderSchedule()">
+      <option value="all">All rounds</option>
+      <option value="Round of 32">Round of 32</option>
+      <option value="Round of 16">Round of 16</option>
+      <option value="Quarter-finals">Quarter-finals</option>
+      <option value="Semi-finals">Semi-finals</option>
+      <option value="Final">Final</option>
+    </select>
+  </div>
+  <div style="overflow-x:auto"><table class="th-table" id="sched-table"></table></div>
+</section>
+
+<section id="viewer">
+  <div class="section-hdr"><h2>MATCH VIEWER</h2><span class="badge">Pick a KO match</span></div>
+  <div class="mv-controls">
+    <select class="mv-select" id="mv-select" onchange="renderMatchViewer()"></select>
+  </div>
+  <div class="mv-card" id="mv-card"><div style="padding:2rem;color:var(--muted);text-align:center">Select a match above</div></div>
+</section>
+
+<section id="trend">
+  <div class="section-hdr"><h2>KO SCORE TREND</h2><span class="badge">Cumulative KO points only</span></div>
+  <canvas id="koTrendChart" height="280"></canvas>
+</section>
+
+<footer>World Cup 2026 · Knockout Stage · <span id="updated-ts">—</span></footer>
+
+<script>
+let D = null;
+const FRIEND_COLORS = ['#FFD700','#FF6B6B','#4FC3F7','#9ACD32','#FF8C42','#B68FE0','#4DD0A8'];
+const MEDAL = {1:'🥇',2:'🥈',3:'🥉'};
+
+const FLAG_MAP = {
+  'Algeria':"dz",'Argentina':"ar",'Australia':"au",'Austria':"at",
+  'Belgium':"be",'Bosnia and Herzegovina':"ba",'Brazil':"br",'Canada':"ca",
+  'Cape Verde':"cv",'Colombia':"co",'Croatia':"hr",'Curacao':"cw",
+  'Czechia':"cz",'DR Congo':"cd",'Ecuador':"ec",'Egypt':"eg",
+  'England':"gb-eng",'France':"fr",'Germany':"de",'Ghana':"gh",
+  'Haiti':"ht",'Iran':"ir",'Iraq':"iq",'Ivory Coast':"ci",
+  'Japan':"jp",'Jordan':"jo",'Mexico':"mx",'Morocco':"ma",
+  'Netherlands':"nl",'New Zealand':"nz",'Norway':"no",'Panama':"pa",
+  'Paraguay':"py",'Portugal':"pt",'Qatar':"qa",'Saudi Arabia':"sa",
+  'Scotland':"gb-sct",'Senegal':"sn",'South Africa':"za",'South Korea':"kr",
+  'Spain':"es",'Sweden':"se",'Switzerland':"ch",'Tunisia':"tn",
+  'Turkiye':"tr",'United States':"us",'Uruguay':"uy",'Uzbekistan':"uz"
+};
+function esc(s){ return s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):''; }
+function cleanName(s){ return s?s.replace(/^[^A-Za-z]+/,'').trim():''; }
+function teamFlag(name) {
+  if(!name) return '';
+  const n = cleanName(name);
+  if(n==='TBD'||n==='Draw'||!n) return `<span style="color:var(--muted)">${esc(n)||'TBD'}</span>`;
+  const code = FLAG_MAP[n];
+  if(!code) return esc(n);
+  return `<img src="flags/${code}.png" width="16" height="12" alt="${n}" style="vertical-align:middle;border-radius:1px;margin-right:4px">` + esc(n);
+}
+
+async function init() {
+  try {
+    const r = await fetch('data.json?v='+Date.now());
+    D = await r.json();
+    render();
+  } catch(e) {
+    document.body.innerHTML = '<div style="padding:2rem;color:#ff6b6b">Could not load data.json — '+e.message+'</div>';
+  }
+}
+
+function koMatches() {
+  // Return KO matches as array sorted by KO number
+  return Object.entries(D.ko||{})
+    .sort((a,b) => parseInt(a[0].slice(2)) - parseInt(b[0].slice(2)))
+    .map(([id,m]) => ({id,...m}));
+}
+
+function koPlayed() { return koMatches().filter(m => m.winner); }
+
+function rankFriendsKO() {
+  return D.friends.map(f => {
+    const ko_pts = Object.entries(D.predictions[f]?.matches||{})
+      .filter(([k]) => k.startsWith('KO'))
+      .reduce((s,[,v]) => s+(v.pts||0), 0);
+    return { name: f, ko_pts };
+  }).sort((a,b) => b.ko_pts - a.ko_pts);
+}
+
+function render() {
+  renderGSSummary();
+  renderLiveBanner();
+  renderHeroStats();
+  renderLeaderboard();
+  renderBracket();
+  renderSchedule();
+  renderMatchViewerSelect();
+  renderKOTrend();
+  document.getElementById('updated-ts').textContent = 'Data from '+(D.meta?.updated ? new Date(D.meta.updated).toLocaleString() : 'recently');
+  setInterval(renderLiveBanner, 60000);
+}
+
+// ── GS Summary strip ─────────────────────────────────────────
+function renderGSSummary() {
+  const gsTotals = D.gs_totals || {};
+  const ranked = Object.entries(gsTotals).sort((a,b)=>b[1]-a[1]);
+  let rank = 1;
+  const chips = ranked.map(([name, pts], i) => {
+    if(i>0 && pts < ranked[i-1][1]) rank = i+1;
+    const medal = MEDAL[rank] || rank;
+    return `<div class="gs-chip"><span class="gs-rank">${medal}</span> ${esc(name)} <span class="gs-pts">${pts}</span></div>`;
+  }).join('');
+  document.getElementById('gs-chips').innerHTML = chips;
+}
+
+// ── Live Banner ───────────────────────────────────────────────
+function renderLiveBanner() {
+  const nowMs = Date.now();
+  const cstOffset = 6*60*60*1000;
+  const nowCSTStr = new Date(nowMs - cstOffset).toISOString().slice(0,16);
+
+  const kos = koMatches().filter(m => m.date && m.time);
+  function matchStart(m){ return m.date+'T'+m.time.padStart(5,'0'); }
+  function matchEnd(m){ return new Date(new Date(matchStart(m)+':00Z').getTime()+115*60*1000).toISOString().slice(0,16); }
+
+  const live = kos.filter(m => !m.winner && nowCSTStr >= matchStart(m) && nowCSTStr <= matchEnd(m));
+  const upcoming = kos.filter(m => !m.winner && nowCSTStr < matchStart(m))
+    .sort((a,b) => matchStart(a).localeCompare(matchStart(b)));
+
+  const banner = document.getElementById('live-banner');
+  const txt = document.getElementById('live-text');
+  const dot = document.getElementById('live-dot');
+
+  if(live.length > 0) {
+    banner.className = 'visible live-now';
+    dot.style.background = 'var(--red)'; dot.style.animation = '';
+    txt.innerHTML = live.map(m =>
+      `<span class="live-match"><span class="tag-live">LIVE</span> <b>${m.id}</b> ${teamFlag(m.t1)} <span class="live-vs">vs</span> ${teamFlag(m.t2)}</span>`
+    ).join('<span class="live-sep"> | </span>');
+  } else if(upcoming.length > 0) {
+    const next = upcoming[0];
+    const concur = upcoming.filter(m => matchStart(m)===matchStart(next));
+    banner.className = 'visible';
+    dot.style.background = 'var(--cyan)'; dot.style.animation = 'none';
+    const [dp,tp] = matchStart(next).split('T');
+    const [yy,mm,dd] = dp.split('-').map(Number);
+    const h = parseInt(tp); const mn = tp.split(':')[1];
+    const ampm = h>=12?'PM':'AM'; const h12 = h%12||12;
+    const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const jsDate = new Date(yy,mm-1,dd);
+    const timeStr = `${days[jsDate.getDay()]} ${months[mm-1]} ${dd}, ${h12}:${mn} ${ampm} CST`;
+    if(concur.length > 1) {
+      txt.innerHTML = `<span class="next-label">Next (×${concur.length}):</span> `+
+        concur.map(m=>`${teamFlag(m.t1)} vs ${teamFlag(m.t2)} <span style="color:var(--muted);font-size:12px">(${m.id})</span>`).join(' | ')+
+        ` · <span class="next-label">${timeStr}</span>`;
+    } else {
+      txt.innerHTML = `<span class="next-label">Next:</span> ${teamFlag(next.t1)} <span class="live-vs">vs</span> ${teamFlag(next.t2)} <span style="color:var(--muted);font-size:12px">(${next.id})</span> · <span class="next-label">${timeStr}</span>`;
+    }
+  } else {
+    banner.className = '';
+  }
+}
+
+// ── Hero Stats ────────────────────────────────────────────────
+function renderHeroStats() {
+  const played = koPlayed();
+  const goals = played.reduce((s,m) => {
+    const [h,a] = (m.score||'0-0').split('-').map(Number);
+    return s+h+a;
+  }, 0);
+  const total = koMatches().length;
+  document.getElementById('stat-played').textContent = played.length;
+  document.getElementById('stat-goals').textContent = goals||'—';
+  document.getElementById('stat-remaining').textContent = total - played.length;
+
+  const ranked = rankFriendsKO();
+  if(ranked.length) {
+    document.getElementById('nav-leader').innerHTML =
+      `<span>KO Leader:</span><strong>${esc(ranked[0].name)}</strong><span>${ranked[0].ko_pts}pts</span>`;
+  }
+}
+
+// ── Leaderboard ───────────────────────────────────────────────
+function renderLeaderboard() {
+  const ranked = rankFriendsKO();
+  const max = Math.max(...ranked.map(r=>r.ko_pts), 1);
+  const playedCount = koPlayed().length;
+  document.getElementById('lb-badge').textContent = `KO stage only · ${playedCount} matches played`;
+
+  const gsTotals = D.gs_totals || {};
+  let rank = 1;
+  let rows = '';
+  for(let i=0; i<ranked.length; i++) {
+    const f = ranked[i];
+    if(i>0 && f.ko_pts < ranked[i-1].ko_pts) rank = i+1;
+    const medal = MEDAL[rank] || rank;
+    const pct = Math.round((f.ko_pts/max)*100);
+    const cls = rank<=3 ? `rank-${rank}` : '';
+    const gsTotal = gsTotals[f.name] ?? '—';
+    rows += `<tr class="${cls}">
+      <td>${medal}</td>
+      <td class="name">${esc(f.name)}</td>
+      <td class="bar"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
+      <td class="pts">${f.ko_pts}</td>
+      <td class="gs-pts" title="Group stage pts">+${gsTotal} GS</td>
+    </tr>`;
+  }
+  document.getElementById('lb-table').innerHTML = rows;
+}
+
+// ── Bracket ───────────────────────────────────────────────────
+function renderBracket() {
+  const ko = D.ko;
+  const rounds = [
+    {label:'ROUND OF 32',   ids:[...Array(16)].map((_,i)=>`KO${i+1}`)},
+    {label:'ROUND OF 16',  ids:[...Array(8)].map((_,i)=>`KO${i+17}`)},
+    {label:'QUARTER-FINALS',ids:[...Array(4)].map((_,i)=>`KO${i+25}`)},
+    {label:'SEMI-FINALS',  ids:['KO29','KO30']},
+    {label:'FINAL',        ids:['KO31']},
+  ];
+
+  let html = '';
+  for(const round of rounds) {
+    html += `<div class="round-col"><div class="round-label">${round.label}</div>`;
+    round.ids.forEach((id,idx) => {
+      const m = ko[id];
+      if(!m) return;
+      const t1 = cleanName(m.t1||'');
+      const t2 = cleanName(m.t2||'');
+      const w  = cleanName(m.winner||'');
+      const t1win = w && w===t1;
+      const t2win = w && w===t2;
+      const tbd1 = !t1||t1==='TBD';
+      const tbd2 = !t2||t2==='TBD';
+      // Parse score
+      let hs='',as_='';
+      if(m.score) { const sp=m.score.split('-'); hs=sp[0]||''; as_=sp[1]||''; }
+      html += `<div class="match-box${w?' has-winner':''}">
+        <span class="match-id-badge">${id}</span>
+        <div class="match-team${t1win?' winner':''}">
+          <span class="team-name">${tbd1?`<span style="color:var(--border)">TBD</span>`:teamFlag(t1)}</span>
+          ${hs?`<span class="score">${hs}</span>`:''}
+        </div>
+        <div class="match-team${t2win?' winner':''}">
+          <span class="team-name">${tbd2?`<span style="color:var(--border)">TBD</span>`:teamFlag(t2)}</span>
+          ${as_?`<span class="score">${as_}</span>`:''}
+        </div>
+      </div>`;
+      if(idx%2===1) html += '<div class="bracket-spacer"></div>';
+    });
+    if(round.label==='FINAL') {
+      const fw = cleanName(ko['KO31']?.winner||'');
+      html += `<div class="champion-box"><div class="champion-label">🏆 Champion</div><div class="champion-name">${fw?teamFlag(fw):'<span style="color:var(--muted)">TBD</span>'}</div></div>`;
+    }
+    html += '</div>';
+  }
+  document.getElementById('bracket-grid').innerHTML = html;
+}
+
+// ── KO Schedule ───────────────────────────────────────────────
+function renderSchedule() {
+  const filter = document.getElementById('sched-filter').value;
+  const round  = document.getElementById('sched-round').value;
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const days   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  let rows = koMatches().filter(m => m.date);
+  if(filter==='played')   rows = rows.filter(m => m.winner);
+  if(filter==='upcoming') rows = rows.filter(m => !m.winner);
+  if(round!=='all')       rows = rows.filter(m => m.round===round);
+
+  const played = rows.filter(m=>m.winner).length;
+  document.getElementById('sched-badge').textContent = `${played}/${rows.length} played · times in CST`;
+
+  const head = `<thead><tr>
+    <th>ID</th><th>Round</th><th>Date</th><th>Time (CST)</th>
+    <th>Team 1</th><th style="text-align:center">Score</th><th>Team 2</th><th>Winner</th>
+  </tr></thead>`;
+
+  const body = rows.map(m => {
+    const t1 = cleanName(m.t1||'');
+    const t2 = cleanName(m.t2||'');
+    const w  = cleanName(m.winner||'');
+    const hasDate = m.date && m.date !== 'null';
+    let dateStr='TBD', timeStr='TBD';
+    if(hasDate) {
+      const [y,mo,dy] = m.date.split('-').map(Number);
+      const jsDate = new Date(y,mo-1,dy);
+      dateStr = `${days[jsDate.getDay()]} ${months[mo-1]} ${dy}`;
+    }
+    if(m.time && m.time!=='null') {
+      const [hr,mn] = m.time.split(':').map(Number);
+      timeStr = `${hr%12||12}:${String(mn).padStart(2,'0')} ${hr>=12?'PM':'AM'}`;
+    }
+    const scoreStr = m.score
+      ? `<span style="font-family:var(--font-display);font-size:18px;color:var(--amber)">${m.score.replace('-',' – ')}</span>`
+      : `<span style="color:var(--muted)">vs</span>`;
+    const winnerStr = w
+      ? `<span style="color:var(--green)">${teamFlag(w)}</span>`
+      : `<span style="color:var(--border)">—</span>`;
+    const tbd = !t1||t1==='TBD';
+    return `<tr style="${!m.winner?'opacity:.65':''}">
+      <td style="font-family:var(--font-display);font-size:15px;color:var(--amber)">${m.id}</td>
+      <td style="color:var(--muted);font-size:11px;white-space:nowrap">${m.round||'—'}</td>
+      <td style="color:var(--muted);white-space:nowrap">${dateStr}</td>
+      <td style="color:var(--muted);white-space:nowrap">${timeStr}</td>
+      <td style="white-space:nowrap">${tbd?`<span style="color:var(--border)">TBD</span>`:teamFlag(t1)}</td>
+      <td style="text-align:center">${scoreStr}</td>
+      <td style="white-space:nowrap">${tbd?`<span style="color:var(--border)">TBD</span>`:teamFlag(t2)}</td>
+      <td style="white-space:nowrap">${winnerStr}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('sched-table').innerHTML = head + `<tbody>${body}</tbody>`;
+}
+
+// ── Match Viewer ──────────────────────────────────────────────
+function renderMatchViewerSelect() {
+  const sel = document.getElementById('mv-select');
+  const options = koMatches().map(m => {
+    const t1 = cleanName(m.t1||'TBD');
+    const t2 = cleanName(m.t2||'TBD');
+    const status = m.winner ? '✅' : '⏳';
+    return `<option value="${m.id}">${status} ${m.id} · ${t1} vs ${t2}</option>`;
+  }).join('');
+  sel.innerHTML = options || '<option>No KO matches yet</option>';
+  renderMatchViewer();
+}
+
+function renderMatchViewer() {
+  const id = document.getElementById('mv-select').value;
+  const m = D.ko?.[id];
+  if(!m) return;
+
+  const t1 = cleanName(m.t1||'');
+  const t2 = cleanName(m.t2||'');
+  const w  = cleanName(m.winner||'');
+  let hs='',as_='';
+  if(m.score){ const sp=m.score.split('-'); hs=sp[0]; as_=sp[1]; }
+
+  // Who picked what
+  const t1pickers=[], t2pickers=[];
+  for(const f of D.friends) {
+    const p = D.predictions[f]?.matches?.[id];
+    if(!p?.pick) continue;
+    const pick = cleanName(p.pick);
+    const correct = w && pick===w;
+    const played  = !!w;
+    const cls = played?(correct?'correct':'wrong'):'';
+    const chip = `<div class="pick-chip ${cls}">${esc(f)}</div>`;
+    if(pick===t1) t1pickers.push(chip);
+    else if(pick===t2) t2pickers.push(chip);
+  }
+
+  const scoreDisplay = m.score
+    ? `<span class="mv-score">${hs}</span><span class="mv-dash">–</span><span class="mv-score">${as_}</span>`
+    : '<span class="mv-dash" style="font-size:28px">vs</span>';
+
+  const resultBar = w
+    ? `<div class="mv-result">✅ Winner: ${teamFlag(w)}</div>`
+    : `<div class="mv-result" style="color:var(--muted)">⏳ Not yet played</div>`;
+
+  const tbd = !t1||t1==='TBD';
+
+  document.getElementById('mv-card').innerHTML = `
+    <div class="mv-header">
+      <div class="mv-team">${tbd?'<span style="color:var(--muted)">TBD</span>':teamFlag(t1)}</div>
+      <div class="mv-score-box">${scoreDisplay}</div>
+      <div class="mv-team away">${tbd?'<span style="color:var(--muted)">TBD</span>':teamFlag(t2)}</div>
+    </div>
+    ${resultBar}
+    <div class="mv-picks">
+      <div class="mv-col home">
+        <div class="mv-col-hdr">${tbd?'Team 1':esc(t1)} picks</div>
+        ${t1pickers.join('')||'<div style="color:var(--muted);font-size:12px;text-align:center">none</div>'}
+      </div>
+      <div class="mv-col away-col">
+        <div class="mv-col-hdr">${tbd?'Team 2':esc(t2)} picks</div>
+        ${t2pickers.join('')||'<div style="color:var(--muted);font-size:12px;text-align:center">none</div>'}
+      </div>
+    </div>`;
+}
+
+// ── KO Score Trend ─────────────────────────────────────────────
+function renderKOTrend() {
+  const played = koPlayed().sort((a,b) => parseInt(a.id.slice(2))-parseInt(b.id.slice(2)));
+  if(!played.length) {
+    document.getElementById('koTrendChart').insertAdjacentHTML('afterend',
+      '<div style="color:var(--muted);text-align:center;padding:2rem;font-size:13px">No KO matches played yet — chart will appear here once the knockout stage begins</div>');
+    document.getElementById('koTrendChart').style.display='none';
+    return;
+  }
+  const labels = played.map(m=>m.id);
+  const datasets = D.friends.map((f,fi) => {
+    let cum=0;
+    const vals = played.map(m => {
+      const p = D.predictions[f]?.matches?.[m.id];
+      cum += p?.pts||0;
+      return cum;
+    });
+    return { label:f, data:vals, borderColor:FRIEND_COLORS[fi], backgroundColor:FRIEND_COLORS[fi], borderWidth:2, pointRadius:3, tension:0, fill:false };
+  });
+  new Chart(document.getElementById('koTrendChart'),{
+    type:'line', data:{labels,datasets},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{position:'bottom',labels:{color:'#6B7FA3',font:{size:11},boxWidth:12,padding:16}},
+        tooltip:{callbacks:{title:i=>'After '+i[0].label}}
+      },
+      scales:{
+        x:{ticks:{color:'#6B7FA3',font:{size:10}},grid:{color:'#1E3250'}},
+        y:{beginAtZero:true,ticks:{color:'#6B7FA3',stepSize:1},grid:{color:'#1E3250'}}
+      }
+    }
+  });
+}
+
+init();
+</script>
+</body>
+</html>

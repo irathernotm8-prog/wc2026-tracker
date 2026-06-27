@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T15:39:18.499Z"
+    "updated": "2026-06-27T03:11:54.010Z"
   },
   "friends": [
     "Bilal",
@@ -827,9 +827,9 @@
       "away": "Uruguay",
       "home_name": "Spain",
       "away_name": "Uruguay",
-      "hs": 1,
-      "as": 0,
-      "winner": "Spain"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "H6",
@@ -840,9 +840,9 @@
       "away": "Saudi Arabia",
       "home_name": "Cape Verde",
       "away_name": "Saudi Arabia",
-      "hs": 0,
-      "as": 0,
-      "winner": "Draw"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "G5",
@@ -853,9 +853,9 @@
       "away": "New Zealand",
       "home_name": "Belgium",
       "away_name": "New Zealand",
-      "hs": 5,
-      "as": 1,
-      "winner": "Belgium"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "G6",
@@ -866,9 +866,9 @@
       "away": "Iran",
       "home_name": "Egypt",
       "away_name": "Iran",
-      "hs": 1,
-      "as": 1,
-      "winner": "Draw"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "L5",
@@ -955,230 +955,294 @@
       "t1": "Czechia",
       "t2": "Bosnia and Herzegovina",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "12:00"
     },
     "KO2": {
       "round": "Round of 32",
       "t1": "Germany",
       "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "16:00"
     },
     "KO3": {
       "round": "Round of 32",
       "t1": "Sweden",
       "t2": "Morocco",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "20:00"
     },
     "KO4": {
       "round": "Round of 32",
       "t1": "Scotland",
-      "t2": "Cape Verde",
+      "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "23:59"
     },
     "KO5": {
       "round": "Round of 32",
       "t1": "Norway",
       "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-02",
+      "time": "12:00"
     },
     "KO6": {
       "round": "Round of 32",
       "t1": "Ecuador",
       "t2": "Senegal",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-02",
+      "time": "16:00"
     },
     "KO7": {
       "round": "Round of 32",
       "t1": "Mexico",
       "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-02",
+      "time": "20:00"
     },
     "KO8": {
       "round": "Round of 32",
       "t1": "England",
       "t2": "DR Congo",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-02",
+      "time": "23:59"
     },
     "KO9": {
       "round": "Round of 32",
       "t1": "United States",
       "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "12:00"
     },
     "KO10": {
       "round": "Round of 32",
       "t1": "Iran",
       "t2": "Spain",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "16:00"
     },
     "KO11": {
       "round": "Round of 32",
       "t1": "DR Congo",
       "t2": "Panama",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "20:00"
     },
     "KO12": {
       "round": "Round of 32",
       "t1": "Saudi Arabia",
       "t2": "Jordan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "23:59"
     },
     "KO13": {
       "round": "Round of 32",
       "t1": "Canada",
       "t2": "Japan",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-04",
+      "time": "12:00"
     },
     "KO14": {
       "round": "Round of 32",
       "t1": "Argentina",
       "t2": "Spain",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-04",
+      "time": "16:00"
     },
     "KO15": {
       "round": "Round of 32",
       "t1": "Colombia",
       "t2": "Ecuador",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-04",
+      "time": "20:00"
     },
     "KO16": {
       "round": "Round of 32",
       "t1": "Turkiye",
       "t2": "Belgium",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-04",
+      "time": "23:59"
     },
     "KO17": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-08",
+      "time": "14:00"
     },
     "KO18": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-08",
+      "time": "18:00"
     },
     "KO19": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-08",
+      "time": "22:00"
     },
     "KO20": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-09",
+      "time": "14:00"
     },
     "KO21": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-09",
+      "time": "18:00"
     },
     "KO22": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-09",
+      "time": "22:00"
     },
     "KO23": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-10",
+      "time": "14:00"
     },
     "KO24": {
       "round": "Round of 16",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-10",
+      "time": "18:00"
     },
     "KO25": {
       "round": "Quarter-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-12",
+      "time": "14:00"
     },
     "KO26": {
       "round": "Quarter-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-12",
+      "time": "20:00"
     },
     "KO27": {
       "round": "Quarter-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-13",
+      "time": "14:00"
     },
     "KO28": {
       "round": "Quarter-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-13",
+      "time": "20:00"
     },
     "KO29": {
       "round": "Semi-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-16",
+      "time": "20:00"
     },
     "KO30": {
       "round": "Semi-finals",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-17",
+      "time": "20:00"
     },
     "KO31": {
       "round": "Final",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-19",
+      "time": "20:00"
     },
     "KO32": {
       "round": "3rd Place Playoff",
       "t1": "TBD",
       "t2": "TBD",
       "score": null,
-      "winner": null
+      "winner": null,
+      "date": "2026-07-18",
+      "time": "14:00"
     }
   },
   "standings": {
     "A": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ²ÃÂ°ÃÂÃÂÃÂ½ Mexico",
+        "team": "Mexico",
         "p": 3,
         "w": 3,
         "d": 0,
@@ -1189,7 +1253,7 @@
         "pts": 9
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¿ÃÂ°ÃÂÃÂÃÂ¦ South Africa",
+        "team": "South Africa",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1200,7 +1264,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ°ÃÂ°ÃÂÃÂÃÂ· South Korea",
+        "team": "South Korea",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1211,7 +1275,7 @@
         "pts": 3
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ¿ Czechia",
+        "team": "Czechia",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1224,7 +1288,7 @@
     ],
     "B": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ­ Switzerland",
+        "team": "Switzerland",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1235,7 +1299,7 @@
         "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ¦ Canada",
+        "team": "Canada",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1246,7 +1310,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂ¦ Bosnia and Herzegovina",
+        "team": "Bosnia and Herzegovina",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1257,7 +1321,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¶ÃÂ°ÃÂÃÂÃÂ¦ Qatar",
+        "team": "Qatar",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1270,7 +1334,7 @@
     ],
     "C": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂ· Brazil",
+        "team": "Brazil",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1281,7 +1345,7 @@
         "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ²ÃÂ°ÃÂÃÂÃÂ¦ Morocco",
+        "team": "Morocco",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1292,7 +1356,7 @@
         "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ´ Scotland",
+        "team": "Scotland",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1303,7 +1367,7 @@
         "pts": 3
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ­ÃÂ°ÃÂÃÂÃÂ¹ Haiti",
+        "team": "Haiti",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1316,7 +1380,7 @@
     ],
     "D": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¸ United States",
+        "team": "United States",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1327,7 +1391,7 @@
         "pts": 6
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¦ÃÂ°ÃÂÃÂÃÂº Australia",
+        "team": "Australia",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1338,7 +1402,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂµÃÂ°ÃÂÃÂÃÂ¾ Paraguay",
+        "team": "Paraguay",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1349,7 +1413,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¹ÃÂ°ÃÂÃÂÃÂ· Turkiye",
+        "team": "Turkiye",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1362,7 +1426,7 @@
     ],
     "E": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ©ÃÂ°ÃÂÃÂÃÂª Germany",
+        "team": "Germany",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1373,7 +1437,7 @@
         "pts": 6
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ® Ivory Coast",
+        "team": "Ivory Coast",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1384,7 +1448,7 @@
         "pts": 6
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂªÃÂ°ÃÂÃÂÃÂ¨ Ecuador",
+        "team": "Ecuador",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1395,7 +1459,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ¼ Curacao",
+        "team": "Curacao",
         "p": 3,
         "w": 0,
         "d": 1,
@@ -1408,7 +1472,7 @@
     ],
     "F": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ³ÃÂ°ÃÂÃÂÃÂ± Netherlands",
+        "team": "Netherlands",
         "p": 3,
         "w": 2,
         "d": 1,
@@ -1419,7 +1483,7 @@
         "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¯ÃÂ°ÃÂÃÂÃÂµ Japan",
+        "team": "Japan",
         "p": 3,
         "w": 1,
         "d": 2,
@@ -1430,7 +1494,7 @@
         "pts": 5
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¸ÃÂ°ÃÂÃÂÃÂª Sweden",
+        "team": "Sweden",
         "p": 3,
         "w": 1,
         "d": 1,
@@ -1441,7 +1505,7 @@
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¹ÃÂ°ÃÂÃÂÃÂ³ Tunisia",
+        "team": "Tunisia",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1454,99 +1518,99 @@
     ],
     "G": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂªÃÂ°ÃÂÃÂÃÂ¬ Egypt",
-        "p": 2,
-        "w": 1,
+        "team": "Egypt",
+        "p": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
-        "ga": 2,
+        "gf": 5,
+        "ga": 3,
         "gd": 2,
-        "pts": 4
+        "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ§ÃÂ°ÃÂÃÂÃÂª Belgium",
-        "p": 2,
-        "w": 0,
-        "d": 2,
-        "l": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 2
-      },
-      {
-        "team": "ÃÂ°ÃÂÃÂÃÂ®ÃÂ°ÃÂÃÂÃÂ· Iran",
-        "p": 2,
-        "w": 0,
+        "team": "Belgium",
+        "p": 3,
+        "w": 1,
         "d": 2,
         "l": 0,
         "gf": 2,
-        "ga": 2,
-        "gd": 0,
+        "ga": 1,
+        "gd": 1,
+        "pts": 5
+      },
+      {
+        "team": "Iran",
+        "p": 3,
+        "w": 0,
+        "d": 2,
+        "l": 1,
+        "gf": 3,
+        "ga": 4,
+        "gd": -1,
         "pts": 2
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ³ÃÂ°ÃÂÃÂÃÂ¿ New Zealand",
-        "p": 2,
+        "team": "New Zealand",
+        "p": 3,
         "w": 0,
         "d": 1,
-        "l": 1,
-        "gf": 3,
-        "ga": 5,
+        "l": 2,
+        "gf": 4,
+        "ga": 6,
         "gd": -2,
         "pts": 1
       }
     ],
     "H": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂªÃÂ°ÃÂÃÂÃÂ¸ Spain",
-        "p": 2,
-        "w": 1,
+        "team": "Spain",
+        "p": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
-        "ga": 0,
-        "gd": 4,
-        "pts": 4
-      },
-      {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ» Cape Verde",
-        "p": 2,
-        "w": 0,
-        "d": 2,
-        "l": 0,
-        "gf": 2,
+        "gf": 6,
         "ga": 2,
-        "gd": 0,
-        "pts": 2
+        "gd": 4,
+        "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¾ Uruguay",
-        "p": 2,
-        "w": 0,
+        "team": "Uruguay",
+        "p": 3,
+        "w": 1,
         "d": 2,
         "l": 0,
-        "gf": 3,
+        "gf": 5,
         "ga": 3,
-        "gd": 0,
+        "gd": 2,
+        "pts": 5
+      },
+      {
+        "team": "Cape Verde",
+        "p": 3,
+        "w": 0,
+        "d": 2,
+        "l": 1,
+        "gf": 3,
+        "ga": 4,
+        "gd": -1,
         "pts": 2
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¸ÃÂ°ÃÂÃÂÃÂ¦ Saudi Arabia",
-        "p": 2,
+        "team": "Saudi Arabia",
+        "p": 3,
         "w": 0,
         "d": 1,
-        "l": 1,
-        "gf": 1,
-        "ga": 5,
-        "gd": -4,
+        "l": 2,
+        "gf": 2,
+        "ga": 7,
+        "gd": -5,
         "pts": 1
       }
     ],
     "I": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ«ÃÂ°ÃÂÃÂÃÂ· France",
+        "team": "France",
         "p": 3,
         "w": 3,
         "d": 0,
@@ -1557,7 +1621,7 @@
         "pts": 9
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ³ÃÂ°ÃÂÃÂÃÂ´ Norway",
+        "team": "Norway",
         "p": 3,
         "w": 2,
         "d": 0,
@@ -1568,7 +1632,7 @@
         "pts": 6
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¸ÃÂ°ÃÂÃÂÃÂ³ Senegal",
+        "team": "Senegal",
         "p": 3,
         "w": 1,
         "d": 0,
@@ -1579,7 +1643,7 @@
         "pts": 3
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ®ÃÂ°ÃÂÃÂÃÂ¶ Iraq",
+        "team": "Iraq",
         "p": 3,
         "w": 0,
         "d": 0,
@@ -1592,139 +1656,139 @@
     ],
     "J": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¦ÃÂ°ÃÂÃÂÃÂ· Argentina",
-        "p": 2,
-        "w": 2,
+        "team": "Argentina",
+        "p": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
+        "gf": 7,
         "ga": 0,
-        "gd": 5,
-        "pts": 6
+        "gd": 7,
+        "pts": 9
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ©ÃÂ°ÃÂÃÂÃÂ¿ Algeria",
-        "p": 2,
+        "team": "Austria",
+        "p": 3,
         "w": 1,
         "d": 0,
-        "l": 1,
-        "gf": 2,
-        "ga": 4,
+        "l": 2,
+        "gf": 3,
+        "ga": 5,
         "gd": -2,
         "pts": 3
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¦ÃÂ°ÃÂÃÂÃÂ¹ Austria",
-        "p": 2,
+        "team": "Algeria",
+        "p": 3,
         "w": 1,
-        "d": 0,
-        "l": 1,
-        "gf": 3,
-        "ga": 3,
-        "gd": 0,
-        "pts": 3
-      },
-      {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¯ÃÂ°ÃÂÃÂÃÂ´ Jordan",
-        "p": 2,
-        "w": 0,
         "d": 0,
         "l": 2,
         "gf": 2,
         "ga": 5,
         "gd": -3,
-        "pts": 0
+        "pts": 3
+      },
+      {
+        "team": "Jordan",
+        "p": 3,
+        "w": 1,
+        "d": 0,
+        "l": 2,
+        "gf": 3,
+        "ga": 5,
+        "gd": -2,
+        "pts": 3
       }
     ],
     "K": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ´ Colombia",
-        "p": 2,
-        "w": 2,
+        "team": "Colombia",
+        "p": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 4,
+        "gf": 7,
         "ga": 1,
-        "gd": 3,
-        "pts": 6
+        "gd": 6,
+        "pts": 9
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂµÃÂ°ÃÂÃÂÃÂ¹ Portugal",
-        "p": 2,
+        "team": "Portugal",
+        "p": 3,
         "w": 1,
         "d": 1,
-        "l": 0,
-        "gf": 6,
-        "ga": 1,
-        "gd": 5,
+        "l": 1,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
         "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¨ÃÂ°ÃÂÃÂÃÂ© DR Congo",
-        "p": 2,
-        "w": 0,
+        "team": "DR Congo",
+        "p": 3,
+        "w": 1,
         "d": 1,
         "l": 1,
-        "gf": 1,
-        "ga": 2,
+        "gf": 2,
+        "ga": 3,
         "gd": -1,
-        "pts": 1
+        "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂºÃÂ°ÃÂÃÂÃÂ¿ Uzbekistan",
-        "p": 2,
+        "team": "Uzbekistan",
+        "p": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "gf": 1,
-        "ga": 8,
-        "gd": -7,
+        "ga": 10,
+        "gd": -9,
         "pts": 0
       }
     ],
     "L": [
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ´ England",
-        "p": 2,
-        "w": 1,
+        "team": "England",
+        "p": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
+        "gf": 6,
         "ga": 2,
-        "gd": 2,
-        "pts": 4
+        "gd": 4,
+        "pts": 7
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂ¬ÃÂ°ÃÂÃÂÃÂ­ Ghana",
-        "p": 2,
+        "team": "Ghana",
+        "p": 3,
         "w": 1,
         "d": 1,
-        "l": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
-        "pts": 4
-      },
-      {
-        "team": "ÃÂ°ÃÂÃÂÃÂ­ÃÂ°ÃÂÃÂÃÂ· Croatia",
-        "p": 1,
-        "w": 0,
-        "d": 0,
         "l": 1,
         "gf": 2,
-        "ga": 4,
-        "gd": -2,
-        "pts": 0
+        "ga": 2,
+        "gd": 0,
+        "pts": 4
       },
       {
-        "team": "ÃÂ°ÃÂÃÂÃÂµÃÂ°ÃÂÃÂÃÂ¦ Panama",
-        "p": 1,
+        "team": "Croatia",
+        "p": 3,
+        "w": 1,
+        "d": 0,
+        "l": 2,
+        "gf": 3,
+        "ga": 5,
+        "gd": -2,
+        "pts": 3
+      },
+      {
+        "team": "Panama",
+        "p": 3,
         "w": 0,
         "d": 0,
-        "l": 1,
+        "l": 3,
         "gf": 0,
-        "ga": 1,
-        "gd": -1,
+        "ga": 2,
+        "gd": -2,
         "pts": 0
       }
     ]
@@ -1894,7 +1958,7 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Egypt",
@@ -1918,7 +1982,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2021,7 +2085,7 @@
           "pts": 0
         }
       },
-      "total": 37
+      "total": 35
     },
     "Kiana": {
       "matches": {
@@ -2211,7 +2275,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Cape Verde",
@@ -2314,7 +2378,7 @@
           "pts": 0
         }
       },
-      "total": 34
+      "total": 33
     },
     "Humza": {
       "matches": {
@@ -2480,11 +2544,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "H1": {
           "pick": "Draw",
@@ -2504,7 +2568,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2607,7 +2671,7 @@
           "pts": 0
         }
       },
-      "total": 34
+      "total": 31
     },
     "Anu": {
       "matches": {
@@ -2773,11 +2837,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "H1": {
           "pick": "Spain",
@@ -2797,7 +2861,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Saudi Arabia",
@@ -2900,7 +2964,7 @@
           "pts": 0
         }
       },
-      "total": 34
+      "total": 31
     },
     "R2": {
       "matches": {
@@ -3066,7 +3130,7 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Egypt",
@@ -3090,11 +3154,11 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "I1": {
           "pick": "France",
@@ -3193,7 +3257,7 @@
           "pts": 0
         }
       },
-      "total": 38
+      "total": 35
     },
     "Ray": {
       "matches": {
@@ -3359,11 +3423,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "H1": {
           "pick": "Spain",
@@ -3383,11 +3447,11 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "I1": {
           "pick": "France",
@@ -3486,7 +3550,7 @@
           "pts": 0
         }
       },
-      "total": 36
+      "total": 32
     },
     "Laura": {
       "matches": {
@@ -3652,11 +3716,11 @@
         },
         "G5": {
           "pick": "Belgium",
-          "pts": 1
+          "pts": 0
         },
         "G6": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "H1": {
           "pick": "Spain",
@@ -3676,7 +3740,7 @@
         },
         "H5": {
           "pick": "Spain",
-          "pts": 1
+          "pts": 0
         },
         "H6": {
           "pick": "Cape Verde",
@@ -3779,7 +3843,7 @@
           "pts": 0
         }
       },
-      "total": 33
+      "total": 30
     }
   },
   "flags": {
@@ -4774,5 +4838,14 @@
       "status": "out"
     }
   ],
-  "_sha": "4b845db210e0da1d6684bf06d36f7325a1ad3b85"
+  "_sha": "d7b287b1562e368510307a57371bc14737b7d5cf",
+  "gs_totals": {
+    "Bilal": 35,
+    "Kiana": 33,
+    "Humza": 31,
+    "Anu": 31,
+    "R2": 35,
+    "Ray": 32,
+    "Laura": 30
+  }
 }

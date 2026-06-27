@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WC26 · The Pulse</title>
+<title>WC26 · Group Stage</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -23,6 +23,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(9,17,31,.92);backdrop-filt
 nav .logo{font-family:var(--font-display);font-size:22px;color:var(--cyan);letter-spacing:1px;margin-right:2rem;white-space:nowrap}
 nav a{color:var(--muted);text-decoration:none;font-size:12px;font-weight:500;padding:0 .75rem;height:48px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
 nav a:hover{color:var(--text);border-bottom-color:var(--cyan)}
+nav a.nav-page{color:var(--muted);font-size:12px;font-weight:600;border-bottom:2px solid transparent}
+nav a.nav-page.active{color:var(--cyan);border-bottom-color:var(--cyan)}
+nav a.nav-page:hover{color:var(--text);border-bottom-color:var(--cyan)}
+.nav-divider{width:1px;height:20px;background:var(--border);margin:0 .5rem;flex-shrink:0}
 .nav-pts{margin-left:auto;display:flex;align-items:center;gap:.5rem;font-size:12px}
 .nav-pts span{color:var(--muted)}
 .nav-pts strong{color:var(--amber);font-family:var(--font-display);font-size:16px}
@@ -164,15 +168,18 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
 
 <nav>
   <span class="logo">WC26</span>
-  <a href="#leaderboard">🏆 Standings</a>
-  <a href="#bracket">🔵 Bracket</a>
-  <a href="#groups">📊 Groups</a>
-  <a href="#viewer">👁 Match</a>
-  <a href="#trend">📈 Trend</a>
-  <a href="#history">📜 History</a>
-  <a href="#rankings">🏅 Rankings</a>
-  <a href="#schedule">📅 Schedule</a>
-  <a href="predictions.html">🎯 KO Picks</a>
+  <a href="index.html" class="nav-page active">⚽ Group Stage</a>
+  <a href="knockout.html" class="nav-page">🏆 Knockout</a>
+  <a href="predictions.html" class="nav-page">🎯 KO Picks</a>
+  <span class="nav-divider"></span>
+  <a href="#leaderboard">Standings</a>
+  <a href="#bracket">Bracket</a>
+  <a href="#groups">Groups</a>
+  <a href="#viewer">Match</a>
+  <a href="#trend">Trend</a>
+  <a href="#history">History</a>
+  <a href="#rankings">Rankings</a>
+  <a href="#schedule">Schedule</a>
   <div class="nav-pts" id="nav-leader"></div>
 </nav>
 
@@ -182,7 +189,7 @@ footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:11px;border
 </div>
 
 <section id="hero">
-  <div class="hero-eyebrow">Prediction League · 2026</div>
+  <div class="hero-eyebrow">Group Stage · Prediction League · 2026</div>
   <h1 class="hero-title">WORLD CUP <span>26</span><br>THE PULSE</h1>
   <div class="hero-stats">
     <div class="h-stat"><div class="h-stat-num" id="stat-played">—</div><div class="h-stat-label">Games played</div></div>
@@ -426,7 +433,8 @@ function renderHeroStats() {
 }
 
 function rankFriends() {
-  return D.friends.map(f => ({ name: f, total: D.predictions[f]?.total || 0 }))
+  // Group stage page uses gs_totals (frozen once KO begins)
+  return D.friends.map(f => ({ name: f, total: (D.gs_totals && D.gs_totals[f] !== undefined ? D.gs_totals[f] : D.predictions[f]?.total) || 0 }))
     .sort((a,b) => b.total - a.total);
 }
 
@@ -435,7 +443,7 @@ function renderLeaderboard() {
   const ranked = rankFriends();
   const max = ranked[0]?.total || 1;
   const played = D.schedule.filter(m=>m.hs!==null&&m.hs!==undefined).length;
-  document.getElementById('lb-badge').textContent = `${played} matches played`;
+  document.getElementById('lb-badge').textContent = `Group stage · ${played}/72 matches played`;
 
   let rows = '';
   let rank = 1;
