@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T19:31:20.870Z"
+    "updated": "2026-06-27T03:11:54.010Z"
   },
   "friends": [
     "Bilal",
@@ -952,8 +952,8 @@
   "ko": {
     "KO1": {
       "round": "Round of 32",
-      "t1": "Czechia",
-      "t2": "Bosnia and Herzegovina",
+      "t1": "South Africa",
+      "t2": "Canada",
       "score": null,
       "winner": null,
       "date": "2026-06-28",
@@ -961,7 +961,7 @@
     },
     "KO2": {
       "round": "Round of 32",
-      "t1": "Germany",
+      "t1": "Brazil",
       "t2": "Japan",
       "score": null,
       "winner": null,
@@ -970,129 +970,129 @@
     },
     "KO3": {
       "round": "Round of 32",
-      "t1": "Sweden",
+      "t1": "Netherlands",
       "t2": "Morocco",
-      "score": null,
-      "winner": null,
-      "date": "2026-06-29",
-      "time": "15:30"
-    },
-    "KO4": {
-      "round": "Round of 32",
-      "t1": "Scotland",
-      "t2": "Japan",
       "score": null,
       "winner": null,
       "date": "2026-06-29",
       "time": "20:00"
     },
-    "KO5": {
+    "KO4": {
       "round": "Round of 32",
-      "t1": "Norway",
-      "t2": "Japan",
+      "t1": "Ivory Coast",
+      "t2": "Norway",
       "score": null,
       "winner": null,
       "date": "2026-06-30",
       "time": "12:00"
     },
-    "KO6": {
+    "KO5": {
       "round": "Round of 32",
-      "t1": "Ecuador",
-      "t2": "Senegal",
+      "t1": "Germany",
+      "t2": "Ecuador",
       "score": null,
       "winner": null,
       "date": "2026-06-30",
       "time": "16:00"
     },
-    "KO7": {
+    "KO6": {
       "round": "Round of 32",
-      "t1": "Mexico",
-      "t2": "Japan",
+      "t1": "France",
+      "t2": "Sweden",
       "score": null,
       "winner": null,
       "date": "2026-06-30",
       "time": "20:00"
     },
+    "KO7": {
+      "round": "Round of 32",
+      "t1": null,
+      "t2": null,
+      "score": null,
+      "winner": null,
+      "date": "2026-07-02",
+      "time": "20:00"
+    },
     "KO8": {
       "round": "Round of 32",
-      "t1": "England",
-      "t2": "DR Congo",
-      "score": null,
-      "winner": null,
-      "date": "2026-07-01",
-      "time": "11:00"
-    },
-    "KO9": {
-      "round": "Round of 32",
       "t1": "United States",
-      "t2": "Japan",
-      "score": null,
-      "winner": null,
-      "date": "2026-07-01",
-      "time": "15:00"
-    },
-    "KO10": {
-      "round": "Round of 32",
-      "t1": "Iran",
-      "t2": "Spain",
+      "t2": "Bosnia and Herzegovina",
       "score": null,
       "winner": null,
       "date": "2026-07-01",
       "time": "19:00"
     },
-    "KO11": {
+    "KO9": {
       "round": "Round of 32",
-      "t1": "DR Congo",
-      "t2": "Panama",
+      "t1": "England",
+      "t2": "Senegal",
       "score": null,
       "winner": null,
       "date": "2026-07-02",
-      "time": "14:00"
+      "time": "12:00"
+    },
+    "KO10": {
+      "round": "Round of 32",
+      "t1": null,
+      "t2": null,
+      "score": null,
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "16:00"
+    },
+    "KO11": {
+      "round": "Round of 32",
+      "t1": null,
+      "t2": null,
+      "score": null,
+      "winner": null,
+      "date": "2026-07-03",
+      "time": "20:00"
     },
     "KO12": {
       "round": "Round of 32",
-      "t1": "Saudi Arabia",
-      "t2": "Jordan",
+      "t1": null,
+      "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
-      "time": "18:00"
+      "date": "2026-07-03",
+      "time": "23:59"
     },
     "KO13": {
       "round": "Round of 32",
-      "t1": "Canada",
-      "t2": "Japan",
+      "t1": null,
+      "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
-      "time": "22:00"
+      "date": "2026-07-04",
+      "time": "12:00"
     },
     "KO14": {
       "round": "Round of 32",
-      "t1": "Argentina",
-      "t2": "Spain",
+      "t1": null,
+      "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "15:00"
+      "date": "2026-07-04",
+      "time": "16:00"
     },
     "KO15": {
       "round": "Round of 32",
-      "t1": "Colombia",
-      "t2": "Ecuador",
+      "t1": null,
+      "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "17:00"
+      "date": "2026-07-04",
+      "time": "20:00"
     },
     "KO16": {
       "round": "Round of 32",
-      "t1": "Turkiye",
-      "t2": "Belgium",
+      "t1": null,
+      "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-3",
-      "time": "20:30"
+      "date": "2026-07-04",
+      "time": "23:59"
     },
     "KO17": {
       "round": "Round of 16",
@@ -4838,7 +4838,7 @@
       "status": "out"
     }
   ],
-  "_sha": "02cdce01c022495b9d2ab599670b282df033e7d2",
+  "_sha": "d7b287b1562e368510307a57371bc14737b7d5cf",
   "gs_totals": {
     "Bilal": 35,
     "Kiana": 33,
