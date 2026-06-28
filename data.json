@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-28T01:54:56.821Z"
+    "updated": "2026-06-28T04:01:04.145Z"
   },
   "friends": [
     "Bilal",
@@ -931,9 +931,9 @@
       "away": "Jordan",
       "home_name": "Argentina",
       "away_name": "Jordan",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 3,
+      "as": 1,
+      "winner": "Argentina"
     },
     {
       "id": "J6",
@@ -944,9 +944,9 @@
       "away": "Austria",
       "home_name": "Algeria",
       "away_name": "Austria",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 3,
+      "as": 3,
+      "winner": "Draw"
     }
   ],
   "ko": {
@@ -2030,7 +2030,7 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Austria",
@@ -2085,7 +2085,7 @@
           "pts": 1
         }
       },
-      "total": 39
+      "total": 40
     },
     "Kiana": {
       "matches": {
@@ -2323,7 +2323,7 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Austria",
@@ -2378,7 +2378,7 @@
           "pts": 1
         }
       },
-      "total": 36
+      "total": 37
     },
     "Humza": {
       "matches": {
@@ -2616,11 +2616,11 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "K1": {
           "pick": "Draw",
@@ -2671,7 +2671,7 @@
           "pts": 0
         }
       },
-      "total": 35
+      "total": 37
     },
     "Anu": {
       "matches": {
@@ -2909,11 +2909,11 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "K1": {
           "pick": "Portugal",
@@ -2964,7 +2964,7 @@
           "pts": 1
         }
       },
-      "total": 37
+      "total": 39
     },
     "R2": {
       "matches": {
@@ -3202,11 +3202,11 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "K1": {
           "pick": "Portugal",
@@ -3257,7 +3257,7 @@
           "pts": 1
         }
       },
-      "total": 41
+      "total": 43
     },
     "Ray": {
       "matches": {
@@ -3495,7 +3495,7 @@
         },
         "J5": {
           "pick": "Argentina",
-          "pts": 0
+          "pts": 1
         },
         "J6": {
           "pick": "Austria",
@@ -3550,7 +3550,7 @@
           "pts": 1
         }
       },
-      "total": 38
+      "total": 39
     },
     "Laura": {
       "matches": {
@@ -4838,14 +4838,14 @@
       "status": "out"
     }
   ],
-  "_sha": "0a48edbe6ac1b13e02264bb61b83291e511f0a37",
+  "_sha": "e2702845060bf18860f677528c471fcb097a5b28",
   "gs_totals": {
-    "Bilal": 39,
-    "Kiana": 36,
-    "Humza": 35,
-    "Anu": 37,
-    "R2": 41,
-    "Ray": 38,
+    "Bilal": 40,
+    "Kiana": 37,
+    "Humza": 37,
+    "Anu": 39,
+    "R2": 43,
+    "Ray": 39,
     "Laura": 36
   }
 }
