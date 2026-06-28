@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-28T04:01:04.145Z"
+    "updated": "2026-06-28T04:06:41.958Z"
   },
   "friends": [
     "Bilal",
@@ -1043,7 +1043,7 @@
     "KO11": {
       "round": "Round of 32",
       "t1": "Spain",
-      "t2": null,
+      "t2": "Austria",
       "score": null,
       "winner": null,
       "date": "2026-07-02",
@@ -1061,7 +1061,7 @@
     "KO13": {
       "round": "Round of 32",
       "t1": "Switzerland",
-      "t2": null,
+      "t2": "Algeria",
       "score": null,
       "winner": null,
       "date": "2026-07-02",
@@ -4838,7 +4838,7 @@
       "status": "out"
     }
   ],
-  "_sha": "e2702845060bf18860f677528c471fcb097a5b28",
+  "_sha": "356ac16153db96d0a5bf55dd1edbf35c93bdddde",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
