@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-28T04:06:41.958Z"
+    "updated": "2026-06-28T22:04:03.084Z"
   },
   "friends": [
     "Bilal",
@@ -954,8 +954,8 @@
       "round": "Round of 32",
       "t1": "South Africa",
       "t2": "Canada",
-      "score": null,
-      "winner": null,
+      "score": "0-1",
+      "winner": "Canada",
       "date": "2026-06-28",
       "time": "14:00"
     },
@@ -3157,7 +3157,7 @@
         },
         "KO1": {
           "pick": "Canada",
-          "pts": 0
+          "pts": 2
         },
         "KO2": {
           "pick": "Brazil",
@@ -3220,7 +3220,7 @@
           "pts": 0
         }
       },
-      "total": 39
+      "total": 41
     },
     "R2": {
       "matches": {
@@ -3514,7 +3514,7 @@
         },
         "KO1": {
           "pick": "Canada",
-          "pts": 0
+          "pts": 2
         },
         "KO2": {
           "pick": "Brazil",
@@ -3577,7 +3577,7 @@
           "pts": 0
         }
       },
-      "total": 43
+      "total": 45
     },
     "Ray": {
       "matches": {
@@ -4228,7 +4228,7 @@
         },
         "KO1": {
           "pick": "Canada",
-          "pts": 0
+          "pts": 2
         },
         "KO2": {
           "pick": "Brazil",
@@ -4291,7 +4291,7 @@
           "pts": 0
         }
       },
-      "total": 36
+      "total": 38
     }
   },
   "flags": {
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "356ac16153db96d0a5bf55dd1edbf35c93bdddde",
+  "_sha": "236534aca551805f06bad5a933d0b10d402dc00a",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
