@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-27T19:53:45.897Z"
+    "updated": "2026-06-28T01:54:13.333Z"
   },
   "friends": [
     "Bilal",
@@ -905,9 +905,9 @@
       "away": "Colombia",
       "home_name": "Portugal",
       "away_name": "Colombia",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 0,
+      "as": 0,
+      "winner": "Draw"
     },
     {
       "id": "K6",
@@ -918,9 +918,9 @@
       "away": "Uzbekistan",
       "home_name": "DR Congo",
       "away_name": "Uzbekistan",
-      "hs": null,
-      "as": null,
-      "winner": null
+      "hs": 3,
+      "as": 1,
+      "winner": "DR Congo"
     },
     {
       "id": "J5",
@@ -2937,7 +2937,7 @@
         },
         "K6": {
           "pick": "DR Congo",
-          "pts": 0
+          "pts": 1
         },
         "L1": {
           "pick": "Croatia",
@@ -2964,7 +2964,7 @@
           "pts": 0
         }
       },
-      "total": 34
+      "total": 35
     },
     "R2": {
       "matches": {
@@ -3226,7 +3226,7 @@
         },
         "K5": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "K6": {
           "pick": "Uzbekistan",
@@ -3257,7 +3257,7 @@
           "pts": 0
         }
       },
-      "total": 38
+      "total": 39
     },
     "Ray": {
       "matches": {
@@ -3812,11 +3812,11 @@
         },
         "K5": {
           "pick": "Draw",
-          "pts": 0
+          "pts": 1
         },
         "K6": {
           "pick": "DR Congo",
-          "pts": 0
+          "pts": 1
         },
         "L1": {
           "pick": "England",
@@ -3843,7 +3843,7 @@
           "pts": 0
         }
       },
-      "total": 33
+      "total": 35
     }
   },
   "flags": {
@@ -4838,14 +4838,14 @@
       "status": "out"
     }
   ],
-  "_sha": "6de015eb73e14081927dddd79dc9d01938b3eab1",
+  "_sha": "f6ff09c021547bf499fdaf55bc9ade64212c996f",
   "gs_totals": {
     "Bilal": 37,
     "Kiana": 34,
     "Humza": 34,
-    "Anu": 34,
-    "R2": 38,
+    "Anu": 35,
+    "R2": 39,
     "Ray": 36,
-    "Laura": 33
+    "Laura": 35
   }
 }
