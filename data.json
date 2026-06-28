@@ -2083,6 +2083,70 @@
         "L6": {
           "pick": "Croatia",
           "pts": 1
+        },
+        "KO1": {
+          "pick": "South Africa",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Belgium",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Croatia",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Switzerland",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Egypt",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
+          "pts": 0
         }
       },
       "total": 40
@@ -2376,6 +2440,70 @@
         "L6": {
           "pick": "Croatia",
           "pts": 1
+        },
+        "KO1": {
+          "pick": "South Africa",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Ivory Coast",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Senegal",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Portugal",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Algeria",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Egypt",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
+          "pts": 0
         }
       },
       "total": 37
@@ -2668,6 +2796,70 @@
         },
         "L6": {
           "pick": "Draw",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": "South Africa",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Belgium",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Portugal",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Switzerland",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Egypt",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
           "pts": 0
         }
       },
@@ -2962,6 +3154,70 @@
         "L6": {
           "pick": "Croatia",
           "pts": 1
+        },
+        "KO1": {
+          "pick": "Canada",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Belgium",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Portugal",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Switzerland",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Egypt",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
+          "pts": 0
         }
       },
       "total": 39
@@ -3255,6 +3511,70 @@
         "L6": {
           "pick": "Croatia",
           "pts": 1
+        },
+        "KO1": {
+          "pick": "Canada",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Morocco",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Senegal",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Portugal",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Algeria",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Australia",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Ghana",
+          "pts": 0
         }
       },
       "total": 43
@@ -3548,6 +3868,70 @@
         "L6": {
           "pick": "Croatia",
           "pts": 1
+        },
+        "KO1": {
+          "pick": "South Africa",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Ecuador",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Belgium",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Croatia",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Switzerland",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Australia",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
+          "pts": 0
         }
       },
       "total": 39
@@ -3840,6 +4224,70 @@
         },
         "L6": {
           "pick": "Draw",
+          "pts": 0
+        },
+        "KO1": {
+          "pick": "Canada",
+          "pts": 0
+        },
+        "KO2": {
+          "pick": "Brazil",
+          "pts": 0
+        },
+        "KO3": {
+          "pick": "Germany",
+          "pts": 0
+        },
+        "KO4": {
+          "pick": "Netherlands",
+          "pts": 0
+        },
+        "KO5": {
+          "pick": "Norway",
+          "pts": 0
+        },
+        "KO6": {
+          "pick": "France",
+          "pts": 0
+        },
+        "KO7": {
+          "pick": "Mexico",
+          "pts": 0
+        },
+        "KO8": {
+          "pick": "England",
+          "pts": 0
+        },
+        "KO9": {
+          "pick": "Belgium",
+          "pts": 0
+        },
+        "KO10": {
+          "pick": "United States",
+          "pts": 0
+        },
+        "KO11": {
+          "pick": "Spain",
+          "pts": 0
+        },
+        "KO12": {
+          "pick": "Croatia",
+          "pts": 0
+        },
+        "KO13": {
+          "pick": "Switzerland",
+          "pts": 0
+        },
+        "KO14": {
+          "pick": "Egypt",
+          "pts": 0
+        },
+        "KO15": {
+          "pick": "Argentina",
+          "pts": 0
+        },
+        "KO16": {
+          "pick": "Colombia",
           "pts": 0
         }
       },
