@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-28T01:44:13.731Z"
+    "updated": "2026-06-27T19:53:45.897Z"
   },
   "friends": [
     "Bilal",
@@ -879,9 +879,9 @@
       "away": "Panama",
       "home_name": "England",
       "away_name": "Panama",
-      "hs": 2,
-      "as": 0,
-      "winner": "England"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "L6",
@@ -892,9 +892,9 @@
       "away": "Ghana",
       "home_name": "Croatia",
       "away_name": "Ghana",
-      "hs": 2,
-      "as": 1,
-      "winner": "Croatia"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "K5",
@@ -905,9 +905,9 @@
       "away": "Colombia",
       "home_name": "Portugal",
       "away_name": "Colombia",
-      "hs": 0,
-      "as": 0,
-      "winner": "Draw"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "K6",
@@ -918,9 +918,9 @@
       "away": "Uzbekistan",
       "home_name": "DR Congo",
       "away_name": "Uzbekistan",
-      "hs": 3,
-      "as": 1,
-      "winner": "DR Congo"
+      "hs": null,
+      "as": null,
+      "winner": null
     },
     {
       "id": "J5",
@@ -970,6 +970,15 @@
     },
     "KO3": {
       "round": "Round of 32",
+      "t1": "Germany",
+      "t2": "Paraguay",
+      "score": null,
+      "winner": null,
+      "date": "2026-06-29",
+      "time": "15:30"
+    },
+    "KO4": {
+      "round": "Round of 32",
       "t1": "Netherlands",
       "t2": "Morocco",
       "score": null,
@@ -977,7 +986,7 @@
       "date": "2026-06-29",
       "time": "20:00"
     },
-    "KO4": {
+    "KO5": {
       "round": "Round of 32",
       "t1": "Ivory Coast",
       "t2": "Norway",
@@ -986,15 +995,6 @@
       "date": "2026-06-30",
       "time": "12:00"
     },
-    "KO5": {
-      "round": "Round of 32",
-      "t1": "Germany",
-      "t2": "Ecuador",
-      "score": null,
-      "winner": null,
-      "date": "2026-06-30",
-      "time": "16:00"
-    },
     "KO6": {
       "round": "Round of 32",
       "t1": "France",
@@ -1002,18 +1002,36 @@
       "score": null,
       "winner": null,
       "date": "2026-06-30",
-      "time": "20:00"
+      "time": "16:00"
     },
     "KO7": {
       "round": "Round of 32",
-      "t1": null,
-      "t2": null,
+      "t1": "Mexico",
+      "t2": "Ecuador",
       "score": null,
       "winner": null,
-      "date": "2026-07-02",
+      "date": "2026-06-30",
       "time": "20:00"
     },
     "KO8": {
+      "round": "Round of 32",
+      "t1": "England",
+      "t2": "DR Congo",
+      "score": null,
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "11:00"
+    },
+    "KO9": {
+      "round": "Round of 32",
+      "t1": "Belgium",
+      "t2": "Senegal",
+      "score": null,
+      "winner": null,
+      "date": "2026-07-01",
+      "time": "15:00"
+    },
+    "KO10": {
       "round": "Round of 32",
       "t1": "United States",
       "t2": "Bosnia and Herzegovina",
@@ -1022,77 +1040,59 @@
       "date": "2026-07-01",
       "time": "19:00"
     },
-    "KO9": {
+    "KO11": {
       "round": "Round of 32",
-      "t1": "England",
-      "t2": "Senegal",
+      "t1": "Spain",
+      "t2": null,
       "score": null,
       "winner": null,
       "date": "2026-07-02",
-      "time": "12:00"
-    },
-    "KO10": {
-      "round": "Round of 32",
-      "t1": null,
-      "t2": null,
-      "score": null,
-      "winner": null,
-      "date": "2026-07-03",
-      "time": "16:00"
-    },
-    "KO11": {
-      "round": "Round of 32",
-      "t1": null,
-      "t2": null,
-      "score": null,
-      "winner": null,
-      "date": "2026-07-03",
-      "time": "20:00"
+      "time": "14:00"
     },
     "KO12": {
       "round": "Round of 32",
-      "t1": null,
-      "t2": null,
+      "t1": "Portugal",
+      "t2": "Croatia",
       "score": null,
       "winner": null,
-      "date": "2026-07-03",
-      "time": "23:59"
+      "date": "2026-07-02",
+      "time": "18:00"
     },
     "KO13": {
       "round": "Round of 32",
-      "t1": null,
+      "t1": "Switzerland",
       "t2": null,
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "12:00"
+      "date": "2026-07-02",
+      "time": "22:00"
     },
     "KO14": {
       "round": "Round of 32",
-      "t1": null,
-      "t2": null,
+      "t1": "Australia",
+      "t2": "Egypt",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "16:00"
+      "date": "2026-07-03",
+      "time": "13:00"
     },
     "KO15": {
       "round": "Round of 32",
-      "t1": null,
-      "t2": null,
+      "t1": "Argentina",
+      "t2": "Cape Verde",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "20:00"
+      "date": "2026-07-03",
+      "time": "17:00"
     },
     "KO16": {
       "round": "Round of 32",
-      "t1": null,
-      "t2": null,
+      "t1": "Colombia",
+      "t2": "Ghana",
       "score": null,
       "winner": null,
-      "date": "2026-07-04",
-      "time": "23:59"
+      "date": "2026-07-03",
+      "time": "20:30"
     },
     "KO17": {
       "round": "Round of 16",
@@ -2078,14 +2078,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 1
+          "pts": 0
         }
       },
-      "total": 39
+      "total": 37
     },
     "Kiana": {
       "matches": {
@@ -2371,14 +2371,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 1
+          "pts": 0
         }
       },
-      "total": 36
+      "total": 34
     },
     "Humza": {
       "matches": {
@@ -2664,14 +2664,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Draw",
           "pts": 0
         }
       },
-      "total": 35
+      "total": 34
     },
     "Anu": {
       "matches": {
@@ -2937,7 +2937,7 @@
         },
         "K6": {
           "pick": "DR Congo",
-          "pts": 1
+          "pts": 0
         },
         "L1": {
           "pick": "Croatia",
@@ -2957,14 +2957,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 1
+          "pts": 0
         }
       },
-      "total": 37
+      "total": 34
     },
     "R2": {
       "matches": {
@@ -3226,7 +3226,7 @@
         },
         "K5": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "K6": {
           "pick": "Uzbekistan",
@@ -3250,14 +3250,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 1
+          "pts": 0
         }
       },
-      "total": 41
+      "total": 38
     },
     "Ray": {
       "matches": {
@@ -3543,14 +3543,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Croatia",
-          "pts": 1
+          "pts": 0
         }
       },
-      "total": 38
+      "total": 36
     },
     "Laura": {
       "matches": {
@@ -3812,11 +3812,11 @@
         },
         "K5": {
           "pick": "Draw",
-          "pts": 1
+          "pts": 0
         },
         "K6": {
           "pick": "DR Congo",
-          "pts": 1
+          "pts": 0
         },
         "L1": {
           "pick": "England",
@@ -3836,14 +3836,14 @@
         },
         "L5": {
           "pick": "England",
-          "pts": 1
+          "pts": 0
         },
         "L6": {
           "pick": "Draw",
           "pts": 0
         }
       },
-      "total": 36
+      "total": 33
     }
   },
   "flags": {
@@ -4838,14 +4838,14 @@
       "status": "out"
     }
   ],
-  "_sha": "5fb10835eb899225144af5edf3170c53d5e4fa60",
+  "_sha": "6de015eb73e14081927dddd79dc9d01938b3eab1",
   "gs_totals": {
-    "Bilal": 39,
-    "Kiana": 36,
-    "Humza": 35,
-    "Anu": 37,
-    "R2": 41,
-    "Ray": 38,
-    "Laura": 36
+    "Bilal": 37,
+    "Kiana": 34,
+    "Humza": 34,
+    "Anu": 34,
+    "R2": 38,
+    "Ray": 36,
+    "Laura": 33
   }
 }
