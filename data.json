@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-28T22:04:03.084Z"
+    "updated": "2026-06-29T19:07:20.642Z"
   },
   "friends": [
     "Bilal",
@@ -963,8 +963,8 @@
       "round": "Round of 32",
       "t1": "Brazil",
       "t2": "Japan",
-      "score": null,
-      "winner": null,
+      "score": "2-1",
+      "winner": "Brazil",
       "date": "2026-06-29",
       "time": "12:00"
     },
@@ -2090,7 +2090,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -2149,7 +2149,7 @@
           "pts": 0
         }
       },
-      "total": 40
+      "total": 42
     },
     "Kiana": {
       "matches": {
@@ -2447,7 +2447,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -2506,7 +2506,7 @@
           "pts": 0
         }
       },
-      "total": 37
+      "total": 39
     },
     "Humza": {
       "matches": {
@@ -2804,7 +2804,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -2863,7 +2863,7 @@
           "pts": 0
         }
       },
-      "total": 37
+      "total": 39
     },
     "Anu": {
       "matches": {
@@ -3161,7 +3161,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -3220,7 +3220,7 @@
           "pts": 0
         }
       },
-      "total": 41
+      "total": 43
     },
     "R2": {
       "matches": {
@@ -3518,7 +3518,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -3577,7 +3577,7 @@
           "pts": 0
         }
       },
-      "total": 45
+      "total": 47
     },
     "Ray": {
       "matches": {
@@ -3875,7 +3875,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -3934,7 +3934,7 @@
           "pts": 0
         }
       },
-      "total": 39
+      "total": 41
     },
     "Laura": {
       "matches": {
@@ -4232,7 +4232,7 @@
         },
         "KO2": {
           "pick": "Brazil",
-          "pts": 0
+          "pts": 2
         },
         "KO3": {
           "pick": "Germany",
@@ -4291,7 +4291,7 @@
           "pts": 0
         }
       },
-      "total": 38
+      "total": 40
     }
   },
   "flags": {
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "236534aca551805f06bad5a933d0b10d402dc00a",
+  "_sha": "932370f223ec087cdd38506e991b233bec47a465",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
