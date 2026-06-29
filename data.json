@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-29T23:49:57.725Z"
+    "updated": "2026-06-29T23:50:58.439Z"
   },
   "friends": [
     "Bilal",
@@ -972,7 +972,7 @@
       "round": "Round of 32",
       "t1": "Germany",
       "t2": "Paraguay",
-      "score": "1-1 (3-4)",
+      "score": "3-4",
       "winner": "Paraguay",
       "date": "2026-06-29",
       "time": "15:30"
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "afb6833b02b91fc05c42844040b38b9b9320dde1",
+  "_sha": "aebdb95ac8864f2d1a41348970a1a22ec2b7ec2c",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
