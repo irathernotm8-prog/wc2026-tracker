@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-30T04:01:30.369Z"
+    "updated": "2026-06-30T21:26:02.811Z"
   },
   "friends": [
     "Bilal",
@@ -990,8 +990,8 @@
       "round": "Round of 32",
       "t1": "Ivory Coast",
       "t2": "Norway",
-      "score": null,
-      "winner": null,
+      "score": "1-2",
+      "winner": "Norway",
       "date": "2026-06-30",
       "time": "12:00"
     },
@@ -2102,7 +2102,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -2149,7 +2149,7 @@
           "pts": 0
         }
       },
-      "total": 42
+      "total": 44
     },
     "Kiana": {
       "matches": {
@@ -2816,7 +2816,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -2863,7 +2863,7 @@
           "pts": 0
         }
       },
-      "total": 39
+      "total": 41
     },
     "Anu": {
       "matches": {
@@ -3173,7 +3173,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -3220,7 +3220,7 @@
           "pts": 0
         }
       },
-      "total": 43
+      "total": 45
     },
     "R2": {
       "matches": {
@@ -3530,7 +3530,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -3577,7 +3577,7 @@
           "pts": 0
         }
       },
-      "total": 49
+      "total": 51
     },
     "Ray": {
       "matches": {
@@ -3887,7 +3887,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -3934,7 +3934,7 @@
           "pts": 0
         }
       },
-      "total": 41
+      "total": 43
     },
     "Laura": {
       "matches": {
@@ -4244,7 +4244,7 @@
         },
         "KO5": {
           "pick": "Norway",
-          "pts": 0
+          "pts": 2
         },
         "KO6": {
           "pick": "France",
@@ -4291,7 +4291,7 @@
           "pts": 0
         }
       },
-      "total": 40
+      "total": 42
     }
   },
   "flags": {
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "d18a8a70fcab4eca955df6149bcce097087081ad",
+  "_sha": "c5c32ba9b534c79f733359895d65c3c5a594cce2",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
