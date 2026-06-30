@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-29T23:50:58.439Z"
+    "updated": "2026-06-30T04:01:30.369Z"
   },
   "friends": [
     "Bilal",
@@ -981,8 +981,8 @@
       "round": "Round of 32",
       "t1": "Netherlands",
       "t2": "Morocco",
-      "score": null,
-      "winner": null,
+      "score": "2-3",
+      "winner": "Morocco",
       "date": "2026-06-29",
       "time": "20:00"
     },
@@ -3526,7 +3526,7 @@
         },
         "KO4": {
           "pick": "Morocco",
-          "pts": 0
+          "pts": 2
         },
         "KO5": {
           "pick": "Norway",
@@ -3577,7 +3577,7 @@
           "pts": 0
         }
       },
-      "total": 47
+      "total": 49
     },
     "Ray": {
       "matches": {
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "aebdb95ac8864f2d1a41348970a1a22ec2b7ec2c",
+  "_sha": "d18a8a70fcab4eca955df6149bcce097087081ad",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
