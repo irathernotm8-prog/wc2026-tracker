@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-30T21:26:02.811Z"
+    "updated": "2026-07-01T18:19:26.014Z"
   },
   "friends": [
     "Bilal",
@@ -999,8 +999,8 @@
       "round": "Round of 32",
       "t1": "France",
       "t2": "Sweden",
-      "score": null,
-      "winner": null,
+      "score": "3-0",
+      "winner": "France",
       "date": "2026-06-30",
       "time": "16:00"
     },
@@ -1008,8 +1008,8 @@
       "round": "Round of 32",
       "t1": "Mexico",
       "t2": "Ecuador",
-      "score": null,
-      "winner": null,
+      "score": "2-0",
+      "winner": "Mexico",
       "date": "2026-06-30",
       "time": "20:00"
     },
@@ -1017,8 +1017,8 @@
       "round": "Round of 32",
       "t1": "England",
       "t2": "DR Congo",
-      "score": null,
-      "winner": null,
+      "score": "2-1",
+      "winner": "England",
       "date": "2026-07-01",
       "time": "11:00"
     },
@@ -2106,15 +2106,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Belgium",
@@ -2149,7 +2149,7 @@
           "pts": 0
         }
       },
-      "total": 44
+      "total": 50
     },
     "Kiana": {
       "matches": {
@@ -2463,15 +2463,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Senegal",
@@ -2506,7 +2506,7 @@
           "pts": 0
         }
       },
-      "total": 39
+      "total": 45
     },
     "Humza": {
       "matches": {
@@ -2820,15 +2820,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Belgium",
@@ -2863,7 +2863,7 @@
           "pts": 0
         }
       },
-      "total": 41
+      "total": 47
     },
     "Anu": {
       "matches": {
@@ -3177,15 +3177,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Belgium",
@@ -3220,7 +3220,7 @@
           "pts": 0
         }
       },
-      "total": 45
+      "total": 51
     },
     "R2": {
       "matches": {
@@ -3534,15 +3534,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Senegal",
@@ -3577,7 +3577,7 @@
           "pts": 0
         }
       },
-      "total": 51
+      "total": 57
     },
     "Ray": {
       "matches": {
@@ -3891,7 +3891,7 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Ecuador",
@@ -3899,7 +3899,7 @@
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Belgium",
@@ -3934,7 +3934,7 @@
           "pts": 0
         }
       },
-      "total": 43
+      "total": 47
     },
     "Laura": {
       "matches": {
@@ -4248,15 +4248,15 @@
         },
         "KO6": {
           "pick": "France",
-          "pts": 0
+          "pts": 2
         },
         "KO7": {
           "pick": "Mexico",
-          "pts": 0
+          "pts": 2
         },
         "KO8": {
           "pick": "England",
-          "pts": 0
+          "pts": 2
         },
         "KO9": {
           "pick": "Belgium",
@@ -4291,7 +4291,7 @@
           "pts": 0
         }
       },
-      "total": 42
+      "total": 48
     }
   },
   "flags": {
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "c5c32ba9b534c79f733359895d65c3c5a594cce2",
+  "_sha": "a6e15ee41d181049200203c4242f01af87cc88d1",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
