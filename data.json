@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-07T01:30:28.386Z"
+    "updated": "2026-07-07T02:12:09.173Z"
   },
   "friends": [
     "Bilal",
@@ -1143,8 +1143,8 @@
       "round": "Round of 16",
       "t1": "United States",
       "t2": "Belgium",
-      "score": null,
-      "winner": null,
+      "score": "1-4",
+      "winner": "Belgium",
       "date": "2026-07-09",
       "time": "22:00"
     },
@@ -1168,8 +1168,8 @@
     },
     "KO25": {
       "round": "Quarter-finals",
-      "t1": "TBD",
-      "t2": "TBD",
+      "t1": "France",
+      "t2": "Morocco",
       "score": null,
       "winner": null,
       "date": "2026-07-12",
@@ -1177,8 +1177,8 @@
     },
     "KO26": {
       "round": "Quarter-finals",
-      "t1": "TBD",
-      "t2": "TBD",
+      "t1": "Spain",
+      "t2": "Belgium",
       "score": null,
       "winner": null,
       "date": "2026-07-12",
@@ -1186,8 +1186,8 @@
     },
     "KO27": {
       "round": "Quarter-finals",
-      "t1": "TBD",
-      "t2": "TBD",
+      "t1": "Norway",
+      "t2": "England",
       "score": null,
       "winner": null,
       "date": "2026-07-13",
@@ -5286,7 +5286,7 @@
       "status": "out"
     }
   ],
-  "_sha": "fa6a1d125ceef3f30526bfdd27bcb89319a8740f",
+  "_sha": "394e9d44b40b79da833e36494c18ea273d2499af",
   "gs_totals": {
     "Bilal": 40,
     "Kiana": 37,
